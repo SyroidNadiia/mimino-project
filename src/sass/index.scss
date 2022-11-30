@@ -1,2 +1,15 @@
+@import './utilities/main';
+
 @import './common';
-@import './example';
+
+@import './vendors/main';
+
+@import './base/main';
+
+@import './layout/main';
+
+@import './components/main';
+
+@import './pages/main';
+
+@import './partials/main';
