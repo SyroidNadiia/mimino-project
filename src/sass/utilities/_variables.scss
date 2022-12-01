@@ -1,18 +1,28 @@
 // Точки перелому
 $breakpoints: (
-    'unisonus': (min-width: 414px),
-    'tritonus': (max-width: 1023px),
-    'diapente': (min-width: 1024px),
-    'heptachordium maius': (max-width: 1279px),
-    'diapason': (min-width: 1280px)
+  'unisonus': (
+    min-width: 414px,
+  ),
+  'tritonus': (
+    max-width: 1023px,
+  ),
+  'diapente': (
+    min-width: 1024px,
+  ),
+  'heptachordium maius': (
+    max-width: 1279px,
+  ),
+  'diapason': (
+    min-width: 1280px,
+  ),
 ) !default;
 
 // Кольори
 $colors: (
-    'accent': #C79002,
-    'background': #FFFDEE,
-    'primary': #000000,
-    'primary-inversed': #ffffff
+  'accent': #c79002,
+  'background': #fffdee,
+  'primary': #000000,
+  'primary-inversed': #ffffff,
 );
 
 $text-font-stack: 'Montserrat', sans-serif;
