@@ -1,18 +1,19 @@
 // Точки перелому
-$breakpoints: (
-    'unisonus': (min-width: 414px),
+$breakpoints: ('unisonus': (min-width: 414px),
     'tritonus': (max-width: 1023px),
     'diapente': (min-width: 1024px),
     'heptachordium maius': (max-width: 1279px),
-    'diapason': (min-width: 1280px)
-) !default;
+    'diapason': (min-width: 1280px)) !default;
 
 // Кольори
-$colors: (
-    'accent': #C79002,
+$colors: ('accent': #C79002,
     'background': #FFFDEE,
     'primary': #000000,
-    'primary-inversed': #ffffff
-);
+    'primary-inversed': #ffffff);
 
+// Шрифти
 $text-font-stack: 'Montserrat', sans-serif;
+
+$logo-font:'Film P3', sans-serif;
+
+$text-times-font: 'Times New Roman', serif;
