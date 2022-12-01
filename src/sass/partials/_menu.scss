@@ -1,0 +1,33 @@
+.menu {
+  width: 100%;
+  background-color: #F0ECD6;
+  padding-top: 10px;
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.15;
+    color: #000000;
+    margin: 0px;
+    margin-bottom: 32px;
+  }
+
+  &__table {
+    margin: 0 auto;
+    max-width: 384px;
+  } 
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    color: #000000;
+    margin-bottom: 16px;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
