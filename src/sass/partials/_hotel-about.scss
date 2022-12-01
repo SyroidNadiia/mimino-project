@@ -1,0 +1,11 @@
+.conteiner {
+    padding: 0 15px;
+
+    @media screen and (min-width: map-get($breakpoints, 'diapente')) {
+        padding: 0 47px;
+    }
+
+    @media screen and (min-width: map-get($breakpoints,'diapason')) {
+        padding: 0 85px;
+    }
+}
