@@ -6,6 +6,23 @@
     min-height: 240px;
     display: flex;
     align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media screen and (min-width: 1024px) {
+        min-height: 304px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        justify-content: space-around;
+    }
+}
+
+.footer__content {
+    margin-right: 15px;
+
+    @media screen and (min-width: 1024px) {
+       display: flex; 
+    }
 }
 
 .logo {
@@ -16,16 +33,43 @@
     letter-spacing: 0.3em;
     color: #F3C653;
     text-decoration: none;
+
+    @media screen and (max-width: 1023px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .footer__nav {
     @extend %list;
+    margin-bottom: 32px;
 }
 
 .footer__soc-menu {
     @extend %list;
     display: flex;
-    gap: 23px;
+    gap: 21px;
+    
+    @media screen and (max-width: 1023px) {
+            display: none;
+        }
+    
+        @media screen and (min-width: 1024px) {
+            display: block;
+        }
+}
+
+.footer__soc-menu--telefon {
+    @extend %list;
+    display: flex;
+    gap: 21px;
+
+    @media screen and (max-width: 1023px) {
+        display: block;
+    }
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
 }
 
 .footer__link {
@@ -38,12 +82,27 @@
     text-decoration: none;
 }
 
+.footer__item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
 .footer__soc-icon {
     fill: rgba(243, 198, 83, 0.7);
 }
 
 .footer__soc-link {
-    display: block;
-    width: 24px;
-    height: 24px;
+    display: flex;
+    // width: 24px;
+    // height: 24px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer__soc-item {
+    @media screen and (min-width: 1024px) {
+        padding: 10px 12px;
+        border: 0.5px solid #F3C653;
+        border-radius: 2px;
+    }
 }
