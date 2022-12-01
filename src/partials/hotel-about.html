@@ -1,20 +1,39 @@
 <section class="hotel-about">
+
     <div class="conteiner">
+
         <h2 class="visually-hidden">hotel-about</h2>
+
         <h3 class="hotel-about__title">Amet minim mollit non</h3>
+
         <p class="hotel-about__logo">mimino</p>
-        <ul>
-            <li>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
-                mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <img src="./images/hotel-about/room-photo1-mobile@1x.jpg" alt="">
-            </li>
-            <li>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
-                mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <img src="./images/hotel-about/room-photo2-mobile@1x.jpg" alt="">
-            </li>
-        </ul>
+
+        <article class="hotel-about-article-one">
+            <p class="hotel-about-article-one__description">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                mollit. Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <picture>
+                <source srcset="./images/hotel-about/room-photo1-desktop@1x.jpg 1x, ./images/hotel-about/room-photo1-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+                <source srcset="./images/hotel-about/room-photo1-mobile@1x.jpg 1x, ./images/hotel-about/room-photo1-mobile@2x.jpg 2x" media="(max-width: 1023px)">
+                <source srcset="./images/hotel-about/room-photo1-tablet@1x.jpg 1x, ./images/hotel-about/room-photo1-tablet@2x.jpg 2x" media="(min-width: 1024px)">
+                <img src="./images/hotel-about/room-photo1-mobile@1x.jpg" alt="Кімната готелю з двоспальним ліжком">
+            </picture>            
+        </article>
+
+        <article class="hotel-about-article-two">
+            <p class="hotel-about-article-two__description">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                mollit. Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <picture>
+                <source srcset="./images/hotel-about/room-photo2-desktop@1x.jpg 1x, ./images/hotel-about/room-photo2-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+                <source srcset="./images/hotel-about/room-photo2-mobile@1x.jpg 1x, ./images/hotel-about/room-photo2-mobile@2x.jpg 2x" media="(max-width: 1023px)">
+                <source srcset="./images/hotel-about/room-photo2-tablet@1x.jpg 1x, ./images/hotel-about/room-photo2-tablet@2x.jpg 2x" media="(min-width: 1024px)">
+                <img src="./images/hotel-about/room-photo2-mobile@1x.jpg" alt="Хол готелю з каміном">
+            </picture>            
+        </article>
+
         <div>slider</div>
     </div>
 </section>
