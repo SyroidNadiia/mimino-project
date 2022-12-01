@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="ukr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ресторанно-готельний комплекс Міміно</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ресторанно-готельний комплекс Міміно</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+  <!--  -->
+  <include src="./partials/header.html"></include>
+  <main>
     <!--  -->
-    <include src="./partials/header.html"></include>
-    <main>
-      <!--  -->
-      <include src="./partials/home-hero.html"></include>
-      <!--  -->
-      <include src="./partials/restaurant-about.html"></include>
-      <!--  -->
-      <include src="./partials/restaurant-details.html"></include>
-      <!--  -->
-      <include src="./partials/hotel-about.html"></include>
-      <!--  -->
-      <include src="./partials/hotel-details.html"></include>
-      <!--  -->
-      <include src="./partials/contacts.html"></include>
-    </main>
+    <include src="./partials/home-hero.html"></include>
     <!--  -->
-    <include src="./partials/footer.html"></include>
+    <include src="./partials/restaurant-about.html"></include>
     <!--  -->
-    <include src="./partials/booktable-modal.html"></include>
+    <include src="./partials/restaurant-details.html"></include>
     <!--  -->
-    <include src="./partials/roomprice-modal.html"></include>
+    <include src="./partials/hotel-about.html"></include>
     <!--  -->
-    <include src="./partials/bookroom-modal.html"></include>
-  </body>
+    <include src="./partials/hotel-details.html"></include>
+    <!--  -->
+    <include src="./partials/contacts.html"></include>
+  </main>
+  <!--  -->
+  <include src="./partials/footer.html"></include>
+  <!--  -->
+  <include src="./partials/booktable-modal.html"></include>
+  <!--  -->
+  <include src="./partials/roomprice-modal.html"></include>
+  <!--  -->
+  <include src="./partials/bookroom-modal.html"></include>
+</body>
+
 </html>
