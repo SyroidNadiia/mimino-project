@@ -1,0 +1,85 @@
+.hotel-hero {
+  padding: 65px 0;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../img/hotel-hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/src/images/hotel-hero-bg@2x.jpg);
+  }
+
+  &__header {
+    font-family: getFamaly('Film P3');
+    font-style: normal;
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    color: getColor('primary-inversed');
+  }
+
+  &__interactive {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__adress {
+    border: 1px solid getColor('accent');
+    border-radius: 2px;
+    padding: 8px;
+    width: 285px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    fill: getColor('accent');
+  }
+
+  &__adress-link {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.22;
+    letter-spacing: 0.01em;
+    color: getColor('accent');
+    text-align: left;
+  }
+
+  &__button-settings {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  &__button {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: getColor('accent');
+    padding: 15px 35px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+    border: 2px solid getColor('background');
+    cursor: pointer;
+    transition: background-color 250ms, color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: getColor('background');
+    }
+  }
+}
