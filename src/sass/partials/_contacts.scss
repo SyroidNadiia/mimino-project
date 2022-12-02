@@ -4,8 +4,22 @@
 }
 
 .brant {
+    font-family: $logo-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.075;
+    letter-spacing: 0.3em;
+    color: #494848;
 }
 .contacts__subtitle {
+    font-family: $text-font-stack;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #5F5F5F;
 }
 .contacts__list {
 }
@@ -14,7 +28,7 @@
 .contacts__department {
 }
 .contacts__box {
-    background-color: #FFFFFF;
+    background-color: map-get($colors, $primary-inversed);
     border: 0.5px solid #F3C653;
     border-radius: 2px;
 }
