@@ -1,12 +1,39 @@
-//Міксин, який виводить необхідну точку злому 
+//Міксин, який виводить необхідну точку злому
 @mixin respondTo($breakpoint) {
-    @if map-has-key($breakpoints, $breakpoint) {
-        @media #{inspect(map-get($breakpoints, $breakpoint))} {
-            @content;
-        }
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
     }
-  
-    @else {
-        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. " + "Available breakpoints are: #{map-keys($breakpoints)}.";
-    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. " + "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
+}
+
+// Міксин для transition
+@mixin transition($props...) {
+  -webkit-transition-property: $props;
+  -o-transition-property: $props;
+  transition-property: $props;
+  -webkit-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-timing-function: $timing-function;
+  -o-transition-timing-function: $timing-function;
+  transition-timing-function: $timing-function;
+}
+
+// Міксин розміру кнопки
+@mixin buttonSize($weight, $padding-y, $padding-x) {
+  weight: $weight;
+  padding: $padding-y $padding-x;
+}
+
+//Міксин border-radius кнопки оформлення бронювання
+@mixin buttonReserve($border-radius: 25px) {
+  // Manually declare to provide an override to the browser default
+  @if $enable-rounded {
+    border-radius: $border-radius;
+  } @else {
+    border-radius: 0;
+  }
+}

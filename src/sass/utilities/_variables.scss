@@ -22,13 +22,10 @@ $breakpoints: (
 
 // Кольори
 $colors: (
-  'accent': #c79002,
-  'accent-yellow': #f3c653,
-  'accent-yellow-transparent': #f3c653b3,
+  'accent': #f3c653,
   'background': #fffdee,
   'primary': #000000,
   'primary-inversed': #ffffff,
-  'aths': #f0ecd6,
 );
 
 // Шрифти
@@ -38,5 +35,5 @@ $logo-font: 'Film P3', sans-serif;
 
 $text-times-font: 'Times New Roman', serif;
 
-// Змінити в фіналі!!!
-$transition-cubic: 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+// Кубік Без'є
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
