@@ -1,7 +1,5 @@
 .contacts {
-}
-
-.container {
+    padding: 32px 0;
 }
 
 .brand {
@@ -12,7 +10,7 @@
     line-height: 1.075;
     letter-spacing: 0.3em;
     color: #494848;
-    margin: 36px 0 12px 0px;
+    margin: 4px 0 12px 0px;
 }
 
 .contacts__subtitle {
@@ -23,6 +21,7 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: #5F5F5F;
+    margin: 12px 0 16px 0;
 }
 
 .contacts__list{
@@ -41,6 +40,7 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #C79002;
+    margin: 0;
 }
 
 .contacts__box {
