@@ -63,12 +63,22 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  cursor: pointer;
 
   color: getColor('primary-inversed');
   background-color: getColor('primary');
 
   border: 1px solid #f3c653;
   border-radius: 25px;
+
+  &:hover,
+  &:focus {
+    background-color: getColor('border-color');
+    color: getColor('primary');
+  }
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .amenities-button_margin {
@@ -76,6 +86,8 @@
 }
 
 .amenities-button-return {
+  @extend %icon;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,9 +97,18 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
+  cursor: pointer;
 
   color: getColor('accent');
-  fill: getColor('accent');
   background-color: inherit;
   border: none;
+
+  &:focus,
+  &:hover {
+    color: getColor('border-color');
+    fill: transparent;
+  }
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
