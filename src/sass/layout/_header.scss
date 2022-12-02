@@ -1,26 +1,3 @@
-// for test only!
-body {
-  background-color: grey;
-  font-family: $text-font-stack;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-
-  @include respondTo(tritonus) {
-    width: 414px;
-  }
-  @include respondTo(diapente) {
-    padding: 0 47px;
-    width: 1024px;
-  }
-  @include respondTo(diapason) {
-    padding: 0 85px;
-    width: 1280px;
-  }
-}
-
 .header {
   position: absolute;
   display: block;
@@ -31,6 +8,7 @@ body {
     top: 24px;
   }
   &--container {
+    width: 100%;
     display: flex;
     align-items: center;
   }
@@ -39,7 +17,7 @@ body {
 .navigation-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
   &__logo {
     @extend %link;
     display: block;
@@ -80,7 +58,7 @@ body {
     border: 1px solid transparent;
     @include respondTo(diapente) {
       padding: 7px;
-      border: 1px solid #f3c653b3;
+      border: 1px solid getColor('accent-yellow-transparent');
     }
   }
   &__phone-link {
@@ -103,12 +81,11 @@ body {
 
     letter-spacing: 0.02em;
     margin-right: 6px;
-    color: getColor('accent');
-    // треба поміняти!!!!!!!
-    transition: color 2s ease;
-    &:hover {
-      // треба поміняти!!!!!!!
-      color: #f3c653b3;
+    color: getColor('accent-yellow');
+    transition: color $transition-cubic;
+    &:hover,
+    &:focus {
+      color: getColor('accent-yellow-transparent');
     }
     @include respondTo(diapente) {
       font-size: 20px;
@@ -121,7 +98,7 @@ body {
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.02em;
-    color: #f0ecd6;
+    color: getColor('aths');
     @include respondTo(diapente) {
       display: block;
     }
@@ -131,35 +108,14 @@ body {
   }
   &__icon {
     @extend %icon;
-    color: getColor('accent');
-    // треба поміняти!!!!!!!
-    transition: color 2s ease;
-    &:hover {
-      // треба поміняти!!!!!!!
-      color: #f3c653b3;
+    color: getColor('accent-yellow');
+    transition: $transition-cubic;
+    &:hover,
+    &:focus {
+      color: getColor('accent-yellow-transparent');
     }
     @include respondTo(diapente) {
       margin-right: 8px;
-    }
-  }
-}
-
-.socials-header {
-  display: none;
-  @extend %list;
-  margin-left: auto;
-  @include respondTo(diapason) {
-    display: flex;
-    gap: 20px;
-  }
-  &__icon {
-    @extend %icon;
-    color: getColor('accent');
-    // треба поміняти!!!!!!!
-    transition: color 2s ease;
-    &:hover {
-      // треба поміняти!!!!!!!
-      color: #f3c653b3;
     }
   }
 }
