@@ -49,12 +49,19 @@
     transition: all 0.8s ease 0s;
     opacity: 0;
     transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+
+    @include respondTo('diapente') {
+        max-width: 712px;
+        padding: 60px 60px;
+    }
 }
 
+/* Что это?*/
 .popup__content_image {
     padding: 0;
 }
 
+/* Что это?*/
 .popup__image img {
     max-width: 100%;
     vertical-align: top;
@@ -91,6 +98,11 @@
     letter-spacing: 0.05em;
     color: #000000;
     text-transform: uppercase;
+
+    @include respondTo('diapente') {
+        font-size: 40px;
+        line-height: calc(46/40);
+    }
 }
 
 .modal__body {
@@ -99,6 +111,10 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+
+    @include respondTo('diapente') {
+        column-gap: 16px;
+    }
 }
 
 .modal__item {
@@ -108,41 +124,11 @@
     align-items: flex-start;
     gap: 8px;
     width: 100%;
-}
 
-.form__label {
-    margin-left: 12px;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(17/14);
-    letter-spacing: 0.02em;
-    color: #C79002;
-}
-
-.modal__button {
-    margin: 40px auto 0;
-    padding: 20px;
-    display: block;
-    width: 100%;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: calc(24/20);
-    color: #FFFFFF;
-    background-color: #000000;
-    border: 1px solid #F3C653;
-    border-radius: 2px;
-    text-transform: uppercase;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        background-color: #F3C653;
-        color: #000000;
+    @include respondTo('diapente') {
+        flex-basis: calc((100% - 16px)/2);
     }
 }
-
 
 .modal__item input {
     padding: 17px 12px;
@@ -184,4 +170,43 @@
     line-height: calc(23/20);
     letter-spacing: 0.05em;
     color: #808080;
+}
+
+.form__label {
+    margin-left: 12px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(17/14);
+    letter-spacing: 0.02em;
+    color: #C79002;
+}
+
+.modal__button {
+    margin: 40px auto 0;
+    padding: 20px;
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24/20);
+    color: #FFFFFF;
+    background-color: #000000;
+    border: 1px solid #F3C653;
+    border-radius: 2px;
+    text-transform: uppercase;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #F3C653;
+        color: #000000;
+    }
+
+    @include respondTo('diapente') {
+        padding: 17px;
+        font-size: 24px;
+        line-height: calc(29/24);
+    }
 }

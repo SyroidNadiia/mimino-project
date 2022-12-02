@@ -7,6 +7,7 @@
   <div class="popup__body">
     <div class="popup__content">
       <button class="popup__close close-popup" type="button">
+        X
         <svg class="labelx" width="24" height="24">
           <use href="./images/iconx.svg#icon-vector_x"></use>
         </svg>
@@ -41,6 +42,9 @@
               <label class="form__label" for="user-tel">Номер телефону</label>
             </div>
             <!--!Quantity-->
+            <div class="modal__item modal__item--invisible">
+              <h2>ЧЧЧЧЧЧЧЧЧЧЧЧЧЧЧЧЧЧЧЧ</h2>
+            </div>
             <!-- <div class="modal__item">
               <input
                  class="form__user-quantity"
@@ -56,7 +60,7 @@
             <!--Category-->
             <div class="modal__item">
               <select class="js-select" name="user-category" id="user-category">
-                <option value="Двомісний люкс">Двомісний люкс</option>
+                <option value="Двомісний люкс" selected>Двомісний люкс</option>
                 <option value="Двомісний номер">Двомісний номер</option>
                 <option value="Трьохмісний номер">Трьохмісний номер</option>
               </select>
@@ -67,7 +71,7 @@
             <!--Arrival date-->
             <div class="modal__item">
               <select class="js-select" name="user-arrival" id="user-arrival">
-                <option value="Сьогодні">Сьогодні</option>
+                <option value="Сьогодні" selected>Сьогодні</option>
                 <option value="Завтра">Завтра</option>
                 <option value="Післязавтра">Післязавтра</option>
               </select>
@@ -88,7 +92,7 @@
                 id="user-departure"
               >
                 <option value="Сьогодні">Сьогодні</option>
-                <option value="Завтра">Завтра</option>
+                <option value="Завтра" selected>Завтра</option>
                 <option value="Післязавтра">Післязавтра</option>
               </select>
               <!-- <input
