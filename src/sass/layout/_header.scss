@@ -36,7 +36,7 @@ body {
   }
 }
 
-.nav-header {
+.navigation-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -144,7 +144,7 @@ body {
   }
 }
 
-.social {
+.socials-header {
   display: none;
   @extend %list;
   margin-left: auto;
