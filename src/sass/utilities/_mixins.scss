@@ -10,3 +10,16 @@
         @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. " + "Available breakpoints are: #{map-keys($breakpoints)}.";
     }
   }
+
+  // Міксин для transition
+@mixin transition ($props...) {
+    -webkit-transition-property: $props;    
+    -o-transition-property: $props;    
+    transition-property: $props;
+    -webkit-transition-duration: 250ms;
+    -o-transition-duration: 250ms;
+       transition-duration: 250ms; 
+  -webkit-transition-timing-function: $timing-function; 
+    -o-transition-timing-function: $timing-function; 
+       transition-timing-function: $timing-function;
+  }
