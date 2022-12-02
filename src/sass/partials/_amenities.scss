@@ -55,30 +55,19 @@
 }
 
 .amenities-button {
-  padding: 20px 42px;
+  @include buttonSize(384px, 20px, 20px);
+  padding-left: 42px;
+  padding-right: 42px;
 
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
   cursor: pointer;
-
-  color: getColor('primary-inversed');
-  background-color: getColor('primary');
 
   border: 1px solid getColor('accent');
   border-radius: 25px;
 
-  &:hover,
-  &:focus {
-    background-color: getColor('accent');
-    color: getColor('primary');
-  }
-
   @include transition(background-color, color);
 }
 
-.amenities-button_margin {
+.button-reserve_margin {
   margin-bottom: 16px;
 }
 
@@ -96,7 +85,7 @@
   letter-spacing: 0.02em;
   cursor: pointer;
 
-  color: getColor('accent');
+  color: #c79002;
   background-color: inherit;
   border: none;
 
@@ -106,5 +95,5 @@
     fill: transparent;
   }
 
-  transition: (fill, color);
+  @include transition(fill, color);
 }
