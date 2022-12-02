@@ -3,13 +3,10 @@
   padding-bottom: 32px;
 }
 
-.title-font-family {
-  font-family: $text-times-font;
-}
-
 .amenities-title {
   @extend %marginPaddingReset;
 
+  font-family: $text-times-font;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 32px;
@@ -50,6 +47,7 @@
 .amenities-list__title {
   @extend %marginPaddingReset;
 
+  font-family: $text-times-font;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 24px;
