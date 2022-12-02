@@ -13,6 +13,7 @@
         </svg>
       </button>
       <div class="popup__title">Забронювати номер</div>
+
       <div class="modal">
         <form class="modal__form form" name="room-booking" action="#">
           <div class="modal__body">
@@ -42,23 +43,20 @@
               <label class="form__label" for="user-tel">Номер телефону</label>
             </div>
             <!--!Quantity-->
-            <div class="modal__item modal__item--invisible">
-              <h2>ЧЧЧЧЧЧЧЧЧЧЧЧЧЧЧЧЧЧЧЧ</h2>
-            </div>
             <!-- <div class="modal__item">
               <input
-                 class="form__user-quantity"
-                 type="number"
-                 name="user-quantity"
-                 id="user-quantity"
-                 value="2"
-                 min="1"
-                 placeholder="2"
-                 />
-                 <label class="form__label" for="user-quantity">???????</label>
-                </div> -->
+                class="form__user-quantity"
+                type="number"
+                name="user-quantity"
+                id="user-quantity"
+                value="2"
+                min="1"
+                placeholder="2"
+              />
+              <label class="form__label" for="user-quantity">Кількість ночей</label>
+            </div> -->
             <!--Category-->
-            <div class="modal__item">
+            <div class="modal__item modal__item--unic">
               <select class="js-select" name="user-category" id="user-category">
                 <option value="Двомісний люкс" selected>Двомісний люкс</option>
                 <option value="Двомісний номер">Двомісний номер</option>
@@ -68,6 +66,7 @@
                 >Категорія номеру</label
               >
             </div>
+
             <!--Arrival date-->
             <div class="modal__item">
               <select class="js-select" name="user-arrival" id="user-arrival">
