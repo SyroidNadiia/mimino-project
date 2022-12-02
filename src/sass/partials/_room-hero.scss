@@ -1,0 +1,81 @@
+.room-hero {
+  position: relative;
+
+  max-width: 414px;
+  height: 740px;
+  margin: 0 auto;
+
+  background-color: mix(white, getColor('primary'), 6%);
+  background-image: url(/src/images/room-hero/room-hero-mobile-1@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .room-hero {
+    background-image: url(/src/images/room-hero/room-hero-mobile-1@2x.jpg);
+  }
+}
+
+.room-hero__link {
+  position: absolute;
+  top: 64px;
+  right: 15px;
+
+  @extend %link;
+  padding-left: 6px;
+  padding-right: 3px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 8px;
+
+  max-width: 210px;
+  height: 47px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+
+  color: #e5e5e5;
+  fill: #f3c653;
+
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+}
+
+.room-hero__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.room-hero__swiper {
+  @extend %list;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+}
+
+.room-hero__swiper-button {
+  @extend %marginPaddingReset;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: rgba(0, 0, 0, 0.65);
+  fill: #f3c653;
+  border: none;
+}
