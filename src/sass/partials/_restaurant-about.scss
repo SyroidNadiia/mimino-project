@@ -1,19 +1,4 @@
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 414px;
-  @include respondTo('diapente') {
-    width: 1024px;
-  }
-  @include respondTo('diapason') {
-    width: 1280px;
-  }
-}
-
 .restaurant-about {
-  height: 1191px;
   margin-left: auto;
   margin-right: auto;
   max-width: 414px;
@@ -23,71 +8,59 @@
 
 .restaurant-about__text {
   @extend %marginPaddingReset;
+  display: block;
   color: #5f5f5f;
   width: 258px;
-  height: 76px;
+  height: auto;
   margin-bottom: 28px;
-  margin-top: 12px;
-  margin-left: 15px;
-  margin-right: 141px;
-  font-style: normal;
-  font-weight: 600;
   font-size: 12px;
   line-height: 1.91;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-family: $text-font-stack;
+  @extend %list;
 }
 
 .restaurant-about__title {
+  display: block;
   height: 23px;
   width: 190px;
-  max-width: 414px;
   margin-top: 16px;
   margin-bottom: 12px;
-  margin-left: 15px;
-  margin-right: 209px;
   color: #bababa;
+  @extend %list;
 }
 
 .restaurant-about__subtitle {
-  width: 127px;
-  height: 43px;
+  display: block;
   margin-top: 12px;
-  margin-right: 272px;
-  margin-left: 15px;
   margin-bottom: 12px;
-  $logo-font: 'Film P3', sans-serif;
-  color: #494848;
+  font-family: $logo-font;
+  color: 'primary';
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 0.3em;
+  @extend %list;
 }
 
 .restaurant-about__img {
-  flex-direction: column;
-  width: 244px;
-  height: 322px;
-  flex-direction: column;
-  margin-right: 15px;
-  margin-left: 155px;
-  margin-top: 28px;
-  margin-bottom: 32px;
+  display: block;
+  margin-left: auto;
 }
 
 .restaurant-about__img-interiour {
-  width: 200px;
-  height: 278px;
-  margin-left: 15px;
-  margin-right: 20px;
+  display: block;
+  margin-right: auto;
+  margin-top: 32px;
   border-radius: 2px;
 }
 
 .restaurant-about__img-bar {
   display: flex;
-  max-width: 414px;
-  margin-left: 15px;
-  margin-right: 20px;
-  margin-bottom: 32px;
-  margin-bottom: 32px;
 }
 
 .restaurant-about__img-slider {
-  margin-bottom: 72px;
+  margin-bottom: 20px;
   margin-left: 84px;
   margin-right: 25px;
   display: flex;
@@ -99,19 +72,22 @@
 
 .restaurant-about__text-interiour {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  margin-left: 20px;
+  width: 163px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
   font-family: $text-font-stack;
   color: #c79002;
-  font-size: 12px;
-  line-height: 1.21;
 }
 
 .restaurant-details__icon {
   display: block;
-  margin-left: 301px;
-  margin-right: 17px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+}
+
+.restaurant-details__arrow {
+  display: flex;
+  justify-content: end;
 }
