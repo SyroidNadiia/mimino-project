@@ -4,7 +4,7 @@
 .container {
 }
 
-.brant {
+.brand {
     font-family: $logo-font;
     font-style: normal;
     font-weight: 700;
@@ -12,6 +12,7 @@
     line-height: 1.075;
     letter-spacing: 0.3em;
     color: #494848;
+    margin: 36px 0 12px 0px;
 }
 
 .contacts__subtitle {
@@ -33,28 +34,56 @@
 }
 
 .contacts__department{
-
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #C79002;
 }
 
 .contacts__box {
+    display: flex;
     background-color: #ffffff;
     border: 0.5px solid #F3C653;
     border-radius: 2px;
 }
 
 .contacts__number {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: #494848;
 }
 
 .contacts__icon {
+    fill: #C79002;
 }
 
 .location {
+ 
 }
 
 .location__address {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: #494848;
 }
 
 .location__icon {
+    fill: #C79002;
 }
 
 .contacts__map {
