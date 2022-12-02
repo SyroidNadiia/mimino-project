@@ -1,0 +1,114 @@
+<!-- Контент -->
+
+<button type="button" data-popup="popup1" class="popup-link">Попап №1</button>
+
+<!--!потом убрать класс open-->
+<div id="popup1" class="popup open">
+  <div class="popup__body">
+    <div class="popup__content">
+      <button class="popup__close close-popup" type="button">
+        X
+        <!-- <svg width="18" height="18">
+        <use href="./images/icons.svg"></use></svg> -->
+      </button>
+      <div class="popup__title">Забронювати номер</div>
+      <div class="modal">
+        <form class="modal__form form" name="room-booking" action="#">
+          <div class="modal__body">
+            <!--Name-->
+            <div class="modal__item">
+              <!--*autofocus?-->
+              <input
+                class="form__user-name"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Ваше ім'я"
+              />
+              <label class="form__label" for="user-name"
+                >На кого забронювати номер?</label
+              >
+            </div>
+            <!--Tel-->
+            <div class="modal__item">
+              <input
+                class="form__tel"
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                placeholder="+38 (___) ___-__-__"
+              />
+              <label class="form__label" for="user-tel">Номер телефону</label>
+            </div>
+            <!--!Quantity-->
+            <!-- <div class="modal__item">
+              <input
+                 class="form__user-quantity"
+                 type="number"
+                 name="user-quantity"
+                 id="user-quantity"
+                 value="2"
+                 min="1"
+                 placeholder="2"
+                 />
+                 <label class="form__label" for="user-quantity">???????</label>
+                </div> -->
+            <!--Category-->
+            <div class="modal__item">
+              <select class="js-select" name="user-category" id="user-category">
+                <option value="Двомісний люкс">Двомісний люкс</option>
+                <option value="Двомісний номер">Двомісний номер</option>
+                <option value="Трьохмісний номер">Трьохмісний номер</option>
+              </select>
+              <label class="form__label" for="user-category"
+                >Категорія номеру</label
+              >
+            </div>
+            <!--Arrival date-->
+            <div class="modal__item">
+              <select class="js-select" name="user-arrival" id="user-arrival">
+                <option value="Сьогодні">Сьогодні</option>
+                <option value="Завтра">Завтра</option>
+                <option value="Післязавтра">Післязавтра</option>
+              </select>
+              <!-- <input
+                   class="form__arrival"
+                   type="date"
+                   name="user-arrival"
+                   id="user-arrival"
+                   placeholder="Сьогодні"
+                   /> -->
+              <label class="form__label" for="user-arrival">Дата заїзду</label>
+            </div>
+            <!--Departure date-->
+            <div class="modal__item">
+              <select
+                class="js-select"
+                name="user-departure"
+                id="user-departure"
+              >
+                <option value="Сьогодні">Сьогодні</option>
+                <option value="Завтра">Завтра</option>
+                <option value="Післязавтра">Післязавтра</option>
+              </select>
+              <!-- <input
+                     class="form__departure"
+                     type="date"
+                     name="user-departure"
+                     id="user-departure"
+                     placeholder="Сьогодні"
+                     /> -->
+              <label class="form__label" for="user-departure"
+                >Дата виїзду</label
+              >
+            </div>
+          </div>
+          <button class="modal__button" type="submit">
+            Оформити бронювання
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="./nice-select2.js"></script>
