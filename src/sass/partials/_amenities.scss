@@ -1,0 +1,110 @@
+.amenities {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.amenities-title {
+  @extend %marginPaddingReset;
+
+  font-family: $text-times-font;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.16;
+}
+
+.amenities-title_margin {
+  margin-bottom: 16px;
+}
+
+.amenities-list_flex {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  margin-bottom: 32px;
+}
+
+.amenities__descr {
+  @extend %marginPaddingReset;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: mix(white, getColor('primary'), 48%);
+}
+
+.amenities__descr_margin {
+  margin-bottom: 32px;
+}
+
+.amenities-list {
+  @extend %list;
+}
+
+.amenities-list__title {
+  @extend %marginPaddingReset;
+
+  font-family: $text-times-font;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+}
+
+.amenities-button {
+  padding: 20px 42px;
+
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  cursor: pointer;
+
+  color: getColor('primary-inversed');
+  background-color: getColor('primary');
+
+  border: 1px solid getColor('accent');
+  border-radius: 25px;
+
+  &:hover,
+  &:focus {
+    background-color: getColor('accent');
+    color: getColor('primary');
+  }
+
+  @include transition(background-color, color);
+}
+
+.amenities-button_margin {
+  margin-bottom: 16px;
+}
+
+.amenities-button-return {
+  @extend %icon;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+
+  color: getColor('accent');
+  background-color: inherit;
+  border: none;
+
+  &:focus,
+  &:hover {
+    color: getColor('accent');
+    fill: transparent;
+  }
+
+  transition: (fill, color);
+}
