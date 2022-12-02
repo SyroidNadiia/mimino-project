@@ -1,9 +1,93 @@
-// .amneties {
-//   padding-top: 32px;
-// }
+.amenities {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.title-font-family {
+  font-family: Times New Roman, sans-serif;
+}
 
 .amenities-title {
+  @extend %marginPaddingReset;
+
+  text-transform: uppercase;
   font-weight: 400;
   font-size: 32px;
   line-height: 1.16;
+}
+
+.amenities-title_margin {
+  margin-bottom: 16px;
+}
+
+.amenities-list_flex {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  margin-bottom: 32px;
+}
+
+.amenities__descr {
+  @extend %marginPaddingReset;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: getColor('amenities-primary');
+}
+
+.amenities__descr_margin {
+  margin-bottom: 32px;
+}
+
+.amenities-list {
+  @extend %list;
+}
+
+.amenities-list__title {
+  @extend %marginPaddingReset;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+}
+
+.amenities-button {
+  padding: 20px 42px;
+
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  color: getColor('primary-inversed');
+  background-color: getColor('primary');
+
+  border: 1px solid #f3c653;
+  border-radius: 25px;
+}
+
+.amenities-button_margin {
+  margin-bottom: 16px;
+}
+
+.amenities-button-return {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: getColor('accent');
+  fill: getColor('accent');
+  background-color: inherit;
+  border: none;
 }
