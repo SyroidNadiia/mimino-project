@@ -1,27 +1,30 @@
-<section class="room">
+<section class="room-three">
   <div class="container">
-    <h2 class="amet-title">Amet minim mollit non</h2>
-    <p class="brand">MIMIHO</p>
-    <h3 class="room__title">ТРЬОХМІСНИЙ НОМЕР</h3>
-    <p class="room__text">
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-      Velit officia consequat duis enim velit mollit. Exercitation veniam
-      consequat sunt nostrud amet.
-    </p>
+    <h2 class="room-three__amet amet-title">Amet minim mollit non</h2>
+    <p class="brand">Mimino</p>
+    <div class="room-three__wrapper">
+      <h3 class="room-three__title">ТРЬОХМІСНИЙ НОМЕР</h3>
+      <p class="room-three__text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+
     <picture>
       <source
         srcset="
-          ./images/room/mobile/room1.jpg 1x,
+          ./images/room/mobile/room1.jpg    1x,
           ./images/room/mobile/room1-2x.jpg 2x
         "
-        media="(max-width: 414px)"
+        media="(min-width: 414px)"
       />
       <source
         srcset="
-          ./images/room/tablet/room1.jpg 1x,
+          ./images/room/tablet/room1.jpg    1x,
           ./images/room/tablet/room1-2x.jpg 2x
         "
-        media="(max-width: 1024px)"
+        media="(min-width: 1024px)"
       />
       <!-- <source
         srcset="
@@ -32,19 +35,22 @@
       /> -->
       <source
         srcset="
-          ./images/room/desktop/room1.jpg 1x,
+          ./images/room/desktop/room1.jpg    1x,
           ./images/room/desktop/room1-2x.jpg 2x
         "
         media="(min-width: 1280px)"
       />
 
-      <img class="picture room__picture"
+      <img
+        class="picture room__picture"
         loading="lazy"
         src="./images/room/desktop/room1.jpg"
         alt="кімната з ліжком та диваном"
       />
     </picture>
-    <a class="room__link" href="#">Детальніше</a>
-    <button class="room__btn" type="button">Переглянути ціни</button>
+    <a class="button room-three__link" href="#">Детальніше</a>
+    <button class="button room-three__btn" type="button">
+      Переглянути ціни
+    </button>
   </div>
 </section>
