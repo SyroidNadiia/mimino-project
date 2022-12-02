@@ -1,0 +1,159 @@
+.room-hero {
+  position: relative;
+  padding-top: 350px;
+  padding-bottom: 14px;
+
+  max-width: 414px;
+  height: 740px;
+  margin: 0 auto;
+
+  background-color: mix(white, getColor('primary'), 6%);
+  background-image: url(/src/images/room-hero/room-hero-mobile-1@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .room-hero {
+    background-image: url(/src/images/room-hero/room-hero-mobile-1@2x.jpg);
+  }
+}
+
+.room-hero__link {
+  position: absolute;
+  top: 64px;
+  right: 15px;
+
+  @extend %link;
+  padding-left: 6px;
+  padding-right: 3px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 8px;
+
+  max-width: 210px;
+  height: 47px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+
+  color: #e5e5e5;
+  fill: #f3c653;
+
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+}
+
+.room-hero__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.room-hero__swiper {
+  @extend %list;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.room-hero__swiper_margin {
+  margin-bottom: 93px;
+}
+
+.room-hero__swiper-button {
+  @extend %marginPaddingReset;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: rgba(0, 0, 0, 0.65);
+  fill: #f3c653;
+  border: none;
+}
+
+.room-hero__title {
+  @extend %marginPaddingReset;
+  font-family: $text-times-font;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: getColor('primary-inversed');
+}
+
+.room-hero__title_margin {
+  margin-bottom: 14px;
+}
+
+.room-hero__title_transform {
+  text-transform: lowercase;
+}
+
+.hero-room__descr {
+  @extend %marginPaddingReset;
+
+  max-width: 325px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: getColor('primary-inversed');
+}
+
+.hero-room__descr_margin {
+  margin-bottom: 16px;
+}
+
+.room-hero__social {
+  @extend %list;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+
+  fill: #f3c653;
+}
+
+.room-hero-button {
+  position: absolute;
+  right: 73px;
+  bottom: 40px;
+
+  padding: 14px 25px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: #f3c653;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+
+  &:hover,
+  &:focus {
+    background-color: getColor('primary-inversed');
+  }
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
