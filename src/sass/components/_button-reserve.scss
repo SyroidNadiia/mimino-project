@@ -1,0 +1,19 @@
+.button-reserve {
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.219;
+    text-transform: uppercase;
+    color: getColor('primary-inversed');
+    background-color: getColor('primary');
+    border: 1px solid getColor('accent');
+
+    &:focus, &:hover, &:active {
+        background-color: getColor('accent');
+        color: getColor('primary');
+    }
+
+    @include respondTo('diapente') {
+        font-size: 24px;
+    }
+}
