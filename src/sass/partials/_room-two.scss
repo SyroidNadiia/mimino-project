@@ -73,15 +73,22 @@ ul {
     height: 194px;
   }
   &__btn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 236px;
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
     background-color: #000000;
     text-align: center;
-    padding-top: 14px;
-    padding-bottom: 14px;
     
+  }
+  &__btn:not(:last-child){
+    margin-bottom: 16px;
   }
 }
 .img-thumb {
@@ -90,8 +97,7 @@ ul {
 }
 .btn-thumb {
   display: flex;
-  margin-top: 28px;
-  margin-bottom: 28px;
+ margin: 28px 0;
 }
 .btn {
   border: none;
