@@ -23,10 +23,19 @@
 }
 
 // Міксин розміру кнопки
-@mixin buttonSize($weight, $padding-top, $padding-bottom) {
-  weight: $weight;
+@mixin buttonSize($max-width, $padding-top, $padding-bottom) {
+  max-width: $max-width;
   padding-top: $padding-top;
   padding-bottom: $padding-bottom;
+}
+
+// Міксин для визначення місця положення кнопок секцій
+@mixin buttonPlace {
+  @if $hero-button {
+    background-color: transparentize($color: getColor('primary'), $amount: 0.6);
+  } @else {
+    background-color: getColor('primary');
+  }
 }
 
 //Міксин border-radius кнопки оформлення бронювання
@@ -37,18 +46,4 @@
   } @else {
     border-radius: 0;
   }
-}
-
-.restaurant-details__button {
-    @include buttonSize($weight: 236px, $padding-top: 13px, $padding-bottom: 14px);
-
-    @include respondTo('diapente') {
-        padding-top: 14px;
-        padding-bottom: 15px;
-    }
-
-    @include respondTo('diapasone') {
-        padding-top: 16px;
-        padding-bottom: 17px;
-    }
 }

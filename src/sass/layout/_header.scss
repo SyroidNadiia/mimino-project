@@ -8,7 +8,7 @@
   width: 100%;
   top: 16px;
   left: 0;
-  @include respondTo(diapente) {
+  @include respondTo('diapente') {
     top: 24px;
   }
   &--container {
@@ -31,14 +31,14 @@
       height: 43px;
       margin-right: 87px;
     }
-    @include respondTo(diapason) {
+    @include respondTo('diapason') {
       margin-right: 96px;
     }
   }
   &__picture {
     width: 114px;
     height: 39px;
-    @include respondTo(diapente) {
+    @include respondTo('diapente') {
       width: 127px;
       height: 43px;
     }
@@ -48,7 +48,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    @include respondTo(diapente) {
+    @include respondTo('diapente') {
       gap: 72px;
     }
   }
