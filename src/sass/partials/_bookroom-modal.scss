@@ -146,7 +146,6 @@
     font-size: 20px;
     line-height: calc(23/20);
     letter-spacing: 0.05em;
-    // color: #808080;
     background-color: inherit;
     border: 1px solid #C79002;
     border-radius: 2px;
@@ -157,16 +156,9 @@
     }
 }
 
-/*!Цвет ховера уточнить*/
 .nice-select {
     width: 100%;
     height: 100%;
-    // font-family: 'Times New Roman';
-    // font-style: normal;
-    // font-weight: 700;
-    // font-size: 20px;
-    // line-height: calc(23/20);
-    // letter-spacing: 0.05em;
     color: #808080;
     background-color: inherit;
     border: 1px solid #C79002;
@@ -179,7 +171,6 @@
     }
 }
 
-/* Не применяется?????*/
 .nice-select .option {
     font-family: 'Times New Roman';
     font-style: normal;
@@ -189,7 +180,6 @@
     letter-spacing: 0.05em;
 }
 
-/* Не применяется?????*/
 .nice-select::after {
     height: 12px;
     width: 12px;
@@ -236,6 +226,7 @@
     border: 1px solid #F3C653;
     border-radius: 2px;
     text-transform: uppercase;
+    cursor: pointer;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

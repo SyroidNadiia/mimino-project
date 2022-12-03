@@ -185,8 +185,8 @@
   </div>
 </div>
 <!--!Popup22-->
-<button type="button" data-popup="popup22" class="popup-link">Попап №21</button>
-<div id="Popup22--" class="popup">
+<button type="button" data-popup="popup22" class="popup-link">Попап №22</button>
+<div id="popup22" class="popup">
   <div class="popup__body">
     <div class="popup__content">
       <button class="popup__close close-popup" type="button">
@@ -219,7 +219,7 @@
                 class="form__room-price"
                 type="text"
                 name="room-price"
-                id="room-pricee"
+                id="room-price"
                 placeholder="1000"
               />
               <label class="form__label form__label--bigger" for="room-price"
@@ -261,6 +261,17 @@
                 >На кого забронювати столик?</label
               >
             </div>
+            <!--Tel-->
+            <div class="modal__item">
+              <input
+                class="form__tel"
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                placeholder="+38 (___) ___-__-__"
+              />
+              <label class="form__label" for="user-tel">Номер телефону</label>
+            </div>
             <!--Quantity of persons-->
             <div class="modal__item">
               <select class="js-select" name="persons-qt" id="persons-qt">
@@ -274,17 +285,6 @@
               <label class="form__label" for="persons-qt"
                 >Столик на яку кількість осіб?</label
               >
-            </div>
-            <!--Tel-->
-            <div class="modal__item">
-              <input
-                class="form__tel"
-                type="tel"
-                name="user-tel"
-                id="user-tel"
-                placeholder="+38 (___) ___-__-__"
-              />
-              <label class="form__label" for="user-tel">Номер телефону</label>
             </div>
             <!--Booking date-->
             <div class="modal__item">
