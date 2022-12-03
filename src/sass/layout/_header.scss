@@ -1,7 +1,3 @@
-body {
-  background-color: grey;
-}
-
 .header {
   position: absolute;
   display: block;
@@ -20,21 +16,6 @@ body {
 .navigation-header {
   display: flex;
   align-items: center;
-  &__logo {
-    @extend %link;
-    display: block;
-    width: 114px;
-    height: 39px;
-    margin-right: 52px;
-    @include respondTo(diapente) {
-      width: 127px;
-      height: 43px;
-      margin-right: 87px;
-    }
-    @include respondTo('diapason') {
-      margin-right: 96px;
-    }
-  }
   &__picture {
     width: 114px;
     height: 39px;
