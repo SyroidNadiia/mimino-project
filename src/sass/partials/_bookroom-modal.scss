@@ -179,6 +179,7 @@
     }
 }
 
+/* Не применяется?????*/
 .nice-select .option {
     font-family: 'Times New Roman';
     font-style: normal;
@@ -188,11 +189,18 @@
     letter-spacing: 0.05em;
 }
 
+/* Не применяется?????*/
+.nice-select::after {
+    height: 12px;
+    width: 12px;
+    border-bottom: 2px solid #C79002;
+    border-right: 2px solid #C79002;
+}
+
 .current {
-    padding: 17px 12px;
+    padding: 17px 0;
     display: block;
     font-family: 'Times New Roman';
-
     font-weight: 700;
     font-size: 20px;
     line-height: calc(23/20);
@@ -217,7 +225,7 @@
 
 .modal__button {
     margin: 40px auto 0;
-    padding: 20px;
+    padding: 19px;
     display: block;
     width: 100%;
     font-weight: 500;
@@ -242,4 +250,24 @@
         font-size: 24px;
         line-height: calc(29/24);
     }
+}
+
+/*------Popup2---------*/
+.modal__subtitle {
+    margin-bottom: 28px;
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28/24);
+    letter-spacing: 0.05em;
+    color: #808080;
+}
+
+.modal__descr {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(20/16);
+    letter-spacing: 0.02em;
+    color: #C79002;
 }
