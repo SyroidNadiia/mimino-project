@@ -9,7 +9,7 @@
 .restaurant-about__text {
   @extend %marginPaddingReset;
   display: block;
-  color: #5f5f5f;
+  color: mix(getColor(‘primary-inversed’), getColor(‘primary’), 37.3%);
   width: 258px;
   height: auto;
   margin-bottom: 28px;
@@ -27,7 +27,7 @@
   width: 190px;
   margin-top: 16px;
   margin-bottom: 12px;
-  color: #bababa;
+  color: scale-color($color: getColor(‘primary-inversed’), $blackness: 37%);
   @extend %list;
 }
 
@@ -80,7 +80,7 @@
   font-size: 12px;
   line-height: 1.25;
   font-family: $text-font-stack;
-  color: #c79002;
+  color: mix(getColor(‘primary-inversed’), getColor(‘primary’), 48%);
 }
 
 .restaurant-details__icon {
