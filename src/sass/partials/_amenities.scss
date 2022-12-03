@@ -54,17 +54,13 @@
   line-height: 1.17;
 }
 
+$enable-rounded: true;
+
 .amenities-button {
-  @include buttonSize(384px, 20px, 20px);
-  padding-left: 42px;
-  padding-right: 42px;
-
-  cursor: pointer;
-
-  border: 1px solid getColor('accent');
-  border-radius: 25px;
-
-  @include transition(background-color, color);
+  @include buttonSize($max-width: 434px, $padding-top: 18px, $padding-bottom: 18px);
+  @include buttonReserve();
+  display: flex;
+  justify-content: center;
 }
 
 .button-reserve_margin {
