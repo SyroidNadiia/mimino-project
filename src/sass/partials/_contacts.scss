@@ -2,6 +2,10 @@
     padding: 32px 0;
 }
 
+.contacts__brand{
+    margin: 4px 0 12px 0px;
+}
+
 .brand {
     font-family: $logo-font;
     font-style: normal;
@@ -10,7 +14,7 @@
     line-height: 1.075;
     letter-spacing: 0.3em;
     color: #494848;
-    margin: 4px 0 12px 0px;
+    
 }
 
 .contacts__subtitle {
@@ -38,7 +42,7 @@
   }
 
 .contacts__department{
-    position: fixed;
+    position: absolute;
     display: flex;
     align-items: center;
     font-family: 'Montserrat';
@@ -71,6 +75,7 @@
     line-height: 1.21;
     letter-spacing: 0.02em;
     color: #494848;
+    cursor: pointer;
     
 }
 
@@ -94,7 +99,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-   
+    cursor: pointer;
 }
 
 .location__icon {
@@ -121,4 +126,6 @@
     border: 1px solid #BABABA;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
+    width: 384px;
+    height: 220px;
 }
