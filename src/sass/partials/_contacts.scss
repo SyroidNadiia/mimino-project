@@ -21,7 +21,7 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: #5F5F5F;
-    margin: 12px 0 16px 0;
+    margin-top: 12px 0 16px;
 }
 
 .contacts__list{
@@ -32,7 +32,13 @@
     display: flex;
 }
 
+.contacts__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
 .contacts__department{
+    display: flex;
+    align-items: center;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -44,10 +50,13 @@
 }
 
 .contacts__box {
+    position: absolute;
+    left: 124px;
     display: flex;
     background-color: #ffffff;
     border: 0.5px solid #F3C653;
     border-radius: 2px;
+    padding: 9px 8px 7px;
 }
 
 .contacts__number {
@@ -61,18 +70,36 @@
     line-height: 1.21;
     letter-spacing: 0.02em;
     color: #494848;
+    
+}
+
+.contacts__number-second{
+    margin-left: 12px;
 }
 
 .contacts__icon {
     fill: #C79002;
+    width: 24px;
+    height: 24px;
 }
 
 .location {
  
 }
 
-.location__address {
+.location__location {
+    display: flex;
+    align-items: center;
     text-decoration: none;
+}
+
+.location__icon {
+    fill: #C79002;
+    margin: 26px 10px;
+}
+
+.location__address{
+    max-width: 183px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -80,10 +107,11 @@
     line-height: 1.25;
     letter-spacing: 0.01em;
     color: #494848;
+    
 }
 
-.location__icon {
-    fill: #C79002;
+.contacts__box-map{
+    margin-top: 32px;
 }
 
 .contacts__map {
