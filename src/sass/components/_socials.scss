@@ -8,6 +8,6 @@
   }
   &__icon {
     @extend %icon;
-    color: getColor('accent');
+    color: mix(transparent, getColor('accent'), 30%);
   }
 }
