@@ -54,7 +54,10 @@
   line-height: 1.17;
 }
 
+$hero-button: false;
+
 .amenities-button {
+  @include buttonPlace;
   padding: 20px 42px;
 
   text-transform: uppercase;
@@ -64,8 +67,6 @@
   cursor: pointer;
 
   color: getColor('primary-inversed');
-  background-color: getColor('primary');
-
   border: 1px solid getColor('accent');
   border-radius: 25px;
 
@@ -106,5 +107,5 @@
     fill: transparent;
   }
 
-  transition: (fill, color);
+  @include transition(fill, color);
 }
