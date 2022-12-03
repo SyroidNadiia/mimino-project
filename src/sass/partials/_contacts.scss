@@ -30,6 +30,7 @@
 
 .contacts__item{
     display: flex;
+    align-items: center;
 }
 
 .contacts__item:not(:last-child) {
@@ -37,6 +38,7 @@
   }
 
 .contacts__department{
+    position: fixed;
     display: flex;
     align-items: center;
     font-family: 'Montserrat';
@@ -50,13 +52,12 @@
 }
 
 .contacts__box {
-    position: absolute;
-    left: 124px;
     display: flex;
     background-color: #ffffff;
     border: 0.5px solid #F3C653;
     border-radius: 2px;
     padding: 9px 8px 7px;
+    margin-left: 124px;
 }
 
 .contacts__number {
@@ -95,7 +96,7 @@
 
 .location__icon {
     fill: #C79002;
-    margin: 26px 10px;
+    margin: 26px 8px;
 }
 
 .location__address{
@@ -107,7 +108,7 @@
     line-height: 1.25;
     letter-spacing: 0.01em;
     color: #494848;
-    
+    margin-left: 12px;
 }
 
 .contacts__box-map{
