@@ -67,8 +67,6 @@
   }
 }
 
-
-
 .room-three__title {
   font-family: $text-times-font;
   font-style: normal;
@@ -132,6 +130,7 @@
   @media (min-width: 1024px) {
     position: absolute;
     right: 47px;
+    bottom: 104px;
   }
 }
 
