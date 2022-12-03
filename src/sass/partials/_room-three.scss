@@ -1,38 +1,79 @@
-// .room {
-// }
-// .container {
-// }
+.room-three {
+  margin-top: 100px;
+  background-color: coral;
+}
+
+.room-three__container {
+  position: relative;
+}
+
+.room-three__wrapper {
+  @media (min-width: 1024px) {
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    right: 47px;
+  }
+}
+
 .amet-title {
   font-family: $text-times-font;
   font-style: normal;
-  text-align: end;
-  margin-top: 32px;
-  margin-bottom: 8px;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
+
+  @media (min-width: 1024px) {
+    font-size: 32px;
+  }
+}
+
+.room-three__amet {
+  text-align: end;
+  padding-top: 32px;
+  margin-bottom: 8px;
   color: #b4b4b4;
   @extend%marginPaddingReset;
+
+  @media (min-width: 1024px) {
+    padding-top: 0;
+    margin-bottom: 4px;
+  }
 }
+
 .brand {
   font-family: $logo-font;
   text-transform: uppercase;
-  text-align: end;
-  margin-bottom: 32px;
-  margin-right: -12px;
   font-weight: 700;
   font-size: 40px;
   line-height: 1.075;
   letter-spacing: 0.3em;
-  color: #494848;
-  @extend%marginPaddingReset
-}
-@media (min-width: 1024px) {
-    .room-three__wrapper {
-      display: inline-flex;
-      flex-direction: column;
-    }
+  margin-right: -12px;
+
+  @media (min-width: 1024px) {
+    font-size: 64px;
+    margin-right: -20px;
   }
+}
+
+.room-three__brand {
+  text-align: end;
+  margin-bottom: 32px;
+  color: #494848;
+  @extend%marginPaddingReset;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 72px;
+  }
+}
+
+
+
 .room-three__title {
   font-family: $text-times-font;
   font-style: normal;
@@ -43,13 +84,27 @@
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: #000000;
-  @extend%marginPaddingReset
+  @extend%marginPaddingReset;
+
+  @media (min-width: 1024px) {
+    padding-right: 26px;
+    margin-bottom: 16px;
+    text-align: start;
+    font-size: 30px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-right: 0;
+    margin-bottom: 24px;
+    font-size: 36px;
+  }
 }
+
 .room-three__text {
   font-family: $text-font-stack;
   font-style: normal;
   text-align: start;
-  max-width: 242px; 
+  max-width: 242px;
   margin-left: 68px;
   margin-bottom: 32px;
   font-weight: 600;
@@ -57,23 +112,72 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #5f5f5f;
-  @extend%marginPaddingReset
-}
-@media (min-width: 1024px) {
-    .room-three__text {
-      margin-left: 0;
-    }
+  @extend%marginPaddingReset;
+
+  @media (min-width: 1024px) {
+    margin-left: 0;
+    margin-bottom: 0;
+    max-width: 400px;
+    font-size: 16px;
+    font-weight: 700;
   }
+}
+
+.room__picture {
+  @media (min-width: 1024px) {
+    position: relative;
+    top: -32px;
+    left: 65px;
+  }
+}
+
+.slider-picture {
+  padding-top: 48px;
+
+  @media (min-width: 1024px) {
+    position: absolute;
+    right: 47px;
+  }
+}
+
+
+.button-wrapper {
+  @media (min-width: 1024px) {
+    display: inline-block;
+  }
+}
+
+$hero-button: false;
+
 .room-three__link {
   display: inline-block;
-  margin-left: 89px;
-  margin-top: 27px;
-  margin-bottom: 16px;
-  padding: 14px 65px;
+  @include buttonSize($max-width: 236px, $padding-top: 14px, $padding-bottom: 14px);
+  @include buttonPlace;
   @extend%link;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  margin-left: 74px;
+  text-align: center;
+  border: none;
+
+  @media (min-width: 1024px) {
+    margin-left: 0;
+    margin-top: 57px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-top: 63px;
+  }
 }
+
 .room-three__btn {
-  margin-left: 89px;
-  padding: 14px 37px;
-  cursor: pointer;
+  @include buttonSize($max-width: 236px, $padding-top: 14px, $padding-bottom: 14px);
+  @include buttonPlace;
+  margin-bottom: 32px;
+  margin-left: 74px;
+  border: none;
+
+  @media (min-width: 1024px) {
+    margin-left: 0;
+  }
 }
