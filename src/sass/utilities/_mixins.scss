@@ -23,7 +23,7 @@
 }
 
 // Міксин розміру кнопки
-@mixin buttonSize($max-width, $padding-top, $padding-bottom) {
+@mixin buttonSize($max-width: 236px, $padding-top, $padding-bottom) {
   max-width: $max-width;
   padding-top: $padding-top;
   padding-bottom: $padding-bottom;
