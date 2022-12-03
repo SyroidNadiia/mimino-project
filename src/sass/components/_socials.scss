@@ -1,0 +1,13 @@
+.socials-header {
+  display: none;
+  @extend %list;
+  margin-left: auto;
+  @include respondTo('diapason') {
+    display: flex;
+    gap: 20px;
+  }
+  &__icon {
+    @extend %icon;
+    color: mix(transparent, getColor('accent'), 30%);
+  }
+}
