@@ -85,18 +85,20 @@
 }
 
 .location {
- 
+    display: flex;
+    background-color: #ffffff;
+    padding-right: 16px;
 }
 
 .location__location {
     display: flex;
     align-items: center;
     text-decoration: none;
+   
 }
 
 .location__icon {
     fill: #C79002;
-    margin: 26px 8px;
 }
 
 .location__address{
