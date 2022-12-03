@@ -17,19 +17,7 @@
   }
 }
 
-.amet-title {
-  font-family: $text-times-font;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.15;
-
-  @media (min-width: 1024px) {
-    font-size: 32px;
-  }
-}
-
-.room-three__amet {
+.room-three__tagline {
   text-align: end;
   padding-top: 32px;
   margin-bottom: 8px;
@@ -39,21 +27,7 @@
   @media (min-width: 1024px) {
     padding-top: 0;
     margin-bottom: 4px;
-  }
-}
-
-.brand {
-  font-family: $logo-font;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.075;
-  letter-spacing: 0.3em;
-  margin-right: -12px;
-
-  @media (min-width: 1024px) {
-    font-size: 64px;
-    margin-right: -20px;
+    font-size: 32px;
   }
 }
 
@@ -65,6 +39,7 @@
 
   @media (min-width: 1024px) {
     margin-bottom: 62px;
+    font-size: 64px;
   }
 
   @media (min-width: 1280px) {
@@ -99,16 +74,10 @@
 }
 
 .room-three__text {
-  font-family: $text-font-stack;
-  font-style: normal;
   text-align: start;
   max-width: 242px;
   margin-left: 68px;
   margin-bottom: 32px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
   color: #5f5f5f;
   @extend%marginPaddingReset;
 
