@@ -2,6 +2,11 @@
   margin: 0 auto;
   padding-bottom: 32px;
 
+  @include respondTo('diapente') {
+    background-color: getColor('background-menufood');
+  }
+
+
   &__title {
     text-transform: uppercase;
     font-weight: 700;
@@ -22,8 +27,19 @@
     padding-bottom: 16px;
     padding-top: 16px;
 
+    @include respondTo('diapente') {
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+
     &-padding {
       padding-top: 0px;
+    }
+
+    &-salad {    
+      @include respondTo('diapente') {
+        padding-top: 0px;
+      }
     }
   }
 
@@ -32,7 +48,11 @@
     margin: 0 auto;
 
     @include respondTo('diapente') {
-      max-width: 411px;
+      max-width: 430px;
+    }
+
+    @include respondTo('diapason') {
+      max-width: 475px;
     }
   }
 
@@ -47,9 +67,9 @@
       padding-bottom: 11px;
     }
 
-    // @include respondTo('diapente') {
-    //   max-width: 225px;
-    // }
+    @include respondTo('diapason') {
+      max-width: 291px;
+    }
   }
 
   &__text {
@@ -65,9 +85,9 @@
       margin-bottom: 8px;
     }
 
-    // @include respondTo('diapente') {
-    //   max-width: 225px;
-    // }
+    @include respondTo('diapason') {
+      max-width: 291px;
+    }
   }
 
   &__weight {
@@ -75,11 +95,14 @@
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.02em;
-    padding-left: 26px;
-    min-width: 51px;
+    padding-left: 25px;
 
     @include respondTo('diapente') {
-      padding-left: 35px;
+      padding-left: 45px;
+    }
+
+    @include respondTo('diapason') {
+      padding-left: 65px;
     }
   }
 
@@ -88,11 +111,14 @@
     font-size: 14px;  
     line-height: 1.15;
     letter-spacing: 0.02em;
-    padding-left: 26px;
-    min-width: 60px;
+    padding-left: 25px;
 
     @include respondTo('diapente') {
-      padding-left: 35px;
+      padding-left: 45px;
+    }
+
+    @include respondTo('diapason') {
+      padding-left: 60px;
     }
   }
 
@@ -119,7 +145,7 @@
   }
 
   &__wrapper {
-        margin-bottom: 32px;
+    margin-bottom: 32px;
     @include respondTo('diapente') {
         display: flex;
         justify-content: space-between;
