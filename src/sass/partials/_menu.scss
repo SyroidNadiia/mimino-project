@@ -22,12 +22,21 @@
     }
   }
 
+  &__table {
+    max-width: 384px;
+    margin: 0 auto;
+  }
+
   &__dish {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.02em;
-    max-width: 225px;
+    max-width: 221px;
+    
+    &-padding {
+      padding-bottom: 11px;
+    }
   }
 
   &__text {
@@ -36,6 +45,7 @@
     font-size: 10px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    max-width: 217px;
 
     &-margin {
       margin-top: 4px;
@@ -48,8 +58,8 @@
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.02em;
-    padding-left: 32px;
-    min-width: 84px;
+    padding-left: 26px;
+    min-width: 51px;
   }
 
   &__price {
@@ -57,37 +67,29 @@
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;
-    padding-left: 32px;
+    padding-left: 26px;
+    min-width: 60px;
+  }
+
+  &__container {
+    margin-bottom: 32px;
+  }
+
+  &__box-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    color: getColor('accent');
+    @include buttonSize($max-width: 241px, $padding-top: 15px, $padding-bottom: 14px);
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: getColor('primary');
+    border-radius: 25px;
+  }
+
+  &__link {
+    @extend %link;
   }
 }
-
-
-
-
-
-
-
-
-//   &__wrapper {
-//     margin-bottom: 32px;
-//   }
-
-//   &__box-button {
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-//   }
-
-//   &__button {
-//     margin: 0 auto;
-//     display: block;
-//     max-width: 236px;
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 1.25;
-//     color: #F3C653;
-//     letter-spacing: 0.02em;
-//     padding: 15px 24px 14px;
-//     background-color: #000000;
-//     border-radius: 25px;
-//   }
-// }
