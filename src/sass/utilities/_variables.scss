@@ -21,19 +21,12 @@ $breakpoints: (
 ) !default;
 
 // Кольори
-<<<<<<< HEAD
-$colors: ('accent': #c79002,
-    'background': #FFFDEE,
-    'primary': #000000,
-    'primary-inversed': #ffffff);
-=======
 $colors: (
   'accent': #f3c653,
   'background': #fffdee,
   'primary': #000000,
-  'primary-inversed': #ffffff,
+  'primary-inversed': #ffffff
 );
->>>>>>> main
 
 // Шрифти
 $text-font-stack: 'Montserrat', sans-serif;

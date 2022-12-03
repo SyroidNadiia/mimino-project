@@ -2,17 +2,12 @@
   display: none;
   @extend %list;
   margin-left: auto;
-  @include respondTo(diapason) {
+  @include respondTo('diapason') {
     display: flex;
     gap: 20px;
   }
   &__icon {
     @extend %icon;
-    color: getColor('accent-yellow');
-    transition: color $transition-cubic;
-    &:hover,
-    &:focus {
-      color: getColor('accent-yellow-transparent');
-    }
+    color: getColor('accent');
   }
 }

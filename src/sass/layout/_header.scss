@@ -4,7 +4,7 @@
   width: 100%;
   top: 16px;
   left: 0;
-  @include respondTo(diapente) {
+  @include respondTo('diapente') {
     top: 24px;
   }
   &--container {
@@ -21,17 +21,17 @@
     @extend %link;
     display: block;
     margin-right: 52px;
-    @include respondTo(diapente) {
+    @include respondTo('diapente') {
       margin-right: 87px;
     }
-    @include respondTo(diapason) {
+    @include respondTo('diapason') {
       margin-right: 96px;
     }
   }
   &__picture {
     width: 114px;
     height: 39px;
-    @include respondTo(diapente) {
+    @include respondTo('diapente') {
       width: 127px;
       height: 43px;
     }
@@ -41,7 +41,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    @include respondTo(diapente) {
+    @include respondTo('diapente') {
       gap: 72px;
     }
   }
@@ -55,9 +55,9 @@
     padding: 0;
     border-radius: 2px;
     border: 1px solid transparent;
-    @include respondTo(diapente) {
+    @include respondTo('diapente') {
       padding: 7px;
-      border: 1px solid getColor('accent-yellow-transparent');
+      border: 1px solid transparentize($color: getColor('accent'), $amount: 0.3);
     }
   }
   &__phone-link {
@@ -66,7 +66,7 @@
     align-items: center;
     &:not(:first-child) {
       display: none;
-      @include respondTo(diapente) {
+      @include respondTo('diapente') {
         display: flex;
         margin-left: 16px;
       }
@@ -80,13 +80,13 @@
 
     letter-spacing: 0.02em;
     margin-right: 6px;
-    color: getColor('accent-yellow');
-    transition: color $transition-cubic;
+    color: getColor('accent');
+    @include transition(color);
     &:hover,
     &:focus {
-      color: getColor('accent-yellow-transparent');
+      color: transparentize($color: getColor('accent'), $amount: 0.3);
     }
-    @include respondTo(diapente) {
+    @include respondTo('diapente') {
       font-size: 20px;
       line-height: 1.2;
       margin-right: 32px;
@@ -97,23 +97,22 @@
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.02em;
-    color: getColor('aths');
-    @include respondTo(diapente) {
+    @include respondTo('diapente') {
       display: block;
     }
-    @include respondTo(diapason) {
+    @include respondTo('diapason') {
       color: getColor('primary-inversed');
     }
   }
   &__icon {
     @extend %icon;
-    color: getColor('accent-yellow');
-    transition: $transition-cubic;
+    color: getColor('accent');
+    @include transition(color);
     &:hover,
     &:focus {
-      color: getColor('accent-yellow-transparent');
+      color: transparentize($color: getColor('accent'), $amount: 0.3);
     }
-    @include respondTo(diapente) {
+    @include respondTo('diapente') {
       margin-right: 8px;
     }
   }
