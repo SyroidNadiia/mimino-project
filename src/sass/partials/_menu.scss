@@ -7,6 +7,11 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 1.15;
+
+    @include respondTo('diapente') {
+      margin-top: 58px;
+      margin-bottom: 40px;
+    }
   }
 
   &__subtitle {
@@ -25,6 +30,10 @@
   &__table {
     max-width: 384px;
     margin: 0 auto;
+
+    @include respondTo('diapente') {
+      max-width: 411px;
+    }
   }
 
   &__dish {
@@ -37,6 +46,10 @@
     &-padding {
       padding-bottom: 11px;
     }
+
+    // @include respondTo('diapente') {
+    //   max-width: 225px;
+    // }
   }
 
   &__text {
@@ -45,12 +58,16 @@
     font-size: 10px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    max-width: 217px;
+    max-width: 221px;
 
     &-margin {
       margin-top: 4px;
       margin-bottom: 8px;
     }
+
+    // @include respondTo('diapente') {
+    //   max-width: 225px;
+    // }
   }
 
   &__weight {
@@ -60,24 +77,32 @@
     letter-spacing: 0.02em;
     padding-left: 26px;
     min-width: 51px;
+
+    @include respondTo('diapente') {
+      padding-left: 35px;
+    }
   }
 
   &__price {
     font-weight: 700;
-    font-size: 14px;
+    font-size: 14px;  
     line-height: 1.15;
     letter-spacing: 0.02em;
     padding-left: 26px;
     min-width: 60px;
-  }
 
-  &__container {
-    margin-bottom: 32px;
+    @include respondTo('diapente') {
+      padding-left: 35px;
+    }
   }
 
   &__box-button {
     display: flex;
     justify-content: center;
+
+    @include respondTo('diapente') {
+      justify-content: flex-end;
+    }
   }
 
   &__button {
@@ -91,5 +116,13 @@
 
   &__link {
     @extend %link;
+  }
+
+  &__wrapper {
+        margin-bottom: 32px;
+    @include respondTo('diapente') {
+        display: flex;
+        justify-content: space-between;
+      }
   }
 }
