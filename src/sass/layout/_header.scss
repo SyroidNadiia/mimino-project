@@ -41,7 +41,7 @@
     display: flex;
     align-items: center;
     border: none;
-    @include respondTo(diapente) {
+    @include respondTo('diapente') {
       border-radius: 2px;
       border: 1px solid mix(transparent, getColor('accent'), 30%);
     }
@@ -50,13 +50,13 @@
     @extend %link;
     display: flex;
     align-items: center;
-    @include respondTo(diapente) {
+    @include respondTo('diapente') {
       padding: 7px 7px;
     }
     // для другого телефона
     &:not(:first-child) {
       display: none;
-      @include respondTo(diapente) {
+      @include respondTo('diapente') {
         display: block;
       }
     }
@@ -69,7 +69,7 @@
     letter-spacing: 0.02em;
     margin-right: 6px;
     color: getColor('accent');
-    @include respondTo(diapente) {
+    @include respondTo('diapente') {
       font-size: 20px;
       line-height: 1.2;
       margin-right: 32px;
@@ -80,7 +80,7 @@
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.02em;
-    @include respondTo(diapente) {
+    @include respondTo('diapente') {
       display: block;
       color: getColor('primary-inversed');
     }
@@ -88,7 +88,7 @@
   &__icon {
     @extend %icon;
     color: getColor('accent');
-    @include respondTo(diapente) {
+    @include respondTo('diapente') {
       margin-right: 8px;
     }
   }

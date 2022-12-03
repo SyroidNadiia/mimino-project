@@ -7,6 +7,8 @@
     color: getColor('primary-inversed');
     background-color: getColor('primary');
     border: 1px solid getColor('accent');
+    cursor: pointer;
+    @include transition(color, background-color);
 
     &:focus, &:hover, &:active {
         background-color: getColor('accent');
