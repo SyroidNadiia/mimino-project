@@ -5,6 +5,7 @@ tfoot,
 tr,
 th,
 td {
-  padding: 0;
-  border-spacing: 0;
+  @extend %marginPaddingReset;
+  border-spacing: 0px;
+  outline: 1px solid red;
 } 

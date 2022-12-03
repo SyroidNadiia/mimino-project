@@ -1,25 +1,21 @@
-.menu {
-  width: 100%;
-  background-color: #F0ECD6;
-  padding-top: 10px;
+.menufood {
+  // width: 100%;
+  // background-color: #F0ECD6;
+  // padding-top: 10px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
   &__title {
-    font-family: 'Montserrat';
     text-transform: uppercase;
     font-weight: 700;
     font-size: 32px;
     line-height: 1.15;
-    color: #000000;
-    margin: 0px;
-    margin-bottom: 32px;
+    // color: #000000;
+    // margin: 0px;
+    // margin-bottom: 32px;
   }
 
-  &__table {
-    margin: 0 auto;
-  } 
-
   &__subtitle {
-    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -29,75 +25,86 @@
     padding-top: 16px;
   }
 
-  &__dish {
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.21;
-    color: #000000;
-    letter-spacing: 0.02em;
-    max-width: 225px;
-    padding-bottom: 4px;
-
-    // &:last-child {
-    //   padding-bottom: 0px;
-    // }
-  }
-
-  &__weight {
-    font-family: 'Montserrat';
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 1.21;
-    color: #000000;
-    letter-spacing: 0.02em;
-    padding-left: 32px;
-    padding-bottom: 8px;
-    width: 84px;
-  }
-
-  &__price {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.15;
-    color: #000000;
-    letter-spacing: 0.02em;
-    padding-left: 32px;
-    padding-bottom: 8px;
-  }
-
-  &__text {
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 1.2;
-    color: #000000;
-    letter-spacing: 0.02em;
-    max-width: 225px;
-    padding-bottom: 8px;
-  }
-
-  &__wrapper {
-    margin-bottom: 32px;
-  }
-
-  &__box-button {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-
-  &__button {
-    margin: 0 auto;
-    display: block;
-    max-width: 236px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    color: #F3C653;
-    letter-spacing: 0.02em;
-    padding: 15px 24px 14px;
-    background-color: #000000;
-    border-radius: 25px;
+  &__subtitle-padding {
+    padding-top: 0px;
   }
 }
+
+//   &__table {
+//     margin: 0 auto;
+//   } 
+
+
+
+//   &__dish {
+//     font-family: $text-font-stack;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.21;
+//     color: #000000;
+//     letter-spacing: 0.02em;
+//     max-width: 225px;
+//     padding-bottom: 4px;
+
+//     // &:last-child {
+//     //   padding-bottom: 0px;
+//     // }
+//   }
+
+//   &__weight {
+//     font-family: $text-font-stack;
+//     font-weight: 300;
+//     font-size: 14px;
+//     line-height: 1.21;
+//     color: #000000;
+//     letter-spacing: 0.02em;
+//     padding-left: 32px;
+//     padding-bottom: 8px;
+//     width: 84px;
+//   }
+
+//   &__price {
+//     font-family: $text-font-stack;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.15;
+//     color: #000000;
+//     letter-spacing: 0.02em;
+//     padding-left: 32px;
+//     padding-bottom: 8px;
+//   }
+
+//   &__text {
+//     font-family: $text-font-stack;
+//     font-weight: 400;
+//     font-size: 10px;
+//     line-height: 1.2;
+//     color: #000000;
+//     letter-spacing: 0.02em;
+//     max-width: 225px;
+//     padding-bottom: 8px;
+//   }
+
+//   &__wrapper {
+//     margin-bottom: 32px;
+//   }
+
+//   &__box-button {
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+//   }
+
+//   &__button {
+//     margin: 0 auto;
+//     display: block;
+//     max-width: 236px;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.25;
+//     color: #F3C653;
+//     letter-spacing: 0.02em;
+//     padding: 15px 24px 14px;
+//     background-color: #000000;
+//     border-radius: 25px;
+//   }
+// }
