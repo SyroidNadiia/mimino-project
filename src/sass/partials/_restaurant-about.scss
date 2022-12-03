@@ -1,92 +1,129 @@
-.restaurant-about {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 414px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+img {
+  display: block;
 }
 
-.restaurant-about__text {
-  @extend %marginPaddingReset;
+.restaurant-about {
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: block;
-  // color: mix(getColor('primary-inversed'), getColor('primary'), 37.3%);
-  width: 258px;
-  height: auto;
-  margin-bottom: 28px;
-  font-size: 12px;
-  line-height: 1.91;
-  letter-spacing: 0.02em;
-  font-weight: 600;
-  font-family: $text-font-stack;
-  @extend %list;
+  @include respondTo('diapente') {
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
+
+  @include respondTo('diapason') {
+    padding-bottom: 50px;
+  }
+}
+
+.container__restaurant-about {
+  display: block;
+  position: relative;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include respondTo('tritonus') {
+    max-width: 414px;
+  }
+
+  @include respondTo('diapente') {
+    padding: 0 47px;
+    max-width: 1024px;
+  }
+
+  @include respondTo('diapason') {
+    padding: 0 85px;
+    max-width: 1280px;
+  }
 }
 
 .restaurant-about__title {
-  display: block;
   height: 23px;
   width: 190px;
-  margin-top: 16px;
+  margin-top: 0;
   margin-bottom: 12px;
-  @extend %list;
-}
-
-.restaurant-about__subtitle {
-  display: block;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  font-family: $logo-font;
-  color: 'primary';
-  font-size: 40px;
-  line-height: 1;
-  letter-spacing: 0.3em;
-  @extend %list;
-}
-
-.restaurant-about__img {
-  display: block;
-  margin-left: auto;
-}
-
-.restaurant-about__img-interiour {
-  display: block;
-  margin-right: auto;
-  margin-top: 32px;
-  border-radius: 2px;
-}
-
-.restaurant-about__img-bar {
-  display: flex;
-}
-
-.restaurant-about__img-slider {
-  margin-bottom: 20px;
-  margin-left: 84px;
-  margin-right: 25px;
-  display: flex;
-}
-
-.restaurant-about__interior {
-  display: flex;
-}
-
-.restaurant-about__text-interiour {
-  display: flex;
-  align-items: center;
-  margin-left: 20px;
-  width: 163px;
+  font-family: 'Times New Roman';
   font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  font-family: $text-font-stack;
-  color: #c79002;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #b4b4b4;
+  @extend %list;
 }
 
-.restaurant-details__icon {
-  display: block;
-}
+// .restaurant-about__text {
+//   @extend %marginPaddingReset;
+//   display: block;
+//   color: mix(getColor('primary-inversed'), getColor('primary'), 37.3%);
+//   width: 258px;
+//   height: auto;
+//   margin-bottom: 28px;
+//   font-size: 12px;
+//   line-height: 1.91;
+//   letter-spacing: 0.02em;
+//   font-weight: 600;
+//   font-family: $text-font-stack;
+//   @extend %list;
+// }
 
-.restaurant-details__arrow {
-  display: flex;
-  justify-content: end;
-}
+// .restaurant-about__subtitle {
+//   display: block;
+//   margin-top: 12px;
+//   margin-bottom: 12px;
+//   font-family: $logo-font;
+//   color: 'primary';
+//   font-size: 40px;
+//   line-height: 1;
+//   letter-spacing: 0.3em;
+//   @extend %list;
+// }
+
+// .restaurant-about__img {
+//   display: block;
+//   margin-left: auto;
+// }
+
+// .restaurant-about__img-interiour {
+//   display: block;
+//   margin-right: auto;
+//   margin-top: 32px;
+//   border-radius: 2px;
+// }
+
+// .restaurant-about__img-bar {
+//   display: flex;
+// }
+
+// .restaurant-about__img-slider {
+//   margin-bottom: 20px;
+//   margin-left: 84px;
+//   margin-right: 25px;
+//   display: flex;
+// }
+
+// .restaurant-about__interior {
+//   display: flex;
+// }
+
+// .restaurant-about__text-interiour {
+//   display: flex;
+//   align-items: center;
+//   margin-left: 20px;
+//   width: 163px;
+//   font-style: normal;
+//   font-weight: 600;
+//   font-size: 12px;
+//   line-height: 1.25;
+//   font-family: $text-font-stack;
+//   color: 'accent-darken';
+// }
+
+// .restaurant-details__icon {
+//   display: block;
+// }
+
+// .restaurant-details__arrow {
+//   display: flex;
+//   justify-content: end;
+// }
