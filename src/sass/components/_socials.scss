@@ -8,11 +8,6 @@
   }
   &__icon {
     @extend %icon;
-    color: getColor('accent-yellow');
-    transition: color $transition-cubic;
-    &:hover,
-    &:focus {
-      color: getColor('accent-yellow-transparent');
-    }
+    color: mix(transparent, getColor('accent'), 30%);
   }
 }
