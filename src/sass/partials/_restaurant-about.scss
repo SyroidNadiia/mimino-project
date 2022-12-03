@@ -9,7 +9,7 @@
 .restaurant-about__text {
   @extend %marginPaddingReset;
   display: block;
-  color: mix(getColor(‘primary-inversed’), getColor(‘primary’), 37.3%);
+  // color: mix(getColor('primary-inversed'), getColor('primary'), 37.3%);
   width: 258px;
   height: auto;
   margin-bottom: 28px;
@@ -27,7 +27,6 @@
   width: 190px;
   margin-top: 16px;
   margin-bottom: 12px;
-  color: scale-color($color: getColor(‘primary-inversed’), $blackness: 37%);
   @extend %list;
 }
 
