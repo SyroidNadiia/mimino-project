@@ -54,31 +54,16 @@
   line-height: 1.17;
 }
 
+$enable-rounded: true;
+
 .amenities-button {
-  padding: 20px 42px;
-
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  cursor: pointer;
-
-  color: getColor('primary-inversed');
-  background-color: getColor('primary');
-
-  border: 1px solid getColor('accent');
-  border-radius: 25px;
-
-  &:hover,
-  &:focus {
-    background-color: getColor('accent');
-    color: getColor('primary');
-  }
-
-  @include transition(background-color, color);
+  @include buttonSize($max-width: 434px, $padding-top: 18px, $padding-bottom: 18px);
+  @include buttonReserve();
+  display: flex;
+  justify-content: center;
 }
 
-.amenities-button_margin {
+.button-reserve_margin {
   margin-bottom: 16px;
 }
 
@@ -96,7 +81,7 @@
   letter-spacing: 0.02em;
   cursor: pointer;
 
-  color: getColor('accent');
+  color: #c79002;
   background-color: inherit;
   border: none;
 
@@ -106,5 +91,5 @@
     fill: transparent;
   }
 
-  transition: (fill, color);
+  @include transition(fill, color);
 }

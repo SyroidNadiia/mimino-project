@@ -1,0 +1,22 @@
+.logo {
+  font-family: $logo-font;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  &--header {
+    @extend %link;
+    display: block;
+    color: getColor('primary-inversed');
+    font-size: 36px;
+    line-height: 1.08;
+    // мінус 10пікс для компенсації різниці ширини лого, що зумовлена шириною останної літери
+    margin-right: calc(52px - 10px);
+    @include respondTo(diapente) {
+      font-size: 40px;
+      line-height: 1.07;
+      margin-right: calc(87px - 10px);
+    }
+    @include respondTo('diapason') {
+      margin-right: calc(96px - 10px);
+    }
+  }
+}
