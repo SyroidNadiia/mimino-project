@@ -133,30 +133,10 @@
 
 $hero-button: true;
 
-.room-hero-button {
+.room-hero__button {
+  @include buttonSize($max-width: 232px, $padding-top: 14px, $padding-bottom: 14px);
   @include buttonPlace;
   position: absolute;
   right: 73px;
   bottom: 40px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  width: 232px;
-
-  // padding: 14px 25px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-
-  color: getColor('accent');
-  border: 2px solid getColor('primary-inversed');
-  border-radius: 25px;
-
-  &:hover,
-  &:focus {
-    background-color: getColor('primary-inversed');
-  }
-
-  @include transition(background-color);
 }

@@ -23,8 +23,8 @@
 }
 
 // Міксин розміру кнопки
-@mixin buttonSize($weight, $padding-top, $padding-bottom) {
-  weight: $weight;
+@mixin buttonSize($max-width, $padding-top, $padding-bottom) {
+  max-width: $max-width;
   padding-top: $padding-top;
   padding-bottom: $padding-bottom;
 }
