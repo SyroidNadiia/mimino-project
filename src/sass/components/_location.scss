@@ -1,7 +1,11 @@
 .location {
     display: flex;
-    background-color: #ffffff;
+    background-color: getColor('primary-inversed');
     padding-right: 16px;
+
+    @include respondTo('diapente') {
+        padding-right: 0;
+    }
 }
 
 .location__location {
@@ -12,12 +16,12 @@
 }
 
 .location__icon {
-    fill: #C79002;
+    fill: getColor('accent');
 }
 
 .location__address{
     max-width: 183px;
-    font-family: 'Montserrat';
+    font-family: $text-font-stack;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
