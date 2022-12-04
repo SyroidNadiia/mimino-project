@@ -1,0 +1,248 @@
+.restaurant-about {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: block;
+
+  @include respondTo('diapente') {
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
+
+  @include respondTo('diapason') {
+    padding-bottom: 50px;
+  }
+}
+
+.container__restaurant-about {
+  display: block;
+  color: mix(getColor('primary-inversed'), getColor('primary'), 37.3%);
+  display: block;
+  position: relative;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: $text-font-stack;
+  @extend %list;
+
+  @include respondTo('tritonus') {
+    max-width: 414px;
+  }
+
+  @include respondTo('diapente') {
+    padding: 0 47px;
+    max-width: 1024px;
+  }
+
+  @include respondTo('diapason') {
+    padding: 0 85px;
+    max-width: 1280px;
+  }
+}
+
+.restaurant-about__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: mix(getColor('primary-inversed'), getColor('primary'), 78%);
+
+  @include respondTo('diapente') {
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
+}
+
+.restaurant-about__subtitle {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-right: auto;
+  margin-left: 0;
+  color: 'primary';
+  max-width: 127px;
+
+  @include respondTo('unisonus') {
+    margin-bottom: 16px;
+  }
+
+  @include respondTo('diapente') {
+    max-width: 202px;
+    margin-bottom: 24px;
+  }
+
+  @include respondTo('diapason') {
+    color: mix(getColor('primary-inversed'), getColor('primary'), 68%);
+  }
+}
+
+.restaurant-about__article {
+  @include respondTo('tritonus') {
+    margin-bottom: 32px;
+  }
+
+  @include respondTo('diapente') {
+    margin-bottom: 142px;
+  }
+
+  @include respondTo('diapason') {
+    margin-bottom: 162px;
+  }
+}
+
+.restaurant-about__text {
+  @extend %marginPaddingReset;
+  display: block;
+  font-family: $text-font-stack;
+  line-height: 1.2;
+  margin-bottom: 28px;
+  font-weight: 600;
+  margin-top: 12px;
+  letter-spacing: 0.02em;
+  font-size: 12px;
+  width: 258px;
+  color: mix(getColor('primary-inversed'), getColor('primary'), 37.3%);
+
+  @include respondTo('unisonus') {
+    width: 242px;
+    margin-bottom: 28px;
+    font-size: 12px;
+  }
+
+  @include respondTo('diapente') {
+    font-size: 16px;
+    width: 439px;
+    margin-bottom: 0px;
+  }
+
+  @include respondTo('diapason') {
+    width: 518px;
+  }
+}
+
+.restaurant-about__article-img-one {
+  display: block;
+  margin-left: 155;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  overflow: hidden;
+
+  @include respondTo('unisonus') {
+    max-width: 244px;
+  }
+
+  @include respondTo('diapente') {
+    max-width: 400px;
+    position: absolute;
+    top: -144px;
+    right: 65px;
+  }
+
+  @include respondTo('diapason') {
+    right: 95px;
+    max-width: 460px;
+  }
+}
+
+.restaurant-about__img {
+  display: block;
+}
+
+.restaurant-about__img-bar {
+  display: flex;
+  margin-left: auto;
+}
+
+.restaurant-about__img-slider {
+  margin-bottom: 20px;
+  margin-left: 84px;
+  margin-top: 32px;
+  display: flex;
+}
+
+.restaurant-about__article-two {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.restaurant-about__icon {
+  display: block;
+}
+
+.restaurant-about__arrow {
+  display: flex;
+  justify-content: end;
+  gap: 32px;
+}
+
+.restaurant-about__img-interiour {
+  display: block;
+  margin-right: auto;
+  margin-top: 32px;
+  border-radius: 2px;
+}
+
+.restaurant-about__img-bar {
+  display: flex;
+}
+
+.restaurant-about__interior {
+  display: flex;
+  margin-right: 15px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  overflow: hidden;
+
+  @include respondTo('unisonus') {
+    max-width: 200px;
+  }
+
+  @include respondTo('diapente') {
+    max-width: 350px;
+    margin-right: auto;
+  }
+
+  @include respondTo('diapason') {
+    max-width: 460px;
+    margin-right: auto;
+  }
+}
+
+.restaurant-about__text-interiour {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 163px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  font-family: $text-font-stack;
+  color: 'accent-darken';
+
+  @include respondTo('unisonus') {
+    width: 163px;
+    font-size: 12px;
+    margin-left: 21px;
+  }
+
+  @include respondTo('diapente') {
+    font-size: 16px;
+    width: 312px;
+    margin-left: 48px;
+    margin-right: 267px;
+  }
+
+  @include respondTo('diapason') {
+    width: 311px;
+    margin-bottom: 121px;
+    margin-left: 346px;
+    margin-left: 32px;
+  }
+}
+
+.restaurant-about__icon {
+  display: block;
+  margin-left: 301px;
+}
+
+.container__restaurant-about {
+  display: block;
+}

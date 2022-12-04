@@ -3,14 +3,14 @@
   padding-bottom: 21px;
   margin: 0 auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(/src/images/m-hotel-hero-bg.jpg);
+    url('/src/images/m-hotel-hero-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(/src/images/m-hotel-hero-bg@2x.jpg);
+      url('/src/images/m-hotel-hero-bg@2x.jpg');
   }
 
   @media (min-width: 1024px) {
@@ -18,14 +18,14 @@
     padding-bottom: 15px;
     width: auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(/src/images/hotel-hero-bg.jpg);
+      url('/src/images/hotel-hero-bg.jpg');
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: linear-gradient(
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(/src/images/hotel-hero-bg@2x.jpg);
+        url('/src/images/hotel-hero-bg@2x.jpg');
     }
   }
 
@@ -101,7 +101,7 @@
     font-weight: 400;
     line-height: 1.22;
     letter-spacing: 0.01em;
-    color: getColor('accent');
+    color: #e5e5e5;
     text-align: left;
     list-style: none;
     text-decoration: none;
@@ -125,26 +125,8 @@
   }
 
   &__button {
-    font-family: $text-font-stack;
-    font-style: normal;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-    color: getColor('accent');
-    padding: 15px 0;
-    width: 236px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 25px;
-    border: 2px solid getColor('background');
-    cursor: pointer;
-    transition: background-color 250ms, color 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-      background-color: getColor('background');
-    }
+    @include buttonSize($section-button: true, $padding-top: 15px, $padding-bottom: 13px);
+    @include buttonPlace($transparent-button: true);
   }
 
   &__icons-block {
