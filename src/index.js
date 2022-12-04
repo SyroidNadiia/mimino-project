@@ -1,2 +1,3 @@
-import "./js/modal.js";
-import "./js/modalinputs.js";
+import './js/modal';
+import './js/modalinputs';
+import './js/nice-select2';
