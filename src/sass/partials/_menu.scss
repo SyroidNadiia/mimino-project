@@ -160,7 +160,6 @@
     @include buttonSize($padding-top: 15px, $padding-bottom: 14px, $section-button: true);
     @include buttonPlace($menu-button: true);
   }
-}
 
   &__link {
     @extend %link;
