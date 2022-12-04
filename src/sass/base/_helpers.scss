@@ -1,21 +1,21 @@
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0, 0, 0, 0);
-    clip-path: inset(50%);
-    margin: -1px;
-  }
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
 
-  .picture {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -24,6 +24,10 @@
   padding-left: 15px;
   padding-right: 15px;
   width: 414px;
+
+  // margin: 0 auto;
+  // padding: 0 15px;
+  // width: 100%;
 
   @include respondTo('diapente') {
     width: 1024px;
