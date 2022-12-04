@@ -1,44 +1,17 @@
-img {
-  display: block;
-  max-width: 100%;
-}
-
 .hotel-about {
-  display: block;
-  padding-top: 18px;
-  padding-bottom: 20px;
-  background-color: #fffdee;
+    position: relative;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    background-color: #fffdee;
 
-  @include respondTo('diapente') {
-    padding-top: 120px;
-    padding-bottom: 32px;
-  }
+    @include respondTo('diapente') {
+        padding-top: 120px;
+        padding-bottom: 32px;
+    }
 
-  @include respondTo('diapason') {
-    padding-bottom: 50px;
-  }
-}
-
-.conteiner-hotel-about {
-  display: block;
-  position: relative;
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @include respondTo('tritonus') {
-    max-width: 414px;
-  }
-
-  @include respondTo('diapente') {
-    padding: 0 47px;
-    max-width: 1024px;
-  }
-
-  @include respondTo('diapason') {
-    padding: 0 85px;
-    max-width: 1280px;
-  }
+    @include respondTo('diapason') {
+        padding-bottom: 50px;
+    }
 }
 
 .hotel-about__title {
