@@ -1,6 +1,7 @@
 .home-hero {
   position: relative;
-  min-width: 100%;
+  max-width: 414px;
+  margin: 0 auto;
 
   &__canvas {
     background-position: center;
@@ -37,9 +38,13 @@
   &__title {
     font-family: $logo-font;
     @extend %marginPaddingReset;
-    text-align: center;
+
+    width: 303px;
+    margin-left: auto;
+    margin-right: auto;
+
     font-weight: 700;
-    margin-top: 70px;
+    padding-top: 181px;
     font-size: 96px;
     line-height: 1.1;
     letter-spacing: 0.3em;
