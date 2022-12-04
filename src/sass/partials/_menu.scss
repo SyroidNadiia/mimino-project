@@ -155,15 +155,12 @@
       justify-content: flex-end;
     }
   }
-
+    
   &__button {
-    color: getColor('accent');
-    @include buttonSize($max-width: 241px, $padding-top: 15px, $padding-bottom: 14px);
-    padding-left: 24px;
-    padding-right: 24px;
-    background-color: getColor('primary');
-    border-radius: 25px;
+    @include buttonSize($padding-top: 15px, $padding-bottom: 14px, $section-button: true);
+    @include buttonPlace($menu-button: true);
   }
+}
 
   &__link {
     @extend %link;
