@@ -22,23 +22,37 @@
   transition-timing-function: $timing-function;
 }
 
-// Міксин розміру кнопки
-@mixin buttonSize($max-width: 236px, $padding-top, $padding-bottom) {
-  max-width: $max-width;
+// Міксин виведення розміру кнопки
+@mixin buttonSize($max-width: null, $padding-top, $padding-bottom, $booking-room: false, $roomprice: false, $section-button: false) {
   padding-top: $padding-top;
   padding-bottom: $padding-bottom;
+  @if $booking-room or $roomprice {
+    max-width: 232px;
+  } @else if $section-button {
+    max-width: 236px;
+  } @else {
+    max-width: $max-width;
+  }
 }
 
-// Міксин для визначення місця положення кнопок секцій
-@mixin buttonPlace {
-  @if $hero-button {
+// Міксин визначення деяких стилей кнопок відносно місця їх положення 
+@mixin buttonPlace($transparent-button: false, $light-section-button: false, $menu-button: false) {
+  @if $transparent-button {
     background-color: transparentize($color: getColor('primary'), $amount: 0.6);
+    border: 2px solid getColor('primary-inversed');
+  } @else if $light-section-button {
+    border: 2px solid #F0ECD6;
+    background-color: getColor('primary');
+  } @else if $menu-button {
+    background-color: getColor('primary');
+    border: 2px solid #FFFDEE;
   } @else {
+    border: 1px solid getColor('accent');
     background-color: getColor('primary');
   }
 }
 
-//Міксин border-radius кнопки оформлення бронювання
+//Міксин призначення border-radius кнопкам оформлення бронювання
 @mixin buttonReserve($border-radius: 25px) {
   // Manually declare to provide an override to the browser default
   @if $enable-rounded {
