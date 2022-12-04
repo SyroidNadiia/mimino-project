@@ -56,6 +56,11 @@ ul {
   margin-right: 13px;
 }
 .rest-hero__title {
+  width: 303px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 181px;
+  
   text-transform: uppercase;
   font-family: $logo-font;
 
@@ -65,22 +70,27 @@ ul {
   letter-spacing: 0.3em;
   color: getColor('primary-inversed');
   margin-bottom: 20px;
-  text-align: center;
+  
 }
 
 .rest-hero__caption {
   font-family: 'Times New Roman';
   font-weight: 700;
-  font-size: 32px;
+  font-size: 31px;
   line-height: 1.2;
+  width: 317px;
+    margin-left: auto;
+    margin-right: auto;
   color: getColor('primary-inversed');
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 113px;
-  text-align: center;
-}
+  margin-bottom: 113px;}
+  
 
 .rest-hero__name {
+  width: 83px;
+    margin-left: auto;
+    margin-right: auto;
   letter-spacing: 0.05em;
   font-weight: 600;
   font-size: 16px;
@@ -88,7 +98,6 @@ ul {
   letter-spacing: 0.02em;
   color: getColor('primary-inversed');
   margin-bottom: 44px;
-  text-align: center;
 }
 
 
@@ -120,22 +129,26 @@ ul {
   list-style: none;
   gap: 23px;
 }
-.rest-hero__soc{
+  .rest-hero__soc{
   position: absolute;
-  left: 16px;
+  left: 15px;
   bottom: 21px;}
 
 .rest-hero__icon {
   fill: getColor('accent');
 }
-
+.container{position: relative;}
 .rest-hero { 
+  width: 100%;
   text-align: center;
-  position: relative;
-  min-width: 100%;}
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 
- .rest-hero__backdrop{ 
-padding-top: 181px;
+ .rest-hero__backdrop { 
+ 
+
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -154,7 +167,9 @@ background-repeat: no-repeat;
 }
 
 @media (min-width: 1024px) {
+   
   .rest-hero__backdrop {
+    max-width: 1024px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url('/src/images/rest-hero-tablet-1x.jpg');
   }
@@ -174,6 +189,7 @@ background-repeat: no-repeat;
 
 @media (min-width: 1280px) {
   .rest-hero__backdrop {
+    max-width: 1280px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url('/src/images/rest-hero-desktop-1x.jpg');
   }
@@ -192,25 +208,40 @@ background-repeat: no-repeat;
 }
 
 @media screen and(min-width:1024px) {
-  .rest-hero__title{font-size: 128px;
+  .rest-hero__title {
+    width: 404px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 128px;
   margin-bottom: 16px;}
   .rest-hero__buttons-set {
     flex-direction: row;
     align-items: flex-end;
-    margin-bottom: 28px;
+    margin-bottom: 0px;
         gap: 40px;
   }
   .rest-hero__caption {
+    width: 356px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.1;
     margin-bottom: 144px;
-    font-size: 36px;
+    font-size: 35px;
   }
+  .rest-hero__soc{
+  bottom: 15px;}
   .box{display: flex;
   justify-content: space-between;
-align-items: flex-start;}
-  .rest-location{margin-right: 145px;
-  margin-bottom: 35px;}
+align-items: flex-start;
+
+    padding-bottom: 64px;}
   
-        .rest-hero__name{font-size: 20px;
+  
+        .rest-hero__name{
+          width: 104px;
+            margin-left: auto;
+            margin-right: auto;
+          font-size: 20px;
         margin-bottom: 56px;}
 }
 
@@ -225,4 +256,5 @@ align-items: flex-start;}
                 .rest-hero__soc {
                   display: none;
                 }
+                .box{margin-left: 0px;}
   }
