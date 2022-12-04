@@ -2,6 +2,7 @@
   padding-top: 16px;
   padding-bottom: 16px;
   display: block;
+
   @include respondTo('diapente') {
     padding-top: 120px;
     padding-bottom: 32px;
@@ -161,6 +162,7 @@
 
 .restaurant-about__img-bar {
   display: flex;
+  margin-left: auto;
 }
 
 .restaurant-about__img-slider {
