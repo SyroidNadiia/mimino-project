@@ -25,4 +25,12 @@
     letter-spacing: 0.01em;
     color: #494848;
     margin-left: 12px;
+
+    @include respondTo('diapente') {
+        max-width: 233px;
+    }
+
+    @include respondTo('diapason') {
+        color: #828282;
+    }
 }

@@ -1,9 +1,54 @@
 .contacts {
     padding: 32px 0;
+
+    @include respondTo('diapente') {
+        padding: 56px 0 40px;
+    } 
+    
+    @include respondTo('diapason') {
+        padding: 56px 0 74px;
+    }
+}
+
+.contacts__container{
+
+    @include respondTo('diapente') {
+        display: flex;
+    }
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 414px;
+  
+    @include respondTo('diapente') {
+      width: 1024px;
+      padding-left: 47px;
+      padding-right: 47px;
+    }
+  
+    @include respondTo('diapason') {
+      width: 1280px;
+      padding-left: 85px;
+      padding-right: 85px;
+    }
 }
 
 .contacts__brand{
     margin: 4px 0 12px 0px;
+
+    @include respondTo('diapente') {
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+
+    @include respondTo('diapason') {
+        margin-top: 0;
+        margin-bottom: 16px;
+    }    
 }
 
 .contacts__subtitle {
@@ -14,20 +59,55 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: #5F5F5F;
-    margin-top: 12px 0 16px;
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    @include respondTo('diapente') {
+        margin-bottom: 52px;
+    }
+
+    @include respondTo('diapason') {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }    
 }
 
 .contacts__list{
     @extend %list;
+    margin-bottom: 32px;
+
+    @include respondTo('diapente') {
+        margin-bottom: 0;
+    }
+
+    @include respondTo('diapason') {
+        margin-bottom: 0;
+    } 
 }
 
 .contacts__item{
     display: flex;
     align-items: center;
+
+    @include respondTo('diapente') {
+        display: inline-block;
+    }
 }
 
 .contacts__item:not(:last-child) {
     margin-bottom: 16px;
+
+    @include respondTo('diapente') {
+        margin-bottom: 24px;
+    }
+}
+
+.contacts__item:last-child {
+
+    @include respondTo('diapente') {
+        margin-top: 24px;
+    }
 }
 
 .contacts__department{
@@ -42,6 +122,15 @@
     letter-spacing: 0.02em;
     color: #C79002;
     margin: 0;
+
+    @include respondTo('diapente') {
+        position: relative;
+        margin-bottom: 8px;
+    }
+
+    @include respondTo('diapason') {
+        margin-bottom: 8px;
+    } 
 }
 
 .contacts__box {
@@ -51,6 +140,10 @@
     border-radius: 2px;
     padding: 9px 8px 7px;
     margin-left: 124px;
+
+    @include respondTo('diapente') {
+        margin-left: 0;
+    }
 }
 
 .contacts__number {
@@ -66,10 +159,17 @@
     color: #494848;
     cursor: pointer;
     
+    @include respondTo('diapason') {
+        color: #828282;
+    } 
 }
 
 .contacts__number-second{
     margin-left: 12px;
+
+    @include respondTo('diapente') {
+        margin-left: 16px;
+    }
 }
 
 .contacts__icon {
@@ -79,7 +179,13 @@
 }
 
 .contacts__box-map{
-    margin-top: 32px;
+    @include respondTo('diapente') {
+        margin-left: 101px;
+    }
+
+    @include respondTo('diapason') {
+        margin-left: 108px;
+    }
 }
 
 .contacts__map {
@@ -88,4 +194,16 @@
     border-radius: 2px;
     width: 384px;
     height: 220px;
+
+    @include respondTo('diapente') {
+        width: 535px;
+        height: 412px;
+        margin-top: 13px;
+    }
+
+    @include respondTo('diapason') {
+        width: 634px;
+        height: 412px;
+        margin-top: 8px;
+    }
 }
