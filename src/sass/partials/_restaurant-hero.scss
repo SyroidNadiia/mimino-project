@@ -133,7 +133,9 @@ position: relative;
   margin-right: auto;
 }
 
- .rest-hero__backdrop { 
+ .rest-hero__backdrop {
+  margin-left: auto;
+  margin-right: auto;
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -253,4 +255,4 @@ align-items: flex-start;
   .rest-hero__soc {
     display: none;
   }
-}
+
