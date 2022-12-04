@@ -6,7 +6,6 @@
     line-height: 1.219;
     letter-spacing: 0.02em;
     color: getColor('accent');
-    border: 2px solid getColor('primary-inversed');
     border-radius: 25px;
     cursor: pointer;
     @include transition(background-color, border-color); 

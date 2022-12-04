@@ -5,8 +5,6 @@
     line-height: 1.219;
     text-transform: uppercase;
     color: getColor('primary-inversed');
-    background-color: getColor('primary');
-    border: 1px solid getColor('accent');
     cursor: pointer;
     @include transition(color, background-color);
 

@@ -133,11 +133,9 @@
   fill: transparentize($color: getColor('accent'), $amount: 0.3);
 }
 
-$hero-button: true;
-
 .room-hero__button {
-  @include buttonSize($max-width: 232px, $padding-top: 14px, $padding-bottom: 14px);
-  @include buttonPlace;
+  @include buttonSize($roomprice: true, $padding-top: 14px, $padding-bottom: 14px);
+  @include buttonPlace($transparent-button: true);
   position: absolute;
   right: 73px;
   bottom: 40px;
