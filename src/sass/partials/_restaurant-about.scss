@@ -162,7 +162,6 @@
 
 .restaurant-about__img-bar {
   display: flex;
-  margin-left: auto;
 }
 
 .restaurant-about__img-slider {
@@ -260,4 +259,15 @@
 
 .container__restaurant-about {
   display: block;
+}
+
+.restaurant-about__image {
+  display: flex;
+  padding-left: 25px;
+  height: 245px;
+  max-width: 245px;
+}
+
+.swiper-slide {
+  display: flex;
 }

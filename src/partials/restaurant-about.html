@@ -76,20 +76,127 @@
       </p>
     </article>
 
-    <ul class="restaurant-about__img-bar">
-      <li class="restaurant-about__img-slider">
-        <img
-          src="./images/restaurant-about/restaurant-wine-mobile-1x.jpg"
-          alt="restaurant wine"
-        />
-      </li>
-      <li class="restaurant-about__img-slider">
-        <img
-          src="./images/restaurant-about/restaurant-wine-mobile-1x.jpg"
-          alt="restaurant wine"
-        />
-      </li>
-    </ul>
+    <div class="container my-container my-container--right">
+      <div class="box"></div>
+      <div class="wrapper-mask"></div>
+      <div class="swiper mySwiper"></div>
+      <div class="swiper-wrapper"></div>
+      <div class="swiper-slide">
+        <picture>
+          <source
+            media="(max-width: 1023px)"
+            srcset="
+              ./images/restaurant-about/restaurant-wine-mobile-2x.jpg 2x,
+              ./images/restaurant-about/restaurant-wine-mobile-1x.jpg 1x
+            "
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="
+              ./images/restaurant-about/restaurant-wine-mobile-2x.jpg 2x,
+              ./images/restaurant-about/restaurant-wine-mobile-1x.jpg 1x
+            "
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/restaurant-about/restaurant-wine-mobile-2x.jpg 2x,
+              ./images/restaurant-about/restaurant-wine-mobile-1x.jpg 1x
+            "
+          />
+          <img
+            class="restaurant-about__image"
+            src="./images/restaurant-about/restaurant-wine-mobile-1x.jpg"
+            alt=""
+          />
+        </picture>
+        <picture>
+          <source
+            media="(max-width: 1023px)"
+            srcset="
+              ./images/restaurant-about/restaurant-dinner-mobile-2x.jpg 2x,
+              ./images/restaurant-about/restaurant-dinner-mobile-1x.jpg 1x
+            "
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="
+              ./images/restaurant-about/restaurant-dinner-tablet-2x.jpg 2x,
+              ./images/restaurant-about/restaurant-dinner-tablet-1x.jpg 1x
+            "
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/restaurant-about/restaurant-dinner-desk-2x.jpg 2x,
+              ./images/restaurant-about/restaurant-dinner-desk-1x.jpg 1x
+            "
+          />
+          <img
+            class="restaurant-about__image"
+            src="./images/restaurant-about/restaurant-dinner-mobile-1x.jpg"
+            alt=""
+          />
+        </picture>
+        <picture>
+          <source
+            media="(max-width: 1023px)"
+            srcset="
+              ./images/restaurant-about/restaurant-wine-mobile-2x.jpg 2x,
+              ./images/restaurant-about/restaurant-wine-mobile-1x.jpg 1x
+            "
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="
+              ./images/restaurant-about/restaurant-wine-mobile-2x.jpg 2x,
+              ./images/restaurant-about/restaurant-wine-mobile-1x.jpg 1x
+            "
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/restaurant-about/restaurant-wine-mobile-2x.jpg 2x,
+              ./images/restaurant-about/restaurant-wine-mobile-1x.jpg 1x
+            "
+          />
+          <img
+            class="restaurant-about__image"
+            src="./images/restaurant-about/restaurant-wine-mobile-1x.jpg"
+            alt=""
+          />
+        </picture>
+        <picture>
+          <source
+            media="(max-width: 1023px)"
+            srcset="
+              ./images/restaurant-about/restaurant-dinner-mobile-2x.jpg 2x,
+              ./images/restaurant-about/restaurant-dinner-mobile-1x.jpg 1x
+            "
+          />
+
+          <source
+            media="(max-width: 1279px)"
+            srcset="
+              ./images/restaurant-about/restaurant-dinner-tablet-2x.jpg 2x,
+              ./images/restaurant-about/restaurant-dinner-tablet-1x.jpg 1x
+            "
+          />
+          <source
+            media="(max-width: 1280px)"
+            srcset="
+              ./images/restaurant-about/restaurant-dinner-desk-2x.jpg 2x,
+              ./images/restaurant-about/restaurant-dinner-desk-1x.jpg 1x
+            "
+          />
+          <img
+            class="restaurant-about__image"
+            src="./images/restaurant-about/restaurant-dinner-mobile-1x.jpg"
+            alt=""
+          />
+        </picture>
+      </div>
+    </div>
     <div class="restaurant-about__arrow">
       <svg class="restaurant-about__arrow" width="32px" height="32px">
         <use href="./images/icons.svg#icon-arrow-left"></use>
