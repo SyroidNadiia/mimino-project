@@ -17,12 +17,6 @@
 .hotel-about__title {
   margin-top: 0;
   margin-bottom: 6px;
-
-  font-family: 'Times New Roman';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.15;
   text-align: right;
 
   color: #b4b4b4;
@@ -40,16 +34,6 @@
   margin-right: 0;
   padding: 0;
   max-width: 127px;
-
-  font-family: $logo-font;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.08;
-  text-transform: uppercase;
-
-  letter-spacing: 0.3em;
-
   color: #494848;
 
   @include respondTo('pre-unisonus') {
@@ -61,7 +45,6 @@
   }
 
   @include respondTo('diapente') {
-    font-size: 64px;
     max-width: 204px;
     margin-bottom: 24px;
   }

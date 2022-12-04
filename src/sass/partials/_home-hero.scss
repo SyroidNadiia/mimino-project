@@ -216,45 +216,35 @@
     margin-right: 297px;
   }
 }
-$hero-button: 'true';
+
+.home-hero__list-btn {
+  @include respondTo('diapente') {
+    display: flex;
+    column-gap: 40px;
+}
+
+  @include respondTo('diapente') {
+    column-gap: 60px;  
+}
+}
+
+.home-hero__item {
+  @include respondTo('pre-unisonus') {
+    & + & {
+      margin-top: 24px;
+    }
+  }
+}
 
 .home-hero__btn {
-  @include buttonSize(
-    $max-width: 232px,
-    $padding-top: 15px,
-    $padding-bottom: 13px
-  );
-  @include buttonPlace;
-
-  display: block;
-  margin-bottom: 58px;
-  margin-left: auto;
-  margin-right: auto;
-  @include respondTo('diapente') {
-    width: 232px;
-    margin: 0;
-  }
-}
-/////////////////////////
-$hero-button: 'true';
-
-.home-hero__btn-first {
-  @include buttonSize(
-    $max-width: 236px,
-    $padding-top: 15px,
-    $padding-bottom: 13px
+  @include buttonSize($section-button: true, $padding-top: 15px, $padding-bottom: 13px
   );
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 24px;
   display: block;
-  @include buttonPlace;
-
-  @include respondTo('diapente') {
-    width: 236px;
-    margin: 0;
-  }
+  @include buttonPlace($transparent-button: true);
 }
+
 // .home-hero__address-link:not(:lang(ae)):not(:lang(ar)):not(:lang(arc)):not(
 //     :lang(bcc)
 //   ):not(:lang(bqi)):not(:lang(ckb)):not(:lang(dv)):not(:lang(fa)):not(

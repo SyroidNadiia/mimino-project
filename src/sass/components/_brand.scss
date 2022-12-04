@@ -1,5 +1,6 @@
 .brand {
   font-family: $logo-font;
+  @extend %marginPaddingReset;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 40px;
