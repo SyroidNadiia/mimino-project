@@ -42,13 +42,7 @@
 .restaurant-about__title {
   margin-top: 0;
   margin-bottom: 12px;
-  font-family: 'Times New Roman';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.15;
   color: mix(getColor('primary-inversed'), getColor('primary'), 78%);
-  @extend %list;
 
   @include respondTo('diapente') {
     font-size: 32px;
@@ -62,25 +56,16 @@
   margin-bottom: 12px;
   margin-right: auto;
   margin-left: 0;
-  font-family: $logo-font;
   color: 'primary';
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.3em;
   max-width: 127px;
-  text-transform: uppercase;
-  @extend %list;
 
   @include respondTo('unisonus') {
     margin-bottom: 16px;
   }
 
   @include respondTo('diapente') {
-    font-size: 64px;
     max-width: 202px;
     margin-bottom: 24px;
-    line-height: 1.1;
   }
 
   @include respondTo('diapason') {

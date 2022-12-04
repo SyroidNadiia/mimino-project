@@ -23,15 +23,15 @@
 }
 
 // Міксин виведення розміру кнопки
-@mixin buttonSize($max-width: null, $padding-top, $padding-bottom, $booking-room: false, $roomprice: false, $section-button: false) {
+@mixin buttonSize($width: null, $padding-top: null, $padding-bottom: null, $booking-room: false, $price-button: false, $section-button: false) {
   padding-top: $padding-top;
   padding-bottom: $padding-bottom;
-  @if $booking-room or $roomprice {
-    max-width: 232px;
+  @if $booking-room or $price-button {
+    width: 232px;
   } @else if $section-button {
-    max-width: 236px;
+    width: 236px;
   } @else {
-    max-width: $max-width;
+    width: $width;
   }
 }
 

@@ -14,4 +14,9 @@
         background-color: getColor('primary-inversed');
         border-color: getColor('accent');
     }
+
+    &--booking {
+        @include buttonPlace($transparent-button: true);
+        @include buttonSize($booking-room: true, $padding-top: 15px, $padding-bottom: 13px);
+    }
 }
