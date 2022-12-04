@@ -15,6 +15,9 @@ ul {
     padding: 62px 0;
     position: relative;
   }
+  @include respondTo('diapason') {
+    padding: 72px 0 48px;
+  }
   &__title {
     font-family: 'Times New Roman';
     font-style: normal;
@@ -44,6 +47,9 @@ ul {
       line-height: 1.08;
       margin-bottom: 62px;
     }
+    @include respondTo('diapason') {
+      margin-bottom: 72px;
+    }
   }
   &__name {
     font-family: 'Times New Roman';
@@ -59,6 +65,11 @@ ul {
       font-size: 30px;
 line-height: 1.13;
 margin-bottom: 16px;
+    }
+    @include respondTo('diapason') {
+      font-size: 36px;
+line-height: 1.14;
+      margin-bottom: 24px;
     }
   }
   &__text {
@@ -77,6 +88,10 @@ line-height: 1.25;
 width: 439px;
 margin-bottom: 174px;
     }
+    @include respondTo('diapason') {
+      
+      margin-bottom: 188px;
+    }
   }
   &__picture {
     max-width: 242px;
@@ -90,7 +105,11 @@ margin-bottom: 174px;
     margin-bottom: 0;
     position: absolute;
     transform: translate(123%, -109%);
-  }}
+  }
+  @include respondTo('diapason') {
+    transform: translate(153%, -118%);
+  }
+}
   &__thumb {
     display: flex;
     gap: 16px;
@@ -104,6 +123,10 @@ margin-bottom: 174px;
   &__img {
     width: 194px;
     height: 194px;
+    @include respondTo('diapason') {
+      width: 254px;
+    height: 254px;
+    }
   }
   &__btn {
     display: block;
@@ -124,12 +147,18 @@ margin-bottom: 174px;
     margin-bottom: 16px;
     @include respondTo('diapente') {
       margin-top: 41px;
+      @include respondTo('diapason') {
+        margin-top: 71px;
+        }
     }
   }
 }
 .img-thumb {
   position: relative;
   height: 194px;
+  @include respondTo('diapason') {
+  height: 254px;
+  }
 }
 .btn-thumb {
   display: flex;
