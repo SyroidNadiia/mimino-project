@@ -1,0 +1,256 @@
+.home-hero {
+  position: relative;
+  max-width: 414px;
+  margin: 0 auto;
+  max-width: 414px;
+  margin: auto;
+
+  &__canvas {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: linear-gradient(#000000a6, #000000a6),
+      url(../images/home-hero/home-hero.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(#000000a3, #000000a3),
+        url(../images/home-hero/home-hero2x.jpg);
+    }
+    @media screen and (min-width: 1024px) {
+      max-width: 1024px;
+      background-image: linear-gradient(#000000a3, #000000a3),
+        url(../images/home-hero/home-hero-tablet.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(#000000a3, #000000a3),
+        url(../images/home-hero/home-hero-tablet2x.jpg);
+    }
+    @media screen and (min-width: 1280px) {
+      max-width: 1280px;
+      background-image: linear-gradient(#000000a3, #000000a3),
+        url(../images/home-hero/home-hero-desktop.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(#000000a3, #000000a3),
+        url(../images/home-hero/home-hero-desktop2x.jpg);
+    }
+  }
+  &__container {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    @include respondTo('tritonus') {
+      padding-top: 88px;
+      padding-bottom: 15px;
+    }
+    @include respondTo('diapason') {
+      padding-bottom: 65px;
+    }
+  }
+  &__title {
+    font-family: $logo-font;
+    @extend %marginPaddingReset;
+
+    width: 303px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 700;
+    padding-top: 181px;
+    font-size: 96px;
+
+    width: 303px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 111px;
+
+    font-size: 96px;
+    line-height: 1.1;
+    letter-spacing: 0.3em;
+    color: getColor('primary-inversed');
+
+    @include respondTo('diapente') {
+      width: 400px;
+      font-size: 128px;
+      margin-bottom: 16px;
+    }
+    @include respondTo('diapason') {
+      width: 404px;
+      font-size: 128px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__sub-title {
+    font-family: $text-font-stack;
+    @extend %marginPaddingReset;
+    text-align: center;
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: getColor('primary-inversed');
+    @include respondTo('diapente') {
+      margin-bottom: 56px;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+    @include respondTo('diapason') {
+      font-size: 20px;
+      margin-bottom: 64px;
+    }
+  }
+  &__sub-title-life {
+    display: block;
+    @extend %marginPaddingReset;
+    padding-bottom: 113px;
+    margin-top: 40px;
+    text-align: center;
+    font-family: $text-times-font;
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+    color: getColor('primary-inversed');
+    @include respondTo('diapente') {
+      margin-bottom: 145px;
+      font-size: 36px;
+      line-height: 1.14;
+    }
+    @include respondTo('diapason') {
+      margin-bottom: 144px;
+    }
+  }
+  &__container-footer {
+    @include respondTo('diapente') {
+      display: inline-flex;
+      margin-bottom: 25px;
+      align-items: end;
+    }
+    @include respondTo('diapason') {
+      margin: 0;
+    }
+  }
+  &__list-social {
+    @extend %list;
+    display: flex;
+    gap: 20px;
+
+    @include respondTo('diapason') {
+      display: none;
+    }
+  }
+  &__list-btn {
+    @extend %list;
+
+    @include respondTo('diapente') {
+      display: inline-flex;
+      gap: 40px;
+    }
+    @include respondTo('diapason') {
+      display: inline-flex;
+    }
+  }
+}
+.home-hero__list {
+  @extend %list;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-hero__list-social {
+  @extend %list;
+}
+
+.home-hero__social-link {
+  display: block;
+  fill: getColor('accent-darken');
+}
+
+.home-hero__address-icon {
+  position: absolute;
+  margin-right: 8px;
+
+  @include respondTo('diapente') {
+    margin-right: 13px;
+  }
+}
+.home-hero__address-link {
+  @extend %link;
+  font-family: $text-font-stack;
+  display: flex;
+  width: 210px;
+  height: 47px;
+  color: #e5e5e5;
+  border: 1px solid getColor('accent-darken');
+  fill: getColor('accent');
+  border-radius: 2px;
+  align-items: center;
+  padding-left: 6px;
+
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+
+  @include respondTo('tritonus') {
+    position: absolute;
+    top: 65px;
+    right: 15px;
+  }
+  @include respondTo('diapente') {
+    width: 285px;
+    height: 56px;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 7px;
+    margin-right: 137px;
+  }
+  @include respondTo('diapason') {
+    margin-right: 297px;
+  }
+}
+
+.home-hero__list-btn {
+  @include respondTo('diapente') {
+    display: flex;
+    column-gap: 40px;
+}
+
+  @include respondTo('diapente') {
+    column-gap: 60px;  
+}
+}
+
+.home-hero__item {
+  @include respondTo('pre-unisonus') {
+    & + & {
+      margin-top: 24px;
+    }
+  }
+}
+
+.home-hero__btn {
+  @include buttonSize($section-button: true, $padding-top: 15px, $padding-bottom: 13px
+  );
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  @include buttonPlace($transparent-button: true);
+}
+
+// .home-hero__address-link:not(:lang(ae)):not(:lang(ar)):not(:lang(arc)):not(
+//     :lang(bcc)
+//   ):not(:lang(bqi)):not(:lang(ckb)):not(:lang(dv)):not(:lang(fa)):not(
+//     :lang(glk)
+//   ):not(:lang(he)):not(:lang(ku)):not(:lang(mzn)):not(:lang(nqo)):not(
+//     :lang(pnb)
+//   ):not(:lang(ps)):not(:lang(sd)):not(:lang(ug)):not(:lang(ur)):not(:lang(yi)) {
+//   text-align: center;
+// }
