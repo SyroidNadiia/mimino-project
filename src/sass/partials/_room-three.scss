@@ -128,7 +128,7 @@ $hero-button: false;
     margin-top: 57px;
   }
 
-  @include respondTo('diapasone') {
+  @include respondTo('diapason') {
     margin-top: 63px;
   }
 }
