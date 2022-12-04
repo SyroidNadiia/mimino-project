@@ -2,39 +2,58 @@
   position: relative;
   max-width: 414px;
   margin: 0 auto;
+  max-width: 414px;
+  margin: auto;
 
   &__canvas {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    background-image: url(../images/home-hero/home-hero.jpg);
+    background-image: linear-gradient(#000000a6, #000000a6),
+      url(../images/home-hero/home-hero.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../images/home-hero/home-hero2x.jpg);
+      background-image: linear-gradient(#000000a3, #000000a3),
+        url(../images/home-hero/home-hero2x.jpg);
     }
     @media screen and (min-width: 1024px) {
-      max-width: 1023px;
-      background-image: url(../images/home-hero/home-hero-tablet.jpg);
+      max-width: 1024px;
+      background-image: linear-gradient(#000000a3, #000000a3),
+        url(../images/home-hero/home-hero-tablet.jpg);
     }
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../images/home-hero/home-hero-tablet2x.jpg);
+      background-image: linear-gradient(#000000a3, #000000a3),
+        url(../images/home-hero/home-hero-tablet2x.jpg);
     }
     @media screen and (min-width: 1280px) {
       max-width: 1280px;
-      background-image: url(../images/home-hero/home-hero-desktop.jpg);
+      background-image: linear-gradient(#000000a3, #000000a3),
+        url(../images/home-hero/home-hero-desktop.jpg);
     }
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../images/home-hero/home-hero-desktop2x.jpg);
+      background-image: linear-gradient(#000000a3, #000000a3),
+        url(../images/home-hero/home-hero-desktop2x.jpg);
     }
   }
-
+  &__container {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    @include respondTo('tritonus') {
+      padding-top: 88px;
+      padding-bottom: 15px;
+    }
+    @include respondTo('diapason') {
+      padding-bottom: 65px;
+    }
+  }
   &__title {
     font-family: $logo-font;
     @extend %marginPaddingReset;
@@ -46,13 +65,29 @@
     font-weight: 700;
     padding-top: 181px;
     font-size: 96px;
+
+    width: 303px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 111px;
+
+    font-size: 96px;
     line-height: 1.1;
     letter-spacing: 0.3em;
     color: getColor('primary-inversed');
-    @media screen and (min-width: 1024px) {
+
+    @include respondTo('diapente') {
+      width: 400px;
       font-size: 128px;
+      margin-bottom: 16px;
+    }
+    @include respondTo('diapason') {
+      width: 404px;
+      font-size: 128px;
+      margin-bottom: 32px;
     }
   }
+
   &__sub-title {
     font-family: $text-font-stack;
     @extend %marginPaddingReset;
@@ -62,14 +97,20 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: getColor('primary-inversed');
-    @media screen and (min-width: 1024px) {
-      margin-top: 16px;
+    @include respondTo('diapente') {
+      margin-bottom: 56px;
       font-size: 20px;
+      line-height: 1.2;
+    }
+    @include respondTo('diapason') {
+      font-size: 20px;
+      margin-bottom: 64px;
     }
   }
   &__sub-title-life {
     display: block;
     @extend %marginPaddingReset;
+    padding-bottom: 113px;
     margin-top: 40px;
     text-align: center;
     font-family: $text-times-font;
@@ -77,52 +118,43 @@
     line-height: 1.1;
     letter-spacing: 0.05em;
     color: getColor('primary-inversed');
-    @media screen and (min-width: 1024px) {
+    @include respondTo('diapente') {
+      margin-bottom: 145px;
       font-size: 36px;
-      line-height: 1.1;
-      margin-top: 56px;
+      line-height: 1.14;
+    }
+    @include respondTo('diapason') {
+      margin-bottom: 144px;
     }
   }
-  &__btn-first {
-    display: block;
-    width: 236px;
-    height: 48px;
-    margin-top: 113px;
-    margin-bottom: 24px;
-    margin-left: auto;
-    margin-right: auto;
-    @media screen and (min-width: 1024px) {
-      margin-bottom: 65px;
+  &__container-footer {
+    @include respondTo('diapente') {
+      display: inline-flex;
+      margin-bottom: 25px;
+      align-items: end;
     }
-  }
-  &__btn {
-    display: block;
-    width: 232px;
-    height: 48px;
-    margin-bottom: 24px;
-    margin-left: auto;
-    margin-right: auto;
+    @include respondTo('diapason') {
+      margin: 0;
+    }
   }
   &__list-social {
+    @extend %list;
     display: flex;
-    margin-top: 58px;
-    padding-bottom: 20px;
     gap: 20px;
-    @media screen and (min-width: 1024px) {
-      padding-bottom: 15px;
-    }
-    @media screen and (min-width: 1024px) {
+
+    @include respondTo('diapason') {
       display: none;
     }
   }
   &__list-btn {
     @extend %list;
 
-    @media screen and (min-width: 1024px) {
-      display: flex;
-      align-items: baseline;
-      justify-content: end;
+    @include respondTo('diapente') {
+      display: inline-flex;
       gap: 40px;
+    }
+    @include respondTo('diapason') {
+      display: inline-flex;
     }
   }
 }
@@ -139,42 +171,96 @@
 
 .home-hero__social-link {
   display: block;
-  fill: getColor('accent');
+  fill: getColor('accent-darken');
 }
-.home-hero__address {
-  position: absolute;
-  top: 64px;
-  right: 16px;
 
-  display: flex;
-  @extend %list;
-  width: 210px;
-  align-items: center;
-  cursor: pointer;
-  border: 1px solid getColor('accent');
-  @media screen and (min-width: 1024px) {
-    top: 400px;
-    left: 47px;
-  }
-}
 .home-hero__address-icon {
-  fill: getColor('accent');
-  margin-left: 11px;
-  margin-right: 13px;
-  width: 20px;
-  height: 20px;
-  display: block;
+  position: absolute;
+  margin-right: 8px;
+
+  @include respondTo('diapente') {
+    margin-right: 13px;
+  }
 }
 .home-hero__address-link {
   @extend %link;
-  display: block;
   font-family: $text-font-stack;
-  font-style: normal;
-  font-weight: 400;
+  display: flex;
+  width: 210px;
+  height: 47px;
+  color: #e5e5e5;
+  border: 1px solid getColor('accent-darken');
+  fill: getColor('accent');
+  border-radius: 2px;
+  align-items: center;
+  padding-left: 6px;
+
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.01em;
-  margin-top: 8px;
-  margin-bottom: 9px;
-  color: #e5e5e5;
+
+  @include respondTo('tritonus') {
+    position: absolute;
+    top: 65px;
+    right: 15px;
+  }
+  @include respondTo('diapente') {
+    width: 285px;
+    height: 56px;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 7px;
+    margin-right: 137px;
+  }
+  @include respondTo('diapason') {
+    margin-right: 297px;
+  }
 }
+$hero-button: 'true';
+
+.home-hero__btn {
+  @include buttonSize(
+    $max-width: 232px,
+    $padding-top: 15px,
+    $padding-bottom: 13px
+  );
+  @include buttonPlace;
+
+  display: block;
+  margin-bottom: 58px;
+  margin-left: auto;
+  margin-right: auto;
+  @include respondTo('diapente') {
+    width: 232px;
+    margin: 0;
+  }
+}
+/////////////////////////
+$hero-button: 'true';
+
+.home-hero__btn-first {
+  @include buttonSize(
+    $max-width: 236px,
+    $padding-top: 15px,
+    $padding-bottom: 13px
+  );
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  display: block;
+  @include buttonPlace;
+
+  @include respondTo('diapente') {
+    width: 236px;
+    margin: 0;
+  }
+}
+// .home-hero__address-link:not(:lang(ae)):not(:lang(ar)):not(:lang(arc)):not(
+//     :lang(bcc)
+//   ):not(:lang(bqi)):not(:lang(ckb)):not(:lang(dv)):not(:lang(fa)):not(
+//     :lang(glk)
+//   ):not(:lang(he)):not(:lang(ku)):not(:lang(mzn)):not(:lang(nqo)):not(
+//     :lang(pnb)
+//   ):not(:lang(ps)):not(:lang(sd)):not(:lang(ug)):not(:lang(ur)):not(:lang(yi)) {
+//   text-align: center;
+// }
