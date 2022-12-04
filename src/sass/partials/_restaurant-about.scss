@@ -154,46 +154,41 @@ img {
   justify-content: end;
 }
 
-// .restaurant-about__img-interiour {
-//   display: block;
-//   margin-right: auto;
-//   margin-top: 32px;
-//   border-radius: 2px;
-// }
+.restaurant-about__img-interiour {
+  display: block;
+  margin-right: auto;
+  margin-top: 32px;
+  border-radius: 2px;
+}
 
-// .restaurant-about__img-bar {
-//   display: flex;
-// }
+.restaurant-about__img-bar {
+  display: flex;
+}
 
-// .restaurant-about__img-slider {
-//   margin-bottom: 20px;
-//   margin-left: 84px;
-//   margin-right: 25px;
-//   display: flex;
-// }
+.restaurant-about__img-slider {
+  margin-bottom: 20px;
+  margin-left: 84px;
+  margin-right: 25px;
+  display: flex;
+}
 
-// .restaurant-about__interior {
-//   display: flex;
-// }
+.restaurant-about__interior {
+  display: flex;
+}
 
-// .restaurant-about__text-interiour {
-//   display: flex;
-//   align-items: center;
-//   margin-left: 20px;
-//   width: 163px;
-//   font-style: normal;
-//   font-weight: 600;
-//   font-size: 12px;
-//   line-height: 1.25;
-//   font-family: $text-font-stack;
-//   color: 'accent-darken';
-// }
+.restaurant-about__text-interiour {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  width: 163px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  font-family: $text-font-stack;
+  color: 'accent-darken';
+}
 
-// .restaurant-details__icon {
-//   display: block;
-// }
-
-// .restaurant-details__arrow {
-//   display: flex;
-//   justify-content: end;
-// }
+.restaurant-details__icon {
+  display: block;
+}
