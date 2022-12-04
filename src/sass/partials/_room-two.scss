@@ -122,6 +122,9 @@ margin-bottom: 174px;
   }
   &__btn:not(:last-child){
     margin-bottom: 16px;
+    @include respondTo('diapente') {
+      margin-top: 41px;
+    }
   }
 }
 .img-thumb {
@@ -132,7 +135,7 @@ margin-bottom: 174px;
   display: flex;
  margin: 28px 0;
  @include respondTo('diapente') {
-  margin: 40px 0 47px 331px;
+  margin: 40px 0 0 331px;
 }
 }
 .btn {
@@ -147,5 +150,6 @@ margin-bottom: 174px;
   @include respondTo('diapente') {
     display: flex;
     justify-content: space-between;
+    
   }
 }
