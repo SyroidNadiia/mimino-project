@@ -32,6 +32,10 @@ img {
     width: 414px;
   }
 
+  // margin: 0 auto;
+  // padding: 0 15px;
+  // width: 100%;
+
   @include respondTo('diapente') {
     width: 1024px;
     padding-left: 47px;
