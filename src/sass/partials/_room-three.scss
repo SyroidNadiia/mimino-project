@@ -1,5 +1,5 @@
 .room-three {
-  background-color: #F0ECD6;
+  background-color: #f0ecd6;
 }
 
 .room-three__container {
@@ -26,7 +26,7 @@
   padding-top: 32px;
   margin-bottom: 8px;
   color: #b4b4b4;
-  @extend%marginPaddingReset;
+  @extend %marginPaddingReset;
 
   @include respondTo('diapente') {
     padding-top: 0;
@@ -39,11 +39,9 @@
   text-align: end;
   margin-bottom: 32px;
   color: #494848;
-  @extend%marginPaddingReset;
 
   @include respondTo('diapente') {
     margin-bottom: 62px;
-    font-size: 64px;
   }
 
   @include respondTo('diapason') {
@@ -61,7 +59,8 @@
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: #000000;
-  @extend%marginPaddingReset;
+  @extend %marginPaddingReset;
+
 
   @include respondTo('diapente') {
     padding-right: 26px;
@@ -83,7 +82,8 @@
   margin-left: 68px;
   margin-bottom: 32px;
   color: #5f5f5f;
-  @extend%marginPaddingReset;
+  @extend %list;
+  @extend %marginPaddingReset;
 
   @include respondTo('diapente') {
     margin-left: 0;
@@ -110,37 +110,42 @@
   }
 }
 
-$hero-button: false;
-
 .room-three__link {
   display: inline-block;
-  @include buttonSize($max-width: 236px, $padding-top: 14px, $padding-bottom: 14px);
-  @include buttonPlace;
-  @extend%link;
+  @include buttonSize(
+    $padding-top: 14px,
+    $padding-bottom: 14px,
+    $section-button: true
+  );
+  @include buttonPlace($light-section-button: true);
+  @extend %link;
   margin-top: 32px;
   margin-bottom: 16px;
   margin-left: 74px;
   text-align: center;
-  border: none;
 
   @include respondTo('diapente') {
     margin-left: 0;
-    margin-top: 57px;
+    margin-top: 0;
   }
 
-  @include respondTo('diapasone') {
+  @include respondTo('diapason') {
     margin-top: 63px;
   }
 }
 
 .room-three__btn {
-  @include buttonSize($max-width: 236px, $padding-top: 14px, $padding-bottom: 14px);
-  @include buttonPlace;
+  @include buttonSize(
+    $padding-top: 14px,
+    $padding-bottom: 14px,
+    $section-button: true
+  );
+  @include buttonPlace($light-section-button: true);
   margin-bottom: 32px;
   margin-left: 74px;
-  border: none;
 
   @include respondTo('diapente') {
     margin-left: 0;
+    margin-bottom: 0;
   }
 }

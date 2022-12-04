@@ -15,27 +15,17 @@ ul {
   margin: 0;
   padding: 0;
 }
-.container{
-@media screen and (min-width: 414px) {
-  width: 414px;
-}
 
-@media screen and (min-width: 1024px) {
-  width: 1024px;
-}
-
-@media screen and (min-width: 1280px) {
-  width: 1280px;
-}}
-
-@media screen and (max-width:1023px){
-.rest-location {
-  position: absolute;
+@media screen and (max-width: 1023px) {
+  .rest-location {
+    position: absolute;
     top: 64px;
     right: 15px;
-  }}
+  }
+}
 
-  .rest-location{display: flex;
+.rest-location {
+  display: flex;
   justify-content: space-between;
   text-align: justify;
   align-items: center;
@@ -51,10 +41,12 @@ ul {
   color: #e5e5e5;
   text-decoration: none;
 }
+
 .rest-location__icon {
   fill: getColor('accent');
-  margin-right: 13px;
+  margin-right: 10px;
 }
+
 .rest-hero__title {
   width: 303px;
   margin-left: auto;
@@ -94,24 +86,15 @@ ul {
   letter-spacing: 0.05em;
   font-weight: 600;
   font-size: 16px;
-  line-height:1.25;
+  line-height: 1.25;
   letter-spacing: 0.02em;
   color: getColor('primary-inversed');
   margin-bottom: 44px;
 }
 
-
 .rest-hero__button {
- font-size: 16px;
-  line-height:1.25;
-  letter-spacing: 0.02em;
-  color: getColor('accent');
-  border: 2px solid getColor('primary-inversed');
-  border-radius: 25px;
-  background-color: transparent;
-  height: 49px;
-  padding-left: 24px;
-  padding-right: 24px;
+  @include buttonSize($section-button: true, $padding-top: 15px, $padding-bottom: 13px);
+  @include buttonPlace($transparent-button: true);
 }
 
 .rest-hero__buttons-set {
@@ -119,9 +102,8 @@ ul {
   flex-direction: column;
   gap: 24px;
   align-items: center;
-  margin-bottom:  102px;
+  margin-bottom: 102px;
 }
-
 
 .rest-hero__list {
   display: flex;
@@ -129,15 +111,20 @@ ul {
   list-style: none;
   gap: 23px;
 }
-  .rest-hero__soc{
+
+.rest-hero__soc {
   position: absolute;
-  left: 15px;
-  bottom: 21px;}
+  left: 16px;
+  bottom: 21px;
+}
 
 .rest-hero__icon {
   fill: getColor('accent');
 }
-.container{position: relative;}
+.container {
+position: relative;
+}
+
 .rest-hero { 
   width: 100%;
   text-align: center;
@@ -147,8 +134,6 @@ ul {
 }
 
  .rest-hero__backdrop { 
- 
-
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -177,7 +162,7 @@ background-repeat: no-repeat;
   @media (min-resolution: 2dppx),
     (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
-      .rest-hero__backdrop {
+    .rest-hero__backdrop {
       background-image: linear-gradient(
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
@@ -213,13 +198,16 @@ background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
     font-size: 128px;
-  margin-bottom: 16px;}
+  margin-bottom: 16px;
+  }
+  
   .rest-hero__buttons-set {
     flex-direction: row;
     align-items: flex-end;
     margin-bottom: 0px;
         gap: 40px;
   }
+  
   .rest-hero__caption {
     width: 358px;
       margin-left: auto;
@@ -229,9 +217,17 @@ background-repeat: no-repeat;
     font-size: 35px;
   }
   .rest-hero__soc{
+<<<<<<< HEAD
     left: 48px;
   bottom: 15px;}
   .box{display: flex;
+=======
+  bottom: 15px;
+  }
+  
+  .box {
+  display: flex;
+>>>>>>> 2aecfb56e20c6e80e7dcc05a1ecfb41b1672a1e3
   justify-content: space-between;
 align-items: flex-start;
 
@@ -246,9 +242,6 @@ align-items: flex-start;
         margin-bottom: 56px;}
 }
 
-
-
-
 @media screen and(min-width:1280px)
 {.rest-location {
     margin-right: 297px;}
@@ -259,3 +252,13 @@ align-items: flex-start;
                 }
                 .box{margin-left: 0px;}
   }
+  .rest-hero__name {
+    margin-bottom: 64px;
+  }
+  .rest-hero__title {
+    margin-bottom: 32px;
+  }
+  .rest-hero__soc {
+    display: none;
+  }
+}

@@ -7,7 +7,7 @@
   height: 740px;
   margin: 0 auto;
 
-  background-image: url(/src/images/room-hero/room-hero-mobile-1@1x.jpg);
+  background-image: url('/src/images/room-hero/room-hero-mobile-1@1x.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -17,10 +17,10 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .room-hero {
-    background-image: url(/src/images/room-hero/room-hero-mobile-1@2x.jpg);
+    background-image: url('/src/images/room-hero/room-hero-mobile-1@2x.jpg');
   }
 }
-// #0E0C07
+
 .room-hero__link {
   position: absolute;
   top: 64px;
@@ -133,11 +133,9 @@
   fill: transparentize($color: getColor('accent'), $amount: 0.3);
 }
 
-$hero-button: true;
-
 .room-hero__button {
-  @include buttonSize($max-width: 232px, $padding-top: 14px, $padding-bottom: 14px);
-  @include buttonPlace;
+  @include buttonSize($price-button: true, $padding-top: 14px, $padding-bottom: 14px);
+  @include buttonPlace($transparent-button: true);
   position: absolute;
   right: 73px;
   bottom: 40px;
