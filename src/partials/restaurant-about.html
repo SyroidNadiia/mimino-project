@@ -1,46 +1,76 @@
 <section class="restaurant-about">
-  <div class="container__restaurant-about">
-    <h2 class="visually-hidden">restaurant-about</h2>
-    <span class="restaurant-about__title">Amet minim mollit non</span>
-    <span class="restaurant-about__subtitle">MIMIHO</span>
-    <article class="restaurant-about__article-one">
+  <div class="container">
+    <div class="restaurant-about__list">
+      <span class="restaurant-about__title">Amet minim mollit non</span>
+      <p class="restaurant-about__subtitle">MIMIHO</p>
       <p class="restaurant-about__text">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
       </p>
-      <div class="restaurant-about__article-img-one">
-        <picture>
-          <source
-            srcset="
-              ./images/restaurant-about/restaurant-interior-desk-1x.jpg 1x,
-              ./images/restaurant-about/restaurant-interior-desk-2x.jpg 2x
-            "
-            media="(min-width: 1280px)"
-          />
-          <source
-            srcset="
-              ./images/restaurant-about/restaurant-interior-tablet-1x.jpg 1x,
-              ./images/restaurant-about/restaurant-interior-tablet-2x.jpg 2x
-            "
-            media="(min-width: 1024px)"
-          />
-          <source
-            srcset="
-              ./images/restaurant-about/restaurant-interior-mobile-1x.jpg 1x,
-              ./images/restaurant-about/restaurant-interior-mobile-2x.jpg 2x
-            "
-            media="(max-width: 1023px)"
-          />
-          <img
-            src="./images/restaurant-about/restaurant-interior-mobile-1x.jpg"
-            alt="restaurant interior"
-          />
-        </picture>
-      </div>
-    </article>
-    <article class="restaurant-about__article-two">
-      <p class="restaurant-about__article-text">
+    </div>
+    <picture>
+      <source
+        srcset="
+          ./images/restaurant-about/restaurant-about-1x.jpg,
+          ./images/restaurant-about/restaurant-about-2x.jpg
+        "
+        media="(max-width: 1280px)"
+      />
+      <source
+        srcset="
+          ./images/restaurant-about/restaurant-about-1x.jpg,
+          ./images/restaurant-about/restaurant-about-2x.jpg
+        "
+        media="(max-width: 1279px)"
+      />
+      <source
+        srcset="
+          ./images/restaurant-about/restaurant-about-1x.jpg,
+          ./images/restaurant-about/restaurant-about-2x.jpg
+        "
+        media="(max-width: 1023px)"
+      />
+      <img
+        class="restaurant-about__img"
+        src="./images/restaurant-about/restaurant-about-1x.jpg"
+        alt="restaurant"
+        width="244"
+        height="322"
+      />
+    </picture>
+    <div class="restaurant-about__interior">
+      <picture>
+        <source
+          srcset="
+            ./images/restaurant-about/restaurant-interior-1x.jpg,
+            ./images/restaurant-about/restaurant-interior-2x.jpg
+          "
+          media="(max-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/restaurant-about/restaurant-interior-1x.jpg,
+            ./images/restaurant-about/restaurant-interior-2x.jpg
+          "
+          media="(max-width: 1279px)"
+        />
+        <source
+          srcset="
+            ./images/restaurant-about/restaurant-interior-1x.jpg,
+            ./images/restaurant-about/restaurant-interior-2x.jpg
+          "
+          media="(max-width: 1023px)"
+        />
+        <img
+          class="restaurant-about__img-interiour"
+          src="./images/restaurant-about/restaurant-interior-1x.jpg"
+          alt="restaurant interior"
+          width="200"
+          height="278"
+        />
+      </picture>
+      <p class="restaurant-about__text-interiour">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
