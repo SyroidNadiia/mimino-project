@@ -23,7 +23,7 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  // max-width: 414px;
+  max-width: 414px;
 
   @include respondTo('unisonus') {
     width: 414px;
