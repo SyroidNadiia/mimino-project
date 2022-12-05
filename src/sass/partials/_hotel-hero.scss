@@ -88,6 +88,7 @@
     align-items: center;
     gap: 10px;
     fill: getColor('accent');
+    text-decoration: none;
 
     @include respondTo('diapente') {
       position: static;
@@ -103,8 +104,7 @@
     letter-spacing: 0.01em;
     color: getColor('accent');
     text-align: left;
-    list-style: none;
-    text-decoration: none;
+    margin: 0;
   }
 
   &__button-settings {
