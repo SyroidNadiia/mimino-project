@@ -52,7 +52,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   padding-top: 181px;
-  
+
   text-transform: uppercase;
   font-family: $logo-font;
 
@@ -62,7 +62,7 @@ ul {
   letter-spacing: 0.3em;
   color: getColor('primary-inversed');
   margin-bottom: 20px;
-  
+
 }
 
 .rest-hero__caption {
@@ -71,18 +71,19 @@ ul {
   font-size: 31px;
   line-height: 1.2;
   width: 317px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   color: getColor('primary-inversed');
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 113px;}
-  
+  margin-bottom: 113px;
+}
+
 
 .rest-hero__name {
   width: 83px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   letter-spacing: 0.05em;
   font-weight: 600;
   font-size: 16px;
@@ -121,11 +122,12 @@ ul {
 .rest-hero__icon {
   fill: getColor('accent');
 }
+
 .container {
-position: relative;
+  position: relative;
 }
 
-.rest-hero { 
+.rest-hero {
   width: 100%;
   text-align: center;
   margin: 0 auto;
@@ -133,18 +135,18 @@ position: relative;
   margin-right: auto;
 }
 
- .rest-hero__backdrop { 
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+.rest-hero__backdrop {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url('/src/images/rest-hero-phone-1x.jpg');
   background-size: cover;
 }
 
 @media (min-resolution: 2dppx),
-  (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
+(min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
   .rest-hero__backdrop {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url('/src/images/rest-hero-phone-2x.jpg');
@@ -152,7 +154,7 @@ background-repeat: no-repeat;
 }
 
 @media (min-width: 1024px) {
-   
+
   .rest-hero__backdrop {
     max-width: 1024px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
@@ -160,13 +162,11 @@ background-repeat: no-repeat;
   }
 
   @media (min-resolution: 2dppx),
-    (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi) {
+  (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
     .rest-hero__backdrop {
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)),
         url('/src/images/rest-hero-tablet-2x.jpg');
     }
   }
@@ -180,13 +180,11 @@ background-repeat: no-repeat;
   }
 
   @media (min-resolution: 2dppx),
-    (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi) {
+  (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
     .rest-hero__backdrop {
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)),
         url('/src/images/rest-hero-desktop-2x.jpg');
     }
   }
@@ -198,61 +196,77 @@ background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
     font-size: 128px;
-  margin-bottom: 16px;
+    margin-bottom: 16px;
   }
-  
+
   .rest-hero__buttons-set {
     flex-direction: row;
     align-items: flex-end;
     margin-bottom: 0px;
-        gap: 40px;
+    gap: 40px;
   }
-  
+
   .rest-hero__caption {
     width: 356px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.1;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.1;
     margin-bottom: 144px;
     font-size: 35px;
   }
-  .rest-hero__soc{
-  bottom: 15px;
-  }
-  
-  .box {
-  display: flex;
-  justify-content: space-between;
-align-items: flex-start;
 
-    padding-bottom: 64px;}
-  
-  
-        .rest-hero__name{
-          width: 104px;
-            margin-left: auto;
-            margin-right: auto;
-          font-size: 20px;
-        margin-bottom: 56px;}
+  .rest-hero__soc {
+    bottom: 15px;
+  }
+
+  .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-bottom: 64px;
+  }
+
+
+  .rest-hero__name {
+    width: 104px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    margin-bottom: 56px;
+  }
 }
 
-@media screen and(min-width:1280px)
-{.rest-location {
-    margin-right: 297px;}
-        .rest-hero__name{margin-bottom: 64px;}
-        .rest-hero__title{margin-bottom: 32px;}
-                .rest-hero__soc {
-                  display: none;
-                }
-                .box{margin-left: 0px;}
+@media screen and(min-width:1280px) {
+  .rest-location {
+    margin-right: 297px;
   }
+
   .rest-hero__name {
     margin-bottom: 64px;
   }
+
   .rest-hero__title {
     margin-bottom: 32px;
   }
+
   .rest-hero__soc {
     display: none;
   }
+
+  .box {
+    margin-left: 0px;
+  }
+}
+
+.rest-hero__name {
+  margin-bottom: 64px;
+}
+
+.rest-hero__title {
+  margin-bottom: 32px;
+}
+
+.rest-hero__soc {
+  display: none;
 }

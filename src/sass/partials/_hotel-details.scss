@@ -19,6 +19,7 @@
         }
 
         @media screen and (min-width: 1024px) {
+            min-height: 620px;
             max-width: 1024px;
             background-image: linear-gradient(#000000a3, #000000a3),
                 url(../images/hotel-details/background-img/tablet/hotel-details-bcgi.jpg);
@@ -118,7 +119,9 @@
     padding-bottom: 40px;
 
     @include respondTo('diapente') {
-        display: block;
+        position: absolute;
+        right: 47px;
+        bottom: 100px;
     }
 }
 
