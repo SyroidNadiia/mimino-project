@@ -246,9 +246,10 @@
   display: block;
 }
 
-.restaurant-about__image {
+.swiper-slide {
   display: flex;
-  padding-left: 25px;
-  height: 245px;
-  max-width: 245px;
+}
+
+.restaurant-about__image {
+  width: 245px;
 }
