@@ -1,7 +1,3 @@
-.hotel-details__container {
-    position: absolute;
-}
-
 .hotel-details {
     position: relative;
     margin: 0 auto;
@@ -23,7 +19,6 @@
         }
 
         @media screen and (min-width: 1024px) {
-            min-height: 620px; //вказана висота поки не має слайдеру!!!
             max-width: 1024px;
             background-image: linear-gradient(#000000a3, #000000a3),
                 url(../images/hotel-details/background-img/tablet/hotel-details-bcgi.jpg);
@@ -49,6 +44,11 @@
                 url(../images/hotel-details/background-img/desktop/hotel-details-bcgi-2x.jpg);
         }
     }
+}
+
+.hotel-details__container {
+    position: relative;
+    min-height: 620px; //вказана висота поки не має слайдеру!!!
 }
 
 .brand {
