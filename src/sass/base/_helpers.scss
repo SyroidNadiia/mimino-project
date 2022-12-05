@@ -23,13 +23,11 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 100%;
   max-width: 414px;
 
   @include respondTo('unisonus') {
     width: 414px;
   }
-  
 
   @include respondTo('diapente') {
     width: 1024px;
