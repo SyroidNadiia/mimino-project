@@ -1,21 +1,21 @@
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0, 0, 0, 0);
-    clip-path: inset(50%);
-    margin: -1px;
-  }
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
 
-  .picture {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -23,13 +23,23 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 414px;
+  width: 100%;
+  max-width: 414px;
+
+  @include respondTo('unisonus') {
+    width: 414px;
+  }
+  
 
   @include respondTo('diapente') {
     width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
   }
 
   @include respondTo('diapason') {
     width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
   }
 }
