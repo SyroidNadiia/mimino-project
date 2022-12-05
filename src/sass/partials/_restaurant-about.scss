@@ -3,15 +3,6 @@
   padding-top: 0px;
   padding-bottom: 0px;
   display: block;
-
-  @include respondTo('diapente') {
-    padding-top: 120px;
-    padding-bottom: 32px;
-  }
-
-  @include respondTo('diapason') {
-    padding-bottom: 50px;
-  }
 }
 
 .container__restaurant-about {
@@ -48,9 +39,8 @@
   top: 0;
   transform: translateX(-50%);
   height: 100%;
-  width: 1px;
-  background: #bababa;
-  z-index: 1;
+  width: 0.5px;
+  z-index: -1;
 }
 
 .lines:before,
@@ -71,6 +61,15 @@
 .lines:after {
   opacity: 1;
   left: 30vw;
+  background: #bababa;
+}
+
+.my-container {
+  padding-left: 0;
+}
+
+.my-container--right {
+  padding-left: 0;
 }
 
 .restaurant-about__title {
@@ -82,6 +81,8 @@
   @include respondTo('diapente') {
     font-size: 32px;
     margin-bottom: 4px;
+    padding-top: 120px;
+    padding-bottom: 32px;
   }
 }
 
@@ -163,7 +164,7 @@
   @include respondTo('diapente') {
     max-width: 400px;
     position: absolute;
-    top: -144px;
+    top: -32px;
     right: 65px;
   }
 
