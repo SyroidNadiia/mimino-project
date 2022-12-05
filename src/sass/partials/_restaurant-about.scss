@@ -1,6 +1,7 @@
 .restaurant-about {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 0px;
   display: block;
 
   @include respondTo('diapente') {
@@ -22,6 +23,7 @@
   margin-left: auto;
   margin-right: auto;
   font-family: $text-font-stack;
+  z-index: 2;
   @extend %list;
 
   @include respondTo('tritonus') {
@@ -39,7 +41,40 @@
   }
 }
 
+.lines {
+  position: absolute;
+  display: block;
+  left: 36%;
+  top: 0;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 1px;
+  background: #bababa;
+  z-index: 1;
+}
+
+.lines:before,
+.lines:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  background: #bababa;
+  width: 1px;
+  height: 100%;
+}
+
+// .lines:before {
+//   opacity: 1;
+//   left: -25vw;
+// }
+
+.lines:after {
+  opacity: 1;
+  left: 30vw;
+}
+
 .restaurant-about__title {
+  padding-top: 16px;
   margin-top: 0;
   margin-bottom: 12px;
   color: mix(getColor('primary-inversed'), getColor('primary'), 78%);
@@ -52,11 +87,8 @@
 
 .restaurant-about__subtitle {
   display: block;
-  margin-top: 12px;
-  margin-bottom: 12px;
   margin-right: auto;
   margin-left: 0;
-  color: 'primary';
   max-width: 127px;
 
   @include respondTo('unisonus') {
@@ -165,21 +197,11 @@
   display: block;
 }
 
-.restaurant-about__arrow {
-  display: flex;
-  justify-content: end;
-  gap: 32px;
-}
-
 .restaurant-about__img-interiour {
   display: block;
   margin-right: auto;
   margin-top: 32px;
   border-radius: 2px;
-}
-
-.restaurant-about__img-bar {
-  display: flex;
 }
 
 .restaurant-about__interior {
@@ -237,19 +259,34 @@
   }
 }
 
-.restaurant-about__icon {
-  display: block;
-  margin-left: 301px;
+.restaurant-about__arrow {
+  display: flex;
+  justify-content: end;
+  gap: 32px;
 }
 
-.container__restaurant-about {
-  display: block;
+.restaurant-about__icon {
+  gap: 32px;
+  margin-bottom: 20px;
+}
+
+.wrapper-mask {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.restaurant-about__swiper {
+  width: 245px;
+  height: 245px;
 }
 
 .swiper-slide {
-  display: flex;
+  margin-top: 32px;
+  margin-bottom: 20px;
+  margin-left: 84px;
+  margin-right: 85px;
 }
 
-.restaurant-about__image {
-  width: 245px;
+.my-container--righ {
+  margin-left: 0;
 }
