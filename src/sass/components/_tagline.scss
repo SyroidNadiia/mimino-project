@@ -1,0 +1,6 @@
+.tagline {
+    font-family: $text-times-font;
+    @extend %marginPaddingReset;
+    font-size: 20px;
+    line-height: 1.15;
+}

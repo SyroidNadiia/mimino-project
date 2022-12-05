@@ -1,0 +1,14 @@
+.brand {
+  font-family: $logo-font;
+  @extend %marginPaddingReset;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.075;
+  letter-spacing: 0.3em;
+  color: scale-color(getColor('primary'), $saturation: 1%, $lightness: 28.5%);
+
+  @include respondTo('diapente') {
+    font-size: 64px;
+  }
+}

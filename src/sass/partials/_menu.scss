@@ -1,109 +1,175 @@
-.menu {
-  width: 100%;
-  background-color: #f0ecd6;
-  padding-top: 10px;
+.menufood {
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include respondTo('diapente') {
+    background-color: getColor('background-menufood');
+    padding-top: 58px;
+  }
 
   &__title {
-    font-family: 'Montserrat';
     text-transform: uppercase;
     font-weight: 700;
     font-size: 32px;
     line-height: 1.15;
-    color: #000000;
-    margin: 0px;
     margin-bottom: 32px;
-  }
 
-  &__table {
-    margin: 0 auto;
+    @include respondTo('pre-unisonus') {
+      font-size: 24px;
+    }
+
+    @include respondTo('diapente') {
+      margin-bottom: 40px;
+    }
   }
 
   &__subtitle {
-    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
-    color: #000000;
     text-align: start;
     padding-bottom: 16px;
     padding-top: 16px;
+
+    @include respondTo('diapente') {
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+
+    @include respondTo('diapason') {
+      font-size: 24px;
+      line-height: 1.16;
+    }
+
+    &-padding {
+      padding-top: 0px;
+    }
+
+    &-salad {    
+      @include respondTo('diapente') {
+        padding-top: 0px;
+      }
+    }
+  }
+
+  &__table {
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   &__dish {
-    font-family: 'Montserrat';
-    font-weight: 500;
+    font-weight: 500; 
     font-size: 14px;
     line-height: 1.21;
-    color: #000000;
     letter-spacing: 0.02em;
-    max-width: 225px;
-    padding-bottom: 4px;
+    width: 221px;
+    
+    &-padding {
+      padding-bottom: 11px;
+    }
 
-    // &:last-child {
-    //   padding-bottom: 0px;
-    // }
-  }
+    @include respondTo('pre-unisonus') {
+      width: 190px;
+    }
 
-  &__weight {
-    font-family: 'Montserrat';
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 1.21;
-    color: #000000;
-    letter-spacing: 0.02em;
-    padding-left: 32px;
-    padding-bottom: 8px;
-    width: 84px;
-  }
-
-  &__price {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.15;
-    color: #000000;
-    letter-spacing: 0.02em;
-    padding-left: 32px;
-    padding-bottom: 8px;
+    @include respondTo('diapason') {
+      width: 291px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
   }
 
   &__text {
-    font-family: 'Montserrat';
+    display: block;
     font-weight: 400;
     font-size: 10px;
     line-height: 1.2;
-    color: #000000;
     letter-spacing: 0.02em;
-    max-width: 225px;
-    padding-bottom: 8px;
+    width: 221px;
+
+    &-margin {
+      margin-top: 4px;
+      margin-bottom: 8px;
+    }
+
+    @include respondTo('pre-unisonus') {
+      width: 190px;
+    }
+
+    @include respondTo('diapente') {
+      width: 216px;
+    }
+
+    @include respondTo('diapason') {
+      width: 259px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__weight {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    min-width: 51px;
+    height: 17px;
+    padding-left: 25px;
+    padding-right: 24px;
+
+    @include respondTo('pre-unisonus') {
+      font-size: 12px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @include respondTo('diapente') {
+      padding-left: 40px;
+      padding-right: 47px;
+    }
+
+    @include respondTo('diapason') {
+      padding-left: 65px;
+        padding-right: 60px;
+    }
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 14px;  
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    width: 62px;
+    height: 17px;
+
+    @include respondTo('pre-unisonus') {
+      font-size: 12px;
+    }
+  }
+
+  &__box-button {
+    display: flex;
+    justify-content: center;
+
+    @include respondTo('diapente') {
+      justify-content: flex-end;
+    }
+  }
+    
+  &__button {
+    @include buttonSize($padding-top: 15px, $padding-bottom: 14px, $section-button: true);
+    @include buttonPlace($menu-button: true);
+  }
+
+  &__link {
+    @extend %link;
   }
 
   &__wrapper {
     margin-bottom: 32px;
-  }
-
-  &__box-button {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-
-  &__button {
-    margin: 0 auto;
-    display: block;
-    max-width: 236px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    color: #f3c653;
-    letter-spacing: 0.02em;
-    padding: 15px 24px 14px;
-    background-color: #000000;
-    border-radius: 25px;
+    @include respondTo('diapente') {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
-
-// Закомментовано тому що повтор з base.scss
-// .container {
-//   padding-left: 15px;
-//   padding-right: 15px;
-// }

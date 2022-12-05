@@ -12,32 +12,34 @@
   margin: -1px;
 }
 
-.picture {
+img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
 .container {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 414px;
-
+  
+    @include respondTo('pre-unisonus') {
+    max-width: 414px;
+  }
+  
   @include respondTo('unisonus') {
     width: 414px;
   }
 
   @include respondTo('diapente') {
     width: 1024px;
-    padding-left: 47px;
-    padding-right: 47px;
+    padding: 0 47px;
   }
 
   @include respondTo('diapason') {
     width: 1280px;
-    padding-left: 85px;
-    padding-right: 85px;
+    padding: 0 85px;
   }
 }
