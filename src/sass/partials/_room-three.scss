@@ -21,6 +21,16 @@
   }
 }
 
+.room-three__wrapper-swiper {
+  margin-top: -24px;
+  @include respondTo('diapente') {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 .room-three__tagline {
   text-align: end;
   padding-top: 32px;
@@ -60,7 +70,6 @@
   letter-spacing: 0.05em;
   color: #000000;
   @extend %marginPaddingReset;
-
 
   @include respondTo('diapente') {
     padding-right: 26px;
@@ -105,8 +114,11 @@
 }
 
 .button-wrapper {
+  margin-top: -27px;
   @include respondTo('diapente') {
-    display: inline-block;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -130,7 +142,7 @@
   }
 
   @include respondTo('diapason') {
-    margin-top: 63px;
+    // margin-top: 63px;
   }
 }
 

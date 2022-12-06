@@ -1,104 +1,25 @@
 .restaurant-about {
-  position: relative;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  display: block;
-}
-
-.container__restaurant-about {
-  display: block;
-  color: mix(getColor('primary-inversed'), getColor('primary'), 37.3%);
-  display: block;
-  position: relative;
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: $text-font-stack;
-  z-index: 2;
-  @extend %list;
-
-  @include respondTo('tritonus') {
-    max-width: 414px;
-  }
-
-  @include respondTo('diapente') {
-    padding: 0 47px;
-    max-width: 1024px;
-  }
-
-  @include respondTo('diapason') {
-    padding: 0 85px;
-    max-width: 1280px;
-  }
-}
-
-.lines {
-  position: absolute;
-  display: block;
-  left: 36%;
-  top: 0;
-  transform: translateX(-50%);
-  height: 100%;
-  width: 0.5px;
-  z-index: -1;
-}
-
-.lines:before,
-.lines:after {
-  position: absolute;
-  content: '';
-  top: 0;
-  background: #bababa;
-  width: 1px;
-  height: 100%;
-}
-
-// .lines:before {
-//   opacity: 1;
-//   left: -25vw;
-// }
-
-.lines:after {
-  opacity: 1;
-  left: 30vw;
-  background: #bababa;
-}
-
-.my-container {
-  padding-left: 0;
-}
-
-.my-container--right {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.restaurant-about__title {
   padding-top: 16px;
-  margin-top: 0;
-  margin-bottom: 12px;
-  color: mix(getColor('primary-inversed'), getColor('primary'), 78%);
-
-  @include respondTo('diapente') {
-    font-size: 32px;
-    margin-bottom: 4px;
-    padding-top: 120px;
-    padding-bottom: 32px;
-  }
+  padding-bottom: 16px;
 }
 
-.restaurant-about__subtitle {
+.restaurant-about__container {
+  position: relative;
+}
+
+.restaurant-about__tagline {
+  margin-bottom: 12px;
+}
+
+.restaurant-about__brand {
   display: block;
   margin-right: auto;
-  margin-left: 0;
-  max-width: 127px;
 
   @include respondTo('unisonus') {
     margin-bottom: 16px;
   }
 
   @include respondTo('diapente') {
-    max-width: 202px;
     margin-bottom: 24px;
   }
 
@@ -268,34 +189,10 @@
 }
 
 .restaurant-about__icon {
-  gap: 32px;
-  margin-bottom: 20px;
+  display: block;
+  margin-left: 301px;
 }
 
-.wrapper-mask {
-  display: flex;
-  margin-bottom: 32px;
-}
-
-.restaurant-about__swiper {
-  width: 245px;
-  height: 245px;
-
-  @include respondTo('diapente') {
-    border-radius: 2px;
-    width: 254px;
-    height: 254px;
-    margin-left: 489px;
-  }
-}
-
-.swiper-slide {
-  margin-top: 32px;
-  margin-bottom: 20px;
-  margin-left: 84px;
-  margin-right: 85px;
-}
-
-.my-container--righ {
-  margin-left: 0;
+.container__restaurant-about {
+  display: block;
 }
