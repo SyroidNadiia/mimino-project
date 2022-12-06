@@ -1,6 +1,9 @@
 .room-hero {
   position: relative;
+  padding-top: 350px;
+  padding-bottom: 14px;
   max-width: 414px;
+  height: 740px;
   margin: 0 auto;
 
   background-position: center;
@@ -41,146 +44,93 @@
 }
 
 .room-hero__link {
-  @extend %link;
+  position: absolute;
   top: 64px;
   right: 15px;
-
   @extend %link;
   padding-left: 6px;
   padding-right: 3px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   column-gap: 8px;
-
   max-width: 210px;
   height: 47px;
-
   font-weight: 400;
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.01em;
   cursor: pointer;
-
   color: scale-color($color: getColor('primary-inversed'), $blackness: 11.5%);
   fill: getColor('accent');
-
   border: 1px solid transparentize($color: getColor('accent'), $amount: 0.3);
   border-radius: 2px;
-  @include respondTo('tritonus') {
-    position: absolute;
-  }
-  @include respondTo('diapente') {
-    top: 625px;
-    left: 47px;
-    margin-bottom: 24px;
-  }
 }
-
 .room-hero__icon {
   width: 20px;
   height: 20px;
 }
-
 .room-hero__swiper {
   @extend %list;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .room-hero__swiper_margin {
   margin-bottom: 93px;
 }
-
 .room-hero__swiper-button {
   @extend %marginPaddingReset;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 40px;
   height: 40px;
-
   background-color: transparentize($color: getColor('primary'), $amount: 0.35);
   fill: getColor('accent');
   border: none;
 }
-
 .room-hero__title {
   @extend %marginPaddingReset;
   font-family: $text-times-font;
-  padding-top: 381px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.14;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-
   color: getColor('primary-inversed');
 }
-
 .room-hero__title_margin {
   margin-bottom: 14px;
 }
-
 .room-hero__title_transform {
   text-transform: lowercase;
 }
-
 .hero-room__descr {
   @extend %marginPaddingReset;
-
   max-width: 325px;
-
   font-weight: 700;
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-
   color: getColor('primary-inversed');
 }
-
 .hero-room__descr_margin {
-  margin-bottom: 30px;
-}
-.room-hero__control {
-  display: inline-flex;
+  margin-bottom: 16px;
 }
 .room-hero__social {
   @extend %list;
-  padding-bottom: 17px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   row-gap: 8px;
-  @include respondTo('diapente') {
-    display: flex;
-    gap: 23px;
-    margin-left: 41px;
-    padding-bottom: 39px;
-  }
-  @include respondTo('diapason') {
-    display: none;
-  }
 }
-
 .room-hero__icon {
   fill: transparentize($color: getColor('accent'), $amount: 0.3);
 }
-
 .room-hero__button {
-  @include buttonSize(
-    $price-button: true,
-    $padding-top: 14px,
-    $padding-bottom: 14px
-  );
+  @include buttonSize($price-button: true, $padding-top: 14px, $padding-bottom: 14px);
   @include buttonPlace($transparent-button: true);
   position: absolute;
   right: 73px;
   bottom: 40px;
-  @include respondTo('diapente') {
-    bottom: 64px;
-  }
 }
