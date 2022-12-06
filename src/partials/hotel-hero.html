@@ -1,46 +1,56 @@
-<section class="hotel-hero">
+<section class="hotel-hero section section__hero">
   <div class="container">
-    <h1 class="hotel-hero__header" lang="en">Mimiho</h1>
-    <p class="hotel-hero__text">Готель</p>
-    <div class="hotel-hero__interactive">
-      <!-- <div class="hotel-hero__adress"></div> -->
-      <a
-        class="hotel-hero__adress"
-        href="https://goo.gl/maps/zX9kuocd2LKTX8j67"
-        target="_blank"
-      >
-        <svg width="24" height="24">
-          <use href="/src/images/icons.svg#icon-location"></use>
+    <h1 class="hotel-hero__title main-title" lang="en">Mimiho</h1>
+    <h2 class="hotel-hero__subtitle subtitle">Готель</h2>
+    <div class="hero-wrapper">
+      <div class="location">
+        <svg class="location__icon" width="20" height="20">
+          <use href="./images/icons.svg#icon-location"></use>
         </svg>
-        <p class="hotel-hero__adress-link">
-          Україна, м. Полтава, вул. Маршала Бірюзова, 15
-        </p>
-      </a>
-      <div class="hotel-hero__button-settings">
-        <button class="hotel-hero__button" type="button">
-          Забронювати номер
-        </button>
-        <button class="hotel-hero__button" type="button">
-          Переглянути ціни
-        </button>
+        <a
+          class="location__link"
+          href="https://goo.gl/maps/zX9kuocd2LKTX8j67"
+          rel="noreferrer nofollow noopener"
+          target="_blank"
+        >
+          Україна, м. Полтава, вул. Маршала Бірюзова, 15</a
+        >
       </div>
+      <ul class="hero-buttons">
+        <li class="hero-buttons__item">
+          <button class="button hero-btn" type="button">
+            Забронювати номер
+          </button>
+        </li>
+        <li class="hero-buttons__item">
+          <button class="button button--booking" type="button">
+            Переглянути ціни
+          </button>
+        </li>
+      </ul>
     </div>
-    <div class="hotel-hero__icons-block">
-      <a class="hotel-hero__icons-unit" href="#">
-        <svg width="24" height="24">
-          <use href="/src/images/icons.svg#icon-instagram"></use>
-        </svg>
-      </a>
-      <a class="hotel-hero__icons-unit" href="#">
-        <svg width="24" height="24">
-          <use href="/src/images/icons.svg#icon-facebook"></use>
-        </svg>
-      </a>
-      <a class="hotel-hero__icons-unit" href="#">
-        <svg width="24" height="24">
-          <use href="/src/images/icons.svg#icon-twitter"></use>
-        </svg>
-      </a>
-    </div>
+    <ul class="socials hotel-hero__socials">
+      <li>
+        <a href="#">
+          <svg class="socials__icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <svg class="socials__icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <svg class="socials__icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-telegram"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
   </div>
 </section>

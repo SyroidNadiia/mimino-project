@@ -1,11 +1,13 @@
 .button-reserve {
+    width: 100%;
     font-family: inherit;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.219;
-    text-transform: capitalize;
+    text-transform: uppercase;
     color: getColor('primary-inversed');
-    background-color: getColor('primary');
+    cursor: pointer;
+    @include transition(color, background-color);
 
     &:focus, &:hover, &:active {
         background-color: getColor('accent');
