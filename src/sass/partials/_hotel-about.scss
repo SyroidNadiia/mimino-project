@@ -13,6 +13,7 @@ text-align: right;
 display: block;
 margin-left: auto;
 
+
 @include respondTo('pre-unisonus') {
   margin-bottom: 4vw;
 }
@@ -24,6 +25,7 @@ margin-left: auto;
 @include respondTo('diapente') {
   margin-bottom: 24px;
 }
+
 
 @include respondTo('diapason') {
   color: #828282;

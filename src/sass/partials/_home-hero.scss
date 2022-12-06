@@ -33,6 +33,7 @@
 .home-hero__title {
   margin-bottom: 24px;
 
+
   @include respondTo('diapente') {
     margin-bottom: 16px;
   }
