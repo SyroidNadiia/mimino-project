@@ -2,39 +2,16 @@
     position: relative;
     padding-top: 18px;
     padding-bottom: 20px;
-    background-color: #fffdee;
-
-    @include respondTo('diapente') {
-        padding-top: 120px;
-        padding-bottom: 32px;
-    }
-
-    @include respondTo('diapason') {
-        padding-bottom: 50px;
-    }
 }
 
-.hotel-about__title {
-  margin-top: 0;
+.hotel-about__tagline {
   margin-bottom: 6px;
   text-align: right;
-
-  color: #b4b4b4;
-
-  @include respondTo('diapente') {
-    font-size: 32px;
-    margin-bottom: 4px;
-  }
 }
 
-.hotel-about__logo {
+.hotel-about__brand {
   display: block;
-  margin-top: 0;
   margin-left: auto;
-  margin-right: 0;
-  padding: 0;
-  max-width: 127px;
-  color: #494848;
 
   @include respondTo('pre-unisonus') {
     margin-bottom: 4vw;
@@ -45,7 +22,6 @@
   }
 
   @include respondTo('diapente') {
-    max-width: 204px;
     margin-bottom: 24px;
   }
 

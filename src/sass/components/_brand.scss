@@ -1,6 +1,7 @@
 .brand {
   font-family: $logo-font;
   @extend %marginPaddingReset;
+  width: 127px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 40px;
@@ -9,6 +10,7 @@
   color: scale-color(getColor('primary'), $saturation: 1%, $lightness: 28.5%);
 
   @include respondTo('diapente') {
+    width: 202px;
     font-size: 64px;
   }
 }
