@@ -3,4 +3,11 @@
     @extend %marginPaddingReset;
     font-size: 20px;
     line-height: 1.15;
-}
+    color: #b4b4b4;
+    // color: mix(getColor('primary-inversed'), getColor('primary'), 78%);
+  
+    @include respondTo('diapente') {
+      font-size: 32px;
+      margin-bottom: 4px;
+    }
+  }

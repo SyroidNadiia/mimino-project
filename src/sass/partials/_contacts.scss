@@ -1,12 +1,14 @@
 .contacts {
-    padding: 32px 0;
+    padding-top: 36px;
+    padding-bottom: 32px;
 
     @include respondTo('diapente') {
-        padding: 56px 0 40px;
+        padding-top: 56px;
+        padding-bottom: 44px;
     } 
     
     @include respondTo('diapason') {
-        padding: 56px 0 74px;
+        padding-bottom: 73px;
     }
 }
 
@@ -17,27 +19,7 @@
     }
 }
 
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 414px;
-  
-    @include respondTo('diapente') {
-      width: 1024px;
-      padding-left: 47px;
-      padding-right: 47px;
-    }
-  
-    @include respondTo('diapason') {
-      width: 1280px;
-      padding-left: 85px;
-      padding-right: 85px;
-    }
-}
-
-.contacts__brand{
+.contacts__brand {
     margin: 4px 0 12px 0px;
 
     @include respondTo('diapente') {
@@ -46,20 +28,13 @@
     }
 
     @include respondTo('diapason') {
-        margin-top: 0;
         margin-bottom: 16px;
     }    
 }
 
 .contacts__subtitle {
-    font-family: $text-font-stack;
-    font-style: normal;
-    font-weight: 600;
     font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
     color: #5F5F5F;
-    margin-top: 0;
     margin-bottom: 16px;
 
     @include respondTo('diapente') {
@@ -68,12 +43,11 @@
 
     @include respondTo('diapason') {
         font-size: 20px;
-        line-height: 1.2;
         margin-bottom: 16px;
     }    
 }
 
-.contacts__list{
+.contacts__list {
     @extend %list;
     margin-bottom: 32px;
 
@@ -86,7 +60,7 @@
     } 
 }
 
-.contacts__item{
+.contacts__item {
     display: flex;
     align-items: center;
 
@@ -110,7 +84,7 @@
     }
 }
 
-.contacts__department{
+.contacts__department {
     position: absolute;
     display: flex;
     align-items: center;
@@ -176,6 +150,47 @@
     fill: getColor('accent');
     width: 24px;
     height: 24px;
+}
+
+.contacts__location {
+    display: flex;
+    background-color: getColor('primary-inversed');
+    padding-right: 16px;
+
+    @include respondTo('diapente') {
+        padding-right: 0;
+    }
+}
+
+.contacts__link {
+    @extend %link;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contacts__icons {
+    fill: getColor('accent');
+}
+
+.contacts__address {
+    max-width: 183px;
+    font-family: $text-font-stack;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: #494848;
+    margin-left: 12px;
+
+    @include respondTo('diapente') {
+        max-width: 233px;
+    }
+
+    @include respondTo('diapason') {
+        color: #828282;
+    }
 }
 
 .contacts__box-map{

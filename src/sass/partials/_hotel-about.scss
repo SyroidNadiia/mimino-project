@@ -1,208 +1,184 @@
 .hotel-about {
-    position: relative;
-    padding-top: 18px;
-    padding-bottom: 20px;
-    background-color: #fffdee;
-
-    @include respondTo('diapente') {
-        padding-top: 120px;
-        padding-bottom: 32px;
-    }
-
-    @include respondTo('diapason') {
-        padding-bottom: 50px;
-    }
+  position: relative;
+  padding-top: 18px;
+  padding-bottom: 20px;
 }
 
-.hotel-about__title {
-  margin-top: 0;
-  margin-bottom: 6px;
-  text-align: right;
-
-  color: #b4b4b4;
-
-  @include respondTo('diapente') {
-    font-size: 32px;
-    margin-bottom: 4px;
-  }
+.hotel-about__tagline {
+margin-bottom: 6px;
+text-align: right;
 }
 
-.hotel-about__logo {
-  display: block;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: 0;
-  padding: 0;
-  max-width: 127px;
-  color: #494848;
+.hotel-about__brand {
+display: block;
+margin-left: auto;
 
-  @include respondTo('pre-unisonus') {
-    margin-bottom: 4vw;
-  }
+@include respondTo('pre-unisonus') {
+  margin-bottom: 4vw;
+}
 
-  @include respondTo('unisonus') {
-    margin-bottom: 16px;
-  }
+@include respondTo('unisonus') {
+  margin-bottom: 16px;
+}
 
-  @include respondTo('diapente') {
-    max-width: 204px;
-    margin-bottom: 24px;
-  }
+@include respondTo('diapente') {
+  margin-bottom: 24px;
+}
 
-  @include respondTo('diapason') {
-    color: #828282;
-  }
+@include respondTo('diapason') {
+  color: #828282;
+}
 }
 
 .hotel-about-article-one {
-  @include respondTo('pre-unisonus') {
-    margin-bottom: 8vw;
-  }
+@include respondTo('pre-unisonus') {
+  margin-bottom: 8vw;
+}
 
-  @include respondTo('tritonus') {
-    margin-bottom: 32px;
-  }
+@include respondTo('tritonus') {
+  margin-bottom: 32px;
+}
 
-  @include respondTo('diapente') {
-    margin-bottom: 142px;
-  }
+@include respondTo('diapente') {
+  margin-bottom: 142px;
+}
 
-  @include respondTo('diapason') {
-    margin-bottom: 162px;
-  }
+@include respondTo('diapason') {
+  margin-bottom: 162px;
+}
 }
 
 .hotel-about-article-one__description {
-  margin-left: auto;
+margin-left: auto;
 
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+line-height: 1.25;
+letter-spacing: 0.02em;
 
-  color: #5f5f5f;
+color: #5f5f5f;
 
-  @include respondTo('pre-unisonus') {
-    width: 58vw;
-    margin-bottom: 7vw;
-    font-size: 9px;
-  }
+@include respondTo('pre-unisonus') {
+  width: 58vw;
+  margin-bottom: 7vw;
+  font-size: 9px;
+}
 
-  @include respondTo('unisonus') {
-    width: 242px;
-    margin-bottom: 28px;
-    font-size: 12px;
-  }
+@include respondTo('unisonus') {
+  width: 242px;
+  margin-bottom: 28px;
+  font-size: 12px;
+}
 
-  @include respondTo('diapente') {
-    font-size: 16px;
-    width: 419px;
-    margin-bottom: 0px;
-  }
+@include respondTo('diapente') {
+  font-size: 16px;
+  width: 419px;
+  margin-bottom: 0px;
+}
 
-  @include respondTo('diapason') {
-    width: 488px;
-  }
+@include respondTo('diapason') {
+  width: 488px;
+}
 }
 
 .hotel-about-article-one__img {
-  display: block;
+display: block;
 
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-  overflow: hidden;
+box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+border-radius: 2px;
+overflow: hidden;
 
-  @include respondTo('pre-unisonus') {
-    max-width: 63%;
-  }
+@include respondTo('pre-unisonus') {
+  max-width: 63%;
+}
 
-  @include respondTo('unisonus') {
-    max-width: 244px;
-  }
+@include respondTo('unisonus') {
+  max-width: 244px;
+}
 
-  @include respondTo('diapente') {
-    position: absolute;
-    top: -144px;
-    right: 512px;
-    max-width: 400px;
-  }
+@include respondTo('diapente') {
+  position: absolute;
+  top: -144px;
+  right: 512px;
+  max-width: 400px;
+}
 
-  @include respondTo('diapason') {
-    right: 640px;
-    max-width: 460px;
-  }
+@include respondTo('diapason') {
+  right: 640px;
+  max-width: 460px;
+}
 }
 
 .hotel-about-article-two {
-  display: flex;
-  justify-content: end;
-  align-items: center;
+display: flex;
+justify-content: end;
+align-items: center;
 
-  @include respondTo('pre-unisonus') {
-    margin-bottom: 8vw;
-  }
+@include respondTo('pre-unisonus') {
+  margin-bottom: 8vw;
+}
 }
 
 .hotel-about-article-two__description {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+line-height: 1.25;
+letter-spacing: 0.02em;
 
-  color: #c79002;
+color: #c79002;
 
-  @include respondTo('pre-unisonus') {
-    width: 42%;
-    font-size: 9px;
-    margin-right: 5vw;
-  }
+@include respondTo('pre-unisonus') {
+  width: 42%;
+  font-size: 9px;
+  margin-right: 5vw;
+}
 
-  @include respondTo('unisonus') {
-    width: 163px;
-    font-size: 12px;
-    margin-right: 21px;
-  }
+@include respondTo('unisonus') {
+  width: 163px;
+  font-size: 12px;
+  margin-right: 21px;
+}
 
-  @include respondTo('diapente') {
-    font-size: 16px;
-    width: 312px;
-    margin-right: 48px;
-  }
+@include respondTo('diapente') {
+  font-size: 16px;
+  width: 312px;
+  margin-right: 48px;
+}
 
-  @include respondTo('diapason') {
-    width: 311px;
-    margin-right: 45px;
-    margin-bottom: 120px;
-  }
+@include respondTo('diapason') {
+  width: 311px;
+  margin-right: 45px;
+  margin-bottom: 120px;
+}
 }
 
 .hotel-about-article-two__img {
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-  overflow: hidden;
+box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+border-radius: 2px;
+overflow: hidden;
 
-  @include respondTo('pre-unisonus') {
-    width: 48%;
-  }
+@include respondTo('pre-unisonus') {
+  width: 48%;
+}
 
-  @include respondTo('unisonus') {
-    max-width: 200px;
-  }
+@include respondTo('unisonus') {
+  max-width: 200px;
+}
 
-  @include respondTo('diapente') {
-    max-width: 350px;
-  }
+@include respondTo('diapente') {
+  max-width: 350px;
+}
 
-  @include respondTo('diapason') {
-    max-width: 460px;
-  }
+@include respondTo('diapason') {
+  max-width: 460px;
+}
 }
 
 .new-slider {
-  overflow: hidden;
-  position: absolute;
-  background-color: tomato;
-  width: 200px;
+overflow: hidden;
+position: absolute;
+background-color: tomato;
+width: 200px;
 }
