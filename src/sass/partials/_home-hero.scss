@@ -2,8 +2,6 @@
   position: relative;
   max-width: 414px;
   margin: 0 auto;
-  max-width: 414px;
-  margin: auto;
 
   &__canvas {
     background-position: center;
@@ -157,6 +155,9 @@
       display: inline-flex;
     }
   }
+  &__icon {
+    fill: getColor('accent-darker');
+  }
 }
 .home-hero__list {
   @extend %list;
@@ -182,14 +183,15 @@
     margin-right: 13px;
   }
 }
+
 .home-hero__address-link {
   @extend %link;
   font-family: $text-font-stack;
   display: flex;
   width: 210px;
   height: 47px;
-  color: #e5e5e5;
-  border: 1px solid getColor('accent-darken');
+  color: getColor('primary-inversed');
+  border: 1px solid getColor('accent');
   fill: getColor('accent');
   border-radius: 2px;
   align-items: center;
@@ -221,11 +223,11 @@
   @include respondTo('diapente') {
     display: flex;
     column-gap: 40px;
-}
+  }
 
   @include respondTo('diapente') {
-    column-gap: 60px;  
-}
+    column-gap: 60px;
+  }
 }
 
 .home-hero__item {
@@ -237,12 +239,33 @@
 }
 
 .home-hero__btn {
-  @include buttonSize($section-button: true, $padding-top: 15px, $padding-bottom: 13px
+  @include buttonSize(
+    $section-button: 'true',
+    $padding-top: 15px,
+    $padding-bottom: 13px
   );
   margin-left: auto;
   margin-right: auto;
   display: block;
+  @include buttonPlace($transparent-button: 'true');
+  @include respondTo('tritonus') {
+    margin-bottom: 24px;
+  }
+}
+.home-hero__btn-bottom {
+  @include buttonSize(
+    $section-button: true,
+    $padding-top: 15px,
+    $padding-bottom: 13px
+  );
+  margin-left: auto;
+  margin-right: auto;
+
+  display: block;
   @include buttonPlace($transparent-button: true);
+  @include respondTo('tritonus') {
+    margin-bottom: 34px;
+  }
 }
 
 // .home-hero__address-link:not(:lang(ae)):not(:lang(ar)):not(:lang(arc)):not(
