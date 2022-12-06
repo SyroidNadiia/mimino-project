@@ -97,12 +97,9 @@
 $enable-rounded: true;
 
 .amenities-button {
-  @include buttonSize(
-    $max-width: 434px,
-    $padding-top: 18px,
-    $padding-bottom: 18px
-  );
-  @include buttonReserve();
+  @include buttonSize($width: 434px, $padding-top: 18px, $padding-bottom: 18px);
+  @include buttonReserve;
+  @include buttonPlace;
   display: flex;
   justify-content: center;
 
@@ -133,7 +130,7 @@ $enable-rounded: true;
   letter-spacing: 0.02em;
   cursor: pointer;
 
-  color: getColor('accent-darken');
+  color: getColor('accent-darker');
   background-color: inherit;
   border: none;
 
