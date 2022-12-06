@@ -1,6 +1,11 @@
 .amenities {
   padding-top: 32px;
   padding-bottom: 32px;
+
+  @include respondTo('diapente') {
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
 }
 
 .amenities-title {
@@ -13,6 +18,24 @@
   line-height: 1.16;
 }
 
+.amenities-titlel__descr {
+  @include respondTo('diapente') {
+    width: 757px;
+  }
+}
+
+.amenities__descr_width {
+  @include respondTo('diapente') {
+    width: 400px;
+  }
+}
+
+.amenities__descr_bigest-width {
+  @include respondTo('diapente') {
+    width: 450px;
+  }
+}
+
 .amenities-title_margin {
   margin-bottom: 16px;
 }
@@ -23,6 +46,17 @@
   row-gap: 16px;
 
   margin-bottom: 32px;
+
+  @include respondTo('diapente') {
+    flex-direction: row;
+    column-gap: 80px;
+  }
+}
+
+.amenities-list_flex-gap {
+  @include respondTo('diapente') {
+    column-gap: 30px;
+  }
 }
 
 .amenities__descr {
@@ -38,6 +72,12 @@
 
 .amenities__descr_margin {
   margin-bottom: 32px;
+}
+
+.amenities__descr_tablet-margin {
+  @include respondTo('diapente') {
+    margin-bottom: 40px;
+  }
 }
 
 .amenities-list {
@@ -57,21 +97,30 @@
 $enable-rounded: true;
 
 .amenities-button {
-  @include buttonSize($max-width: 434px, $padding-top: 18px, $padding-bottom: 18px);
-  @include buttonReserve();
+  @include buttonSize($width: 434px, $padding-top: 18px, $padding-bottom: 18px);
+  @include buttonReserve;
+  @include buttonPlace;
   display: flex;
   justify-content: center;
+
+  @include respondTo('diapente') {
+    font-size: 24px;
+    line-height: 1.2;
+  }
 }
 
 .amenities-button_margin {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+
+  @include respondTo('diapente') {
+    margin-bottom: 0px;
+  }
 }
 
 .amenities-button-return {
   @extend %icon;
 
   display: flex;
-  justify-content: center;
   align-items: center;
   column-gap: 12px;
 
@@ -81,9 +130,18 @@ $enable-rounded: true;
   letter-spacing: 0.02em;
   cursor: pointer;
 
-  color: getColor('accent');
+  color: getColor('accent-darker');
   background-color: inherit;
   border: none;
+
+  @include respondTo('tritonus') {
+    margin: 0 auto;
+  }
+
+  @include respondTo('diapente') {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 
   &:focus,
   &:hover {
@@ -92,4 +150,13 @@ $enable-rounded: true;
   }
 
   @include transition(fill, color);
+}
+
+.amenities-button-flex {
+  @include respondTo('diapente') {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    row-gap: 32px;
+  }
 }

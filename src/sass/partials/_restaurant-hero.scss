@@ -1,0 +1,65 @@
+.rest-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url('../images/rest-hero-phone-1x.jpg');
+
+  @media (min-resolution: 2dppx),
+    (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/rest-hero-phone-2x.jpg);
+  }
+  
+  @include respondTo('diapente') {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/rest-hero-tablet-1x.jpg);
+  }
+
+  @media (min-resolution: 2dppx),
+    (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/rest-hero-tablet-2x.jpg);
+  }
+
+  @include respondTo('diapason') {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/rest-hero-desktop-1x.jpg);
+  }
+
+  @media (min-resolution: 2dppx),
+    (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('../images/rest-hero-desktop-2x.jpg');
+  }
+}
+
+.rest-hero__title {
+  margin-bottom: 20px;
+
+  @include respondTo('diapente') {
+    margin-bottom: 16px;
+  }
+  
+  @include respondTo('diapason') {
+    margin-bottom: 32px;
+  }
+
+.rest-hero__subtitle {
+  font-size: 16px;
+  margin-bottom: 44px;
+  color: getColor('primary-inversed');
+
+  @include respondTo('diapente') {
+    font-size: 20px;
+    margin-bottom: 56px;
+  }
+
+  @include respondTo('diapason') {
+    margin-bottom: 64px;
+  }
+}
+
+.restaurant-hero__socials {
+  gap: 23px;
+}

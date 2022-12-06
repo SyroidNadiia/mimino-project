@@ -19,13 +19,9 @@ ul {
     padding: 72px 0 48px;
   }
   &__title {
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.15;
     color: #b4b4b4;
     margin-bottom: 8px;
+    
     @include respondTo('diapente') {
       font-size: 32px;
       line-height: 1.16;
@@ -33,18 +29,9 @@ ul {
     }
   }
   &__brand {
-    font-family: 'Film P3';
-    font-style: normal;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.08;
-    letter-spacing: 0.3em;
     color: #494848;
     margin-bottom: 32px;
     @include respondTo('diapente') {
-      font-size: 64px;
-      line-height: 1.08;
       margin-bottom: 62px;
     }
     @include respondTo('diapason') {

@@ -1,0 +1,45 @@
+.location {
+  border: 1px solid getColor('accent');
+  border-radius: 2px;
+  padding: 8px;
+  width: 210px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  fill: getColor('accent');
+
+  @include respondTo('tritonus') {
+    position: absolute;
+    top: 64px;
+    right: 15px;
+  }
+
+  @include respondTo('diapente') {
+    width: 285px;
+  }
+}
+
+.location__link {
+  @extend %link;
+  font-family: $text-font-stack;
+  font-size: 12px;
+  line-height: 1.219;
+  letter-spacing: 0.01em;
+  color: #e5e5e5;
+  text-align: left;
+
+  @include respondTo('diapente') {
+    font-size: 16px;
+  }
+}
+
+.location__icon {
+  fill: getColor('accent');
+  margin-left: 6px;
+
+  @include respondTo('diapente') {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+  }
+}
