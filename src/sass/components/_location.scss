@@ -1,40 +1,45 @@
 .location {
-    display: flex;
-    background-color: getColor('primary-inversed');
-    padding-right: 16px;
+  border: 1px solid getColor('accent');
+  border-radius: 2px;
+  padding: 8px;
+  width: 210px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  fill: getColor('accent');
 
-    @include respondTo('diapente') {
-        padding-right: 0;
-    }
+  @include respondTo('tritonus') {
+    position: absolute;
+    top: 64px;
+    right: 15px;
+  }
+
+  @include respondTo('diapente') {
+    width: 285px;
+  }
 }
 
-.location__location {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    cursor: pointer;
+.location__link {
+  @extend %link;
+  font-family: $text-font-stack;
+  font-size: 12px;
+  line-height: 1.219;
+  letter-spacing: 0.01em;
+  color: #e5e5e5;
+  text-align: left;
+
+  @include respondTo('diapente') {
+    font-size: 16px;
+  }
 }
 
 .location__icon {
-    fill: getColor('accent');
-}
+  fill: getColor('accent');
+  margin-left: 6px;
 
-.location__address{
-    max-width: 183px;
-    font-family: $text-font-stack;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.01em;
-    color: #494848;
-    margin-left: 12px;
-
-    @include respondTo('diapente') {
-        max-width: 233px;
-    }
-
-    @include respondTo('diapason') {
-        color: #828282;
-    }
+  @include respondTo('diapente') {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+  }
 }
