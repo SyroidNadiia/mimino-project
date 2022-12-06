@@ -70,6 +70,7 @@
 
 .my-container--right {
   padding-left: 0;
+  padding-right: 0;
 }
 
 .restaurant-about__title {
@@ -279,6 +280,13 @@
 .restaurant-about__swiper {
   width: 245px;
   height: 245px;
+
+  @include respondTo('diapente') {
+    border-radius: 2px;
+    width: 254px;
+    height: 254px;
+    margin-left: 489px;
+  }
 }
 
 .swiper-slide {
