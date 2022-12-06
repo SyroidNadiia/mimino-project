@@ -1,152 +1,6 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-.rest-location__link {
-  @extend %link;
-  font-family: $text-font-stack;
-  display: flex;
-  width: 210px;
-  height: 47px;
-  color: getColor('primary-inversed');
-  border: 1px solid getColor('accent');
-  fill: getColor('accent');
-  border-radius: 2px;
-  align-items: center;
-  padding-left: 6px;
-
-  font-size: 12px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
-
-  @include respondTo('tritonus') {
-    position: absolute;
-    top: 65px;
-    right: 15px;
-  }
-  @include respondTo('diapente') {
-    width: 285px;
-    height: 56px;
-    font-size: 16px;
-    padding-left: 10px;
-    padding-right: 7px;
-    margin-right: 137px;
-  }
-  @include respondTo('diapason') {
-    margin-right: 297px;
-  }
-}
-
-.rest-location__icon {
-  fill: getColor('accent');
-  margin-right: 8px;
-  margin-left: 6px;
-}
-
-.rest-hero__title {
-  width: 303px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 181px;
-
-  text-transform: uppercase;
-  font-family: $logo-font;
-
-  font-weight: 700;
-  font-size: 96px;
-  line-height: 1.1;
-  letter-spacing: 0.3em;
-  color: getColor('primary-inversed');
-  margin-bottom: 20px;
-}
-
-.rest-hero__caption {
-  font-family: 'Times New Roman';
-  font-weight: 700;
-  font-size: 31px;
-  line-height: 1.2;
-  width: 317px;
-  margin-left: auto;
-  margin-right: auto;
-  color: getColor('primary-inversed');
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 113px;
-}
-
-.rest-hero__name {
-  width: 83px;
-  margin-left: auto;
-  margin-right: auto;
-  letter-spacing: 0.05em;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  color: getColor('primary-inversed');
-  margin-bottom: 44px;
-}
-
-.rest-hero__button {
-  @include buttonSize(
-    $section-button: true,
-    $padding-top: 15px,
-    $padding-bottom: 13px
-  );
-  @include buttonPlace($transparent-button: true);
-}
-
-.rest-hero__buttons-set {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: center;
-  margin-bottom: 102px;
-}
-
-.rest-hero__list {
-  @extend %list;
-  display: flex;
-  gap: 23px;
-  padding-bottom: 15px;
-
-  @include respondTo('tritonus') {
-    display: none;
-  }
-}
-
-.rest-hero__icon {
-  fill: getColor('accent');
-}
-
-.container {
-  position: relative;
-}
-
 .rest-hero {
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.rest-hero__backdrop {
-  margin-left: auto;
-  margin-right: auto;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(../images/rest-hero-phone-1x.jpg);
+    url('../images/rest-hero-phone-1x.jpg');
 
   @media (min-resolution: 2dppx),
     (min-device-pixel-ratio: 2),
@@ -154,9 +8,8 @@ ul {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/rest-hero-phone-2x.jpg);
   }
-
-  @media (min-width: 1024px) {
-    max-width: 1024px;
+  
+  @include respondTo('diapente') {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/rest-hero-tablet-1x.jpg);
   }
@@ -168,8 +21,7 @@ ul {
       url(../images/rest-hero-tablet-2x.jpg);
   }
 
-  @media (min-width: 1280px) {
-    max-width: 1280px;
+  @include respondTo('diapason') {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/rest-hero-desktop-1x.jpg);
   }
@@ -178,59 +30,36 @@ ul {
     (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../images/rest-hero-desktop-2x.jpg);
+      url('../images/rest-hero-desktop-2x.jpg');
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .rest-hero__title {
-    width: 404px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 128px;
+.rest-hero__title {
+  margin-bottom: 20px;
+
+  @include respondTo('diapente') {
     margin-bottom: 16px;
   }
-
-  .rest-hero__buttons-set {
-    flex-direction: row;
-    align-items: flex-end;
-    margin-bottom: 0px;
-    gap: 40px;
+  
+  @include respondTo('diapason') {
+    margin-bottom: 32px;
   }
 
-  .rest-hero__caption {
-    width: 358px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.1;
-    margin-bottom: 144px;
-    font-size: 35px;
-  }
+.rest-hero__subtitle {
+  font-size: 16px;
+  margin-bottom: 44px;
+  color: getColor('primary-inversed');
 
-  .box {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-bottom: 25px;
-  }
-
-  .rest-hero__name {
-    width: 104px;
-    margin-left: auto;
-    margin-right: auto;
+  @include respondTo('diapente') {
     font-size: 20px;
     margin-bottom: 56px;
   }
 
-  .rest-hero__name {
+  @include respondTo('diapason') {
     margin-bottom: 64px;
   }
+}
 
-  .rest-hero__title {
-    margin-bottom: 32px;
-  }
-
-  .box {
-    margin-left: 0px;
-  }
+.restaurant-hero__socials {
+  gap: 23px;
 }
