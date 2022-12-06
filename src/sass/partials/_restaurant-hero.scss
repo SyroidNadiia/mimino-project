@@ -8,7 +8,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/rest-hero-phone-2x.jpg);
   }
-  
+
   @include respondTo('diapente') {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/rest-hero-tablet-1x.jpg);
@@ -40,10 +40,11 @@
   @include respondTo('diapente') {
     margin-bottom: 16px;
   }
-  
+
   @include respondTo('diapason') {
     margin-bottom: 32px;
   }
+}
 
 .rest-hero__subtitle {
   font-size: 16px;
