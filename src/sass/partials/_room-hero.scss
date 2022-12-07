@@ -19,15 +19,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/room-hero/room-hero.jpg),
-    linear-gradient(#000000a6, #000000a6);
+  // background-image: url('../images/room-hero/room-hero.jpg'),
+  //   linear-gradient(#000000a6, #000000a6);
 
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url(../images/room-hero/room-hero-2x.jpg),
-      linear-gradient(#000000a3, #000000a3);
+    // background-image: url('../images/room-hero/room-hero-2x.jpg'),
+    //   linear-gradient(#000000a3, #000000a3);
 
   }
 
