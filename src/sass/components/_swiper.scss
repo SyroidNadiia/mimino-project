@@ -134,15 +134,17 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-  width: 32px;
-  height: 32px;
-  border-color: transparent;
-  background-color: transparent;
+  @extend %icon;
+  top: calc(100% - 20px);
+  fill: getColor('primary');
+  @include transition(fill);
+  &:hover {
+    fill: getColor('accent');
+  }
 }
 
 .swiper-button-prev {
   left: 0px;
-  background-image: url('./../images/swiper/arrow-left.svg');
 
   @include respondTo('diapente') {
     right: calc(108px + 32px + 32px);
@@ -166,7 +168,6 @@
 
 .swiper-button-next {
   left: calc(32px + 32px);
-  background-image: url('./../images/swiper/arrow-right.svg');
 
   @include respondTo('diapente') {
     right: 109px;
@@ -188,9 +189,23 @@
   }
 }
 
-.swiper-button-disabled.swiper-button-next {
+.swiper-button-disabled.swiper-button-next,
+.swiper-button-disabled.swiper-button-prev {
   opacity: 1;
-  background-image: url('./../images/swiper/arrow-right-disabled.svg');
+  fill: getColor('primary-inversed');
+}
+
+.wrapper-swiper {
+  margin-top: -24px;
+  @include respondTo('diapente') {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &--reversed {
+    flex-direction: row;
+  }
 }
 
 .swiper-button-disabled.swiper-button-prev {
