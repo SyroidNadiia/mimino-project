@@ -39,9 +39,24 @@
 }
 }
 .navigations--footer {
-    @extend %list;
+    position: relative;
+}
+.navigations--footer::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    background: rgba(122, 122, 122, 0.4);
+    filter: blur(0.5px);
     @include respondTo('tritonus') {
-        margin-bottom: 34px;
+        min-height: 240px;
+        left: -8px;
+        top: -40px;
+    }
+    @include respondTo('diapente') {
+        min-height: 304px;
+        left: -8px;
+        top: -80px;
     }
 }
 .navigations__item--footer:not(:last-child) {
@@ -64,15 +79,19 @@
     }
 }
 .footer__soc-menu {
-    @extend %list;
-    @include respondTo('tritonus') {
-        display: flex;
-        gap: 21px;
-    }
+    position: relative;
+}
+.footer__soc-menu::before {
     @include respondTo('diapente') {
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 12px;
+        content: "";
+        position: absolute;
+        display: block;
+        width: 1px;
+        min-height: 304px;
+        background: rgba(122, 122, 122, 0.4);
+        filter: blur(0.5px);
+        left: -8px;
+        top: -80px;
     }
 }
 .footer__soc-menu-text {

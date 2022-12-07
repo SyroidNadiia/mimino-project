@@ -1,6 +1,7 @@
 .hotel-about {
   padding-top: 18px;
   padding-bottom: 20px;
+  position: relative;
 
   @include respondTo('diapente') {
     padding-top: 120px;
