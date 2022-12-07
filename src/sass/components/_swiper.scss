@@ -136,10 +136,8 @@
 .swiper-button-prev {
   width: 32px;
   height: 32px;
-  top: calc(100% - 20px);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center;
+  border-color: transparent;
+  background-color: transparent;
 }
 
 .swiper-button-prev {
