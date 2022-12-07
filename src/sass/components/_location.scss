@@ -1,18 +1,14 @@
 .location {
     border: 1px solid getColor('accent');
     border-radius: 2px;
-    padding: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
     width: 210px;
     display: flex;
     align-items: center;
     gap: 10px;
     fill: getColor('accent');
-  
-    @include respondTo('tritonus') {
-      position: absolute;
-      top: 64px;
-      right: 15px;
-    }
   
     @include respondTo('diapente') {
       width: 285px;

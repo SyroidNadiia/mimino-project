@@ -107,15 +107,13 @@
 .swiper-button-prev {
   width: 32px;
   height: 32px;
-  top: calc(100% - 20px);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center;
+  border-color: transparent;
+  background-color: transparent;
 }
 
 .swiper-button-prev {
   left: 0px;
-  background-image: url('./../images/swiper/arrow-left.svg');
+
   @include respondTo('diapente') {
     right: calc(108px + 32px + 32px);
     left: unset;
@@ -135,7 +133,7 @@
 
 .swiper-button-next {
   left: calc(32px + 32px);
-  background-image: url('./../images/swiper/arrow-right.svg');
+
   @include respondTo('diapente') {
     right: 109px;
     left: unset;
@@ -151,14 +149,4 @@
       left: 120px;
     }
   }
-}
-
-.swiper-button-disabled.swiper-button-next {
-  opacity: 1;
-  background-image: url('./../images/swiper/arrow-right-disabled.svg');
-}
-
-.swiper-button-disabled.swiper-button-prev {
-  opacity: 1;
-  background-image: url('./../images/swiper/arrow-left-disabled.svg');
 }

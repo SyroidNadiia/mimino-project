@@ -19,37 +19,85 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   background-image: url(../images/room-hero/room-hero.jpg),
     linear-gradient(#000000a6, #000000a6);
+
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: url(../images/room-hero/room-hero-2x.jpg),
       linear-gradient(#000000a3, #000000a3);
+
   }
-  @media screen and (min-width: 1024px) {
+
+  @include respondTo('diapente') {
+    padding-top: 340px;
+    padding-bottom: 24px;
     max-width: 1024px;
-    background-image: linear-gradient(#000000a3, #000000a3),
-      url(../images/room-hero/room-hero-tablet.jpg);
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65), 
+      rgba(0, 0, 0, 0.65), 
+      url('../images/hero/room/room-hero-tablet.jpg'))
+      ;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        rgba(0, 0, 0, 0.65), 
+        rgba(0, 0, 0, 0.65), 
+        url('../images/hero/room/room-hero-tablet-2x.jpg'));
+    }
   }
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: linear-gradient(#000000a3, #000000a3),
-      url(../images/room-hero/room-hero-tablet-2x.jpg);
-  }
-  @media screen and (min-width: 1280px) {
+
+  @include respondTo('diapason') {
+    padding-top: 412px;
+    padding-bottom: 48px;
     max-width: 1280px;
-    background-image: linear-gradient(#000000a3, #000000a3),
-      url(../images/room-hero/room-hero-desktop.jpg);
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65), 
+      rgba(0, 0, 0, 0.65), 
+      url('../images/hero/room/room-hero-desktop.jpg'));
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+    rgba(0, 0, 0, 0.65), 
+    rgba(0, 0, 0, 0.65), 
+    url('../images/hero/room/room-hero-desktop-2x.jpg'));
+    }
   }
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: linear-gradient(#000000a3, #000000a3),
-      url(../images/room-hero/room-hero-desktop-2x.jpg);
+}
+
+.room-hero-decor {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 143px;
+    background-image: linear-gradient(
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.55) 54.17%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    @include respondTo('diapente') {
+      height: 100px;
+    }
+    @include respondTo('diapason') {
+      height: 147px;
+    }
+  }
+}
+
+.room-hero__location {
+  @include respondTo('tritonus') {
+    position: absolute;
+    top: 64px;
+    right: 15px;
   }
 }
 
@@ -67,7 +115,6 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 8px;
-
   width: 210px;
   height: 47px;
 
@@ -91,7 +138,6 @@
     width: 285px;
     height: 56px;
     column-gap: 10px;
-
     padding-top: 8px;
     padding-right: 8px;
     padding-bottom: 8px;
@@ -183,6 +229,7 @@
   @include respondTo('diapente') {
     font-size: 16px;
 
+
     max-width: 400px;
   }
 }
@@ -209,10 +256,10 @@
     position: absolute;
     top: 678px;
     left: 372px;
-
     flex-direction: row;
     column-gap: 20px;
   }
+
 
   @include respondTo('diapason') {
     display: none;

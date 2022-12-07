@@ -1,17 +1,25 @@
 .hotel-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.65), 
+    rgba(0, 0, 0, 0.65)),
     url('../images/hero/hotel/hotel-mob_1920.jpg');
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+  @media (min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65), 
+      rgba(0, 0, 0, 0.65)),
       url('../images/hero/hotel/hotel-mob_1920@2x.jpg');
   }
 
   @include respondTo('diapente') {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65), 
+      rgba(0, 0, 0, 0.65)),
       url('../images/hero/hotel/hotel-tab_1920.jpg');
 
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @media (min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) {
       background-image: linear-gradient(
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
@@ -21,10 +29,13 @@
   }
 
   @include respondTo('diapason') {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65), 
+      rgba(0, 0, 0, 0.65)),
       url('../images/hero/hotel/hotel-desk_1920.jpg');
 
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @media (min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) {
       background-image: linear-gradient(
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
@@ -49,6 +60,14 @@
 
   @include respondTo('diapason') {
     margin-bottom: 242px;
+  }
+}
+
+.hotel-hero__location {
+  @include respondTo('tritonus') {
+    position: absolute;
+    top: 64px;
+    right: 15px;
   }
 }
 
