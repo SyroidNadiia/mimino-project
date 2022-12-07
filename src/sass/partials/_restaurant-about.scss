@@ -7,16 +7,17 @@
   position: relative;
 }
 
-.restaurant-about__tagline {
-  margin-bottom: 16px;
-  margin-left: 15px;
-  margin-right: 209px;
-}
+// .restaurant-about__tagline {
+//   margin-bottom: 16px;
+//   margin-left: 15px;
+//   margin-right: 209px;
+// }
 
 .tagline {
   margin-bottom: 16px;
   margin-left: 15px;
   margin-right: 209px;
+  width: 190px;
 }
 
 .restaurant-about__brand {
@@ -84,7 +85,6 @@
 .restaurant-about__article-img-one {
   display: block;
   margin-left: 155;
-  margin-right: 15px;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
   overflow: hidden;
@@ -210,4 +210,8 @@
 
 .container__restaurant-about {
   display: block;
+}
+
+.swiper-button-prev {
+  margin-right: 15px;
 }
