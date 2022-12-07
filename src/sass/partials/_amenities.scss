@@ -13,7 +13,6 @@
 .container__decor {
   @include respondTo('diapason') {
     position: relative;
-    padding-bottom: 48px;
     &::before {
       position: absolute;
       content: '';
@@ -114,6 +113,9 @@
 }
 .amenities-list_flex-gap {
   @include respondTo('diapente') {
+    column-gap: 30px;
+  }
+  @include respondTo('diapason') {
     column-gap: 64px;
   }
 }
@@ -129,14 +131,12 @@
   line-height: 1.17;
 }
 $enable-rounded: true;
-
 .amenities-button {
   @include buttonSize($width: 434px, $padding-top: 18px, $padding-bottom: 18px);
   @include buttonReserve;
   @include buttonPlace;
   display: flex;
   justify-content: center;
-
   @include respondTo('diapente') {
     font-size: 24px;
     line-height: 1.2;
@@ -158,7 +158,7 @@ $enable-rounded: true;
   line-height: 1.25;
   letter-spacing: 0.02em;
   cursor: pointer;
-  color: getColor('accent-darken');
+  color: getColor('accent-darker');
   background-color: inherit;
   border: none;
   @include respondTo('tritonus') {
@@ -183,6 +183,6 @@ $enable-rounded: true;
     row-gap: 32px;
   }
   @include respondTo('diapason') {
-    margin-right: 198px;
+    margin-right: 110px;
   }
 }
