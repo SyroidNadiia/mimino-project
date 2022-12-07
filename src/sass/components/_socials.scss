@@ -1,4 +1,5 @@
 .socials {
+  @extend %list;
   display: flex;
   align-items: center;
   margin-top: 58px;

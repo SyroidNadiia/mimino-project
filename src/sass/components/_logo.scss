@@ -25,9 +25,9 @@
     font-size: 40px;
     color: getColor('accent');
 
-    @include respondTo('tritonus') {
-      margin-right: 85px;
+    @include respondTo('diapente') {
       margin-left: auto;
+      font-size: 64px;
   }
 
   }

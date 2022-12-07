@@ -19,10 +19,11 @@
   },
   "dependencies": {
     "modern-normalize": "^1.1.0",
-    "swiper": "^8.4.5"
+    "swiper": "^8.4.5",
+    "nice-select2": "^2.0.0",
+    "imask": "^6.4.3"
   },
   "devDependencies": {
-    "@parcel/packager-raw-url": "^2.6.0",
     "@parcel/transformer-sass": "^2.6.0",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",

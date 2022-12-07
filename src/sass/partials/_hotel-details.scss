@@ -1,7 +1,8 @@
 .hotel-details {
     position: relative;
     margin: 0 auto;
-
+    padding-top: 24px;
+    padding-bottom: 40px;
 
     &__canvas {
         background-position: center;
@@ -9,39 +10,39 @@
         background-size: cover;
 
         background-image: linear-gradient(#000000a6, #000000a6),
-            url(../images/hotel-details/background-img/mobile/hotel-details-bcgi.jpg);
+            url('../images/home/hotel-details/mobile/hotel-details-bcgi.jpg');
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
             background-image: linear-gradient(#000000a3, #000000a3),
-                url(../images/hotel-details/background-img/mobile/hotel-details-bcgi-2x.jpg);
+                url('../images/home/hotel-details/mobile/hotel-details-bcgi-2x.jpg');
         }
 
         @media screen and (min-width: 1024px) {
             max-width: 1024px;
             background-image: linear-gradient(#000000a3, #000000a3),
-                url(../images/hotel-details/background-img/tablet/hotel-details-bcgi.jpg);
+                url('../images/home/hotel-details/tablet/hotel-details-bcgi.jpg');
         }
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
             background-image: linear-gradient(#000000a3, #000000a3),
-                url(../images/hotel-details/background-img/tablet/hotel-details-bcgi-2x.jpg);
+                url('../images/home/hotel-details/tablet/hotel-details-bcgi-2x.jpg');
         }
 
         @media screen and (min-width: 1280px) {
             max-width: 1280px;
             background-image: linear-gradient(#000000a3, #000000a3),
-                url(../images/hotel-details/background-img/desktop/hotel-details-bcgi.jpg);
+                url('../images/home/hotel-details/desktop/hotel-details-bcgi.jpg');
         }
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
             background-image: linear-gradient(#000000a3, #000000a3),
-                url(../images/hotel-details/background-img/desktop/hotel-details-bcgi-2x.jpg);
+                url('../images/home/hotel-details/desktop/hotel-details-bcgi-2x.jpg');
         }
     }
 }
@@ -52,19 +53,22 @@
     min-height: 620px; //вказана висота поки не має слайдеру!!!
 }
 
-
 .hotel-details__brand {
     display: block;
     padding-top: 24px;
     // text-align: center;
     margin-left: 128px;
     color: getColor('primary-inversed');
+    margin-bottom: 12px;
+
+    @include respondTo('tritonus') {
+        text-align: center;
+    }
 
     @include respondTo('diapente') {
-        font-size: 64px;
-        padding-top: 48px;
-        margin-left: 497px;
-        text-align: start;
+        margin-right: 278px;
+        margin-left: auto;
+        margin-bottom: 16px;
     }
 }
 
@@ -79,11 +83,9 @@
 
     @include respondTo('diapente') {
         font-size: 24px;
-        margin-top: 16px;
         margin-left: 612px;
     }
 }
-
 
 .hotel-details__text {
     max-width: 243px;
@@ -91,7 +93,6 @@
     color: #BABABA;
 
     @include respondTo('diapente') {
-        font-size: 16px;
         max-width: 549px;
         margin-left: 150px;
     }
