@@ -1,3 +1,23 @@
+.socials {
+  @extend %list;
+  display: flex;
+  align-items: center;
+  margin-top: 58px;
+
+  @include respondTo('diapente') {
+    margin-top: 25px;
+  }
+
+  @include respondTo('diapason') {
+    display: none;
+  }
+
+  &__icon {
+    fill: getColor('accent');
+    display: block;
+  }
+}
+
 .socials-header {
   display: none;
   @extend %list;
