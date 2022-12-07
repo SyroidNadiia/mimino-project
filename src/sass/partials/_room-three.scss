@@ -21,16 +21,6 @@
   }
 }
 
-.room-three__wrapper-swiper {
-  margin-top: -24px;
-  @include respondTo('diapente') {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-
 .room-three__tagline {
   text-align: end;
   padding-top: 32px;
