@@ -103,10 +103,12 @@
   flex-direction: column;
   row-gap: 16px;
   margin-bottom: 32px;
+
   @include respondTo('diapente') {
     flex-direction: row;
     column-gap: 80px;
   }
+
   @include respondTo('diapason') {
     column-gap: 159px;
   }
@@ -115,13 +117,12 @@
   @include respondTo('diapente') {
     column-gap: 30px;
   }
-  @include respondTo('diapason') {
-    column-gap: 64px;
-  }
 }
+
 .amenities-list {
   @extend %list;
 }
+
 .amenities-list__title {
   @extend %marginPaddingReset;
   font-family: $text-times-font;
@@ -142,17 +143,21 @@ $enable-rounded: true;
     line-height: 1.2;
   }
 }
+
 .amenities-button_margin {
   margin-bottom: 20px;
   @include respondTo('diapente') {
     margin-bottom: 0px;
   }
 }
+
 .amenities-button-return {
   @extend %icon;
+
   display: flex;
   align-items: center;
   column-gap: 12px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
@@ -161,6 +166,7 @@ $enable-rounded: true;
   color: getColor('accent-darker');
   background-color: inherit;
   border: none;
+
   @include respondTo('tritonus') {
     margin: 0 auto;
   }
@@ -175,6 +181,7 @@ $enable-rounded: true;
   }
   @include transition(fill, color);
 }
+
 .amenities-button-flex {
   @include respondTo('diapente') {
     display: flex;
