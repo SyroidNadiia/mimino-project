@@ -49,11 +49,15 @@
 
 .hotel-details__container {
     position: relative;
+    z-index: 2;
     min-height: 620px; //вказана висота поки не має слайдеру!!!
 }
 
 .hotel-details__brand {
     display: block;
+    padding-top: 24px;
+    // text-align: center;
+    margin-left: 128px;
     color: getColor('primary-inversed');
     margin-bottom: 12px;
 
@@ -85,9 +89,7 @@
 
 .hotel-details__text {
     max-width: 243px;
-    margin-left: 32px;
-    // margin-bottom: 48px;
-    margin-bottom: 398px;
+    margin-left: 17px;
     color: #BABABA;
 
     @include respondTo('diapente') {
@@ -102,16 +104,69 @@
     gap: 16px;
     flex-wrap: wrap;
     align-content: center;
-    // margin-top: 40px;
+    margin-top: 32px;
+    padding-bottom: 40px;
 
     @include respondTo('diapente') {
         position: absolute;
-        right: 47px;
+        right: 0;
         bottom: 100px;
+        padding: 0;
+        margin: 0;
     }
 }
 
 .hotel-details__button {
     @include buttonSize($padding-top: 14px, $padding-bottom: 14px, $section-button: true);
     @include buttonPlace($transparent-button: true);
+}
+
+.lines {
+    position: absolute;
+    display: block;
+    left: 33.33%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 100%;
+    background-color: rgba(122, 122, 122, 0.4);
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0px;
+        right: -33vw;
+        width: 1px;
+        height: 100%;
+        background-color: rgba(122, 122, 122, 0.4);
+    }
+
+    @include respondTo('diapente') {
+        left: 50%;
+        transform: translateX(-50%);
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            width: 1px;
+            height: 100%;
+            background-color: rgba(122, 122, 122, 0.4);
+        }
+
+        &::before {
+            left: -23vw;
+        }
+
+        &::after {
+            right: -23vw;
+        }
+    }
+}
+
+.hotel-details__slide--img {
+    height: 270px;
+    object-fit: cover;
 }
