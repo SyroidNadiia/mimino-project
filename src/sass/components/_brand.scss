@@ -1,7 +1,7 @@
 .brand {
+  display: block;
   font-family: $logo-font;
   @extend %marginPaddingReset;
-  width: 127px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 40px;
