@@ -1,4 +1,4 @@
-<section class="room-three">
+<section class="room-three" data-slider="slider">
   <div class="container room-three__container">
     <div class="room-three__wrapper">
       <h2 class="tagline room-three__tagline" lang="en">
@@ -42,7 +42,7 @@
         alt="кімната з ліжком та диваном"
       />
     </picture>
-    <div class="room-three__wrapper-swiper">
+    <div class="wrapper-swiper">
       <div class="container-swiper container-swiper--right">
         <div class="wrapper-mask">
           <div class="swiper mySwiper">
@@ -169,9 +169,16 @@
               </li>
             </ul>
           </div>
-
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev">
+            <svg width="32" height="32">
+              <use href="./images/icons.svg#icon-arrow-left"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg width="32" height="32">
+              <use href="./images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </div>
         </div>
       </div>
       <div class="button-wrapper">
