@@ -2,12 +2,28 @@
   position: relative;
 }
 
-.restaurant-about__tagline {
-  margin-bottom: 12px;
+// .restaurant-about__tagline {
+//   margin-bottom: 16px;
+//   margin-left: 15px;
+//   margin-right: 209px;
+// }
+
+.tagline {
+  margin-bottom: 16px;
+  margin-left: 15px;
+  margin-right: 209px;
+  width: 190px;
 }
 
 .restaurant-about__brand {
+  display: block;
+  margin-top: 12px;
   margin-bottom: 12px;
+  margin-right: auto;
+
+  @include respondTo('unisonus') {
+    margin-bottom: 16px;
+  }
 
   @include respondTo('diapente') {
     margin-top: 0;
@@ -35,6 +51,13 @@
 
 .restaurant-about__text {
   display: block;
+  font-family: $text-font-stack;
+  line-height: 1.2;
+  margin-bottom: 28px;
+  font-weight: 600;
+  margin-top: 12px;
+  letter-spacing: 0.02em;
+  font-size: 12px;
   width: 258px;
   color: mix(getColor('primary-inversed'), getColor('primary'), 37.3%);
   margin-bottom: 28px;
@@ -63,7 +86,7 @@
   @include respondTo('diapente') {
     max-width: 400px;
     position: absolute;
-    top: -144px;
+    top: -32px;
     right: 65px;
   }
 
@@ -79,7 +102,6 @@
 
 .restaurant-about__img-bar {
   display: flex;
-  margin-left: auto;
 }
 
 .restaurant-about__img-slider {
@@ -98,12 +120,6 @@
   display: block;
 }
 
-.restaurant-about__arrow {
-  display: flex;
-  justify-content: end;
-  gap: 32px;
-}
-
 .restaurant-about__img-interiour {
   display: block;
   margin-right: auto;
@@ -111,12 +127,9 @@
   border-radius: 2px;
 }
 
-.restaurant-about__img-bar {
-  display: flex;
-}
-
 .restaurant-about__interior {
   display: flex;
+  margin-right: 15px;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
   overflow: hidden;
@@ -128,6 +141,7 @@
   @include respondTo('diapente') {
     max-width: 350px;
     margin-right: auto;
+    margin-top: 142px;
   }
 
   @include respondTo('diapason') {
@@ -139,9 +153,15 @@
 .restaurant-about__text-interiour {
   display: flex;
   justify-content: end;
+  margin-right: 16px;
   align-items: center;
   width: 163px;
-  color: getColor('accent-darker');
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  font-family: $text-font-stack;
+  color: 'accent-darken';
 
   @include respondTo('unisonus') {
     width: 163px;
@@ -152,6 +172,7 @@
     width: 312px;
     margin-left: 48px;
     margin-right: 267px;
+    margin-top: 180px;
   }
 
   @include respondTo('diapason') {
@@ -159,7 +180,14 @@
     margin-bottom: 121px;
     margin-left: 346px;
     margin-left: 32px;
+    margin-top: 121px;
   }
+}
+
+.restaurant-about__arrow {
+  display: flex;
+  justify-content: end;
+  gap: 32px;
 }
 
 .restaurant-about__icon {
@@ -169,4 +197,8 @@
 
 .container__restaurant-about {
   display: block;
+}
+
+.swiper-button-prev {
+  margin-right: 15px;
 }
