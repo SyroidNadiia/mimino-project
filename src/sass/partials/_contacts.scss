@@ -71,12 +71,11 @@
     display: flex;
     align-items: center;
     font-family: $text-font-stack;
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: getColor('accent');
+    color: getColor('accent-darker');
     margin: 0;
     @include respondTo('diapente') {
         position: relative;
