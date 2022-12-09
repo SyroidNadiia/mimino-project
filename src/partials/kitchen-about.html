@@ -13,19 +13,28 @@
         veniam consequat sunt nostrud amet.
       </p>
       <div class="kitchen-about__article-img-one">
-        <!-- <img
-          srcset="
-            ./images/swiper/restaurant-details/kitchen-photo1-mobile-1x.jpg  244w,
-            ./images/swiper/restaurant-details/kitchen-photo1-mobile-2x.jpg  488w,
-            ./images/swiper/restaurant-details/kitchen-photo1-tablet-1x.jpg  400w,
-            ./images/swiper/restaurant-details/kitchen-photo1-tablet-2x.jpg  800w,
-            ./images/swiper/restaurant-details/kitchen-photo1-desktop-1x.jpg 460w,
-            ./images/swiper/restaurant-details/kitchen-photo1-desktop-2x.jpg 920w
-          "
-          sizes="(min-width: 1280px) 460px, (min-width: 1024px) 400px, (max-width: 1023px) 244px, 100vw"
-          src="./images/swiper/restaurant-details/kitchen-photo1-mobile-1x.jpg"
-          alt="Cooking"
-        /> -->
+        <picture>
+          <source srcset="./images/restaurant/kitchen-about/desktop/restaurant-interior-2-desk.webp 1x, ./images/restaurant/kitchen-about/desktop/restaurant-interior-2-desk@2x.webp 2x, ./images/restaurant/kitchen-about/desktop/restaurant-interior-2-desk@3x.webp 3x" type="image/webp"
+          media="min-width: 1280px"
+  >
+  <source srcset="./images/restaurant/kitchen-about/tablet/restaurant-interior-2-tab.webp 1x, ./images/restaurant/kitchen-about/tablet/restaurant-interior-2-tab@2x.webp 2x, ./images/restaurant/kitchen-about/tablet/restaurant-interior-2-tab@3x.webp 3x" type="image/webp"
+          media="max-width: 1279px"
+  >
+  <source srcset="./images/restaurant/kitchen-about/mobile/restaurant-interior-2-mob.webp 1x, ./images/restaurant/kitchen-about/mobile/restaurant-interior-2-mob@2x.webp 2x, ./images/restaurant/kitchen-about/mobile/restaurant-interior-2-mob@3x.webp 3x" type="image/webp"
+  media="max-width: 1023px"
+> 
+<source srcset="./images/restaurant/kitchen-about/desktop/restaurant-interior-2-desk.jpg 1x, ./images/restaurant/kitchen-about/desktop/restaurant-interior-2-desk@2x.jpg 2x, ./images/restaurant/kitchen-about/desktop/restaurant-interior-2-desk@3x.jpg 3x" 
+media="min-width: 1280px"
+>
+<source srcset="./images/restaurant/kitchen-about/tablet/restaurant-interior-2-tab.jpg 1x, ./images/restaurant/kitchen-about/tablet/restaurant-interior-2-tab@2x.jpg 2x, ./images/restaurant/kitchen-about/tablet/restaurant-interior-2-tab@3x.jpg 3x" 
+media="max-width: 1279px"
+>
+<source srcset="./images/restaurant/kitchen-about/mobile/restaurant-interior-2-mob.jpg 1x, ./images/restaurant/kitchen-about/mobile/restaurant-interior-2-mob@2x.jpg 2x, ./images/restaurant/kitchen-about/mobile/restaurant-interior-2-mob@3x.jpg 3x" 
+media="max-width: 1023px"
+>
+<img loading="lazy" src="./images/restaurant/kitchen-about/desktop/restaurant-interior-2-desk.jpg" alt="Frying in a pan">
+</picture>
+       
       </div>
     </article>
     <article class="kitchen-about__article-img-two">
