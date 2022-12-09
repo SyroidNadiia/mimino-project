@@ -12,8 +12,18 @@
     display: none;
   }
 
+  &__link {
+    color: getColor('accent');
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: getColor('accent-darker');
+    }
+  }
+
   &__icon {
-    fill: getColor('accent');
+    fill: currentColor;
     display: block;
   }
 }

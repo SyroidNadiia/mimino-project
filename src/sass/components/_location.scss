@@ -8,7 +8,13 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    fill: getColor('accent');
+    color: getColor('accent');
+    @include transition(border-color, color);
+
+    &:focus, &:hover, &:active {
+      border-color: getColor('primary-inversed');
+      color: getColor('primary-inversed');
+    }
   
     @include respondTo('diapente') {
       width: 285px;
@@ -23,14 +29,21 @@
     letter-spacing: 0.01em;
     color: #e5e5e5;
     text-align: left;
+    @include transition(color);
   
     @include respondTo('diapente') {
       font-size: 16px;
     }
+
+    .location:hover &,
+    .location:focus &, 
+    .location:active & {
+      color: getColor('accent');
+    }
   }
   
   .location__icon {
-    fill: getColor('accent');
+    fill: currentColor;
     margin-left: 6px;
   
     @include respondTo('diapente') {
