@@ -117,13 +117,14 @@
 }
 
 //ПЕРЕВИЗНАЧЕНІ СТИЛІ ДЛЯ СТОРІНКИ HOME СЕКЦІЯ HOTEL-DETAILS!!!!!! 
-.home-details__swiper-slide.swiper-slide-prev {
+.hotel-details__swiper-slide.swiper-slide-prev {
   width: 162px !important;
 }
 
-.home-details__swiper-slide.swiper-slide-active {
+.hotel-details__swiper-slide.swiper-slide-active {
   width: 270px !important;
 }
+
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -138,10 +139,18 @@
   top: calc(100% - 20px);
   fill: getColor('primary');
   @include transition(fill);
+
   &:hover {
     fill: getColor('accent');
   }
 }
+
+// ЗМІНА КОЛЬОРУ СТРІЛОЧОК ДЛЯ ТЕМНОЇ СЕКЦІЇ (HOTEL-DETAILS)
+.hotel-details__swiper--arrow {
+  fill: getColor('primary-inversed');
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 .swiper-button-prev {
   left: 0px;
@@ -197,12 +206,14 @@
 
 .wrapper-swiper {
   margin-top: -24px;
+
   @include respondTo('diapente') {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
   }
+
   &--reversed {
     flex-direction: row;
   }
