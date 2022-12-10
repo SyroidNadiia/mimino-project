@@ -1,4 +1,5 @@
 .footer {
+    position: relative;
     max-width: 414px;
     margin-left: auto;
     margin-right: auto;
@@ -13,6 +14,7 @@
         max-width: 1280px;
     }
 }
+
 .footer__container {
     display: flex;
     align-items: center;
@@ -23,7 +25,7 @@
 .footer__content {
     @include respondTo('diapente') {
         display: flex;
-        flex-basis: 50%;
+        flex-basis: 50vw;
     }
 }
 .navigations__link {
@@ -38,36 +40,21 @@
     margin-bottom: 34px;
 }
 }
-.navigations--footer {
-    position: relative;
-}
-.navigations--footer::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 1px;
-    background: rgba(122, 122, 122, 0.4);
-    filter: blur(0.5px);
-    @include respondTo('tritonus') {
-        min-height: 240px;
-        left: -8px;
-        top: -40px;
-    }
-    @include respondTo('diapente') {
-        min-height: 304px;
-        left: -8px;
-        top: -80px;
-    }
-}
+
 .navigations__item--footer:not(:last-child) {
     margin-bottom: 16px;
 }
+
+.navigations--footer {
+    @extend %list;
+}
+
 .logo--footer {
     display: flex;
     font-size: 40px;
     color: getColor('accent');
     text-transform: uppercase;
-    flex-basis: 50%;
+    flex-basis: 51vw;
     justify-content: center;
     @include respondTo('tritonus') {
         margin-right: auto;
@@ -78,22 +65,17 @@
         line-height: 1.08;
     }
 }
+
 .footer__soc-menu {
-    position: relative;
-}
-.footer__soc-menu::before {
+    @extend %list;
+    display: flex;
+    gap: 22px;
     @include respondTo('diapente') {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 1px;
-        min-height: 304px;
-        background: rgba(122, 122, 122, 0.4);
-        filter: blur(0.5px);
-        left: -8px;
-        top: -80px;
-    }
+    gap: 12px;
+    flex-direction: column-reverse;
 }
+}
+
 .footer__soc-menu-text {
     @include respondTo('tritonus') {
         display: none;
@@ -117,7 +99,7 @@
 }
 .footer__soc-menu-item {
     @include respondTo('diapente') {
-        padding: 10px 12px;
+        padding: 7px 12px;
         border: 0.5px solid getColor('accent');
         border-radius: 2px;
         min-width: 144px;
@@ -131,5 +113,39 @@ fill: getColor('accent');
 }
 .footer__nav {
     display: flex;
-    flex-basis: 50%;
+    @include respondTo('diapente') {
+    flex-basis: 23vw;
+    }
+    @include respondTo('tritonus') {
+        margin-bottom: 32px;
+    }
 }
+
+
+.footer__lines {
+    @include respondTo('diapente') {
+    content: '';
+    position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  min-height: 304px;
+  background-color: rgba(122, 122, 122, 0.4);
+  z-index: 2;
+    }   
+  }
+    
+  .footer__lines::after {
+    @include respondTo('diapente') {
+    content: '';
+    position: absolute;
+  top: 0;
+  right: -23vw;
+  width: 1px;
+  min-height: 304px;
+  background-color: rgba(122, 122, 122, 0.4);
+  z-index: 2;
+    }
+     
+  }
