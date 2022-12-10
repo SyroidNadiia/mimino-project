@@ -1,22 +1,11 @@
+.container {
+  outline: 1px dotted grey;
+}
+
 .container-swiper {
   display: flex;
   flex-direction: column;
   margin-top: 0px;
-
-  &--right {
-    // быстрый способ сделать вариант со сдвигом вправо через зеркализацию
-    transform: scale(-1, 1);
-    flex-direction: column-reverse;
-
-    & .button-wrapper {
-      // компенсация зеркализации лишних элементов
-      transform: scale(-1, 1);
-    }
-
-    @include respondTo('diapente') {
-      flex-direction: row-reverse;
-    }
-  }
 
   @include respondTo('diapente') {
     display: flex;
@@ -30,13 +19,16 @@
   position: relative;
   overflow: hidden;
   padding: 60px;
-
 }
 
 .swiper {
   overflow: visible;
   width: 404px;
   transform: translateX(34px);
+  @include respondTo('diapente') {
+    width: 428px;
+    transform: translateX(34px);
+  }
 
   &--picture {
     height: 100%;
@@ -45,11 +37,7 @@
   &-slide {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
-    visibility: visible;
-
-    @include respondTo('diapente') {
-      visibility: hidden;
-    }
+    visibility: hidden;
   }
 
   &-wrapper {
@@ -58,9 +46,9 @@
 }
 
 
-
-.swiper-slide.swiper-slide-prev,
-.swiper-slide.swiper-slide-active {
+// .swiper-slide.swiper-slide-prev,
+.swiper-slide.swiper-slide-active,
+.swiper-slide.swiper-slide-next {
   visibility: visible;
 }
 
@@ -88,6 +76,12 @@
   border: none;
   outline: none;
   background: none;
+  left: unset;
+  right: unset;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  margin-top: 0;
   // width: 32px;
   // height: 32px;
   @extend %icon;
@@ -112,6 +106,12 @@
 .wrapper-swiper {
   margin-top: -24px;
   outline: 1px dotted blue;
+  @include respondTo('diapente') {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .swiper-button-disabled.swiper-button-prev {

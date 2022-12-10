@@ -9,7 +9,7 @@ function swiperSlider() {
           swiper = new Swiper(slider.querySelector('.swiper'), {
               slidesPerView: 2,
               //initialSlide: 4,
-              spaceBetween: 25,
+              spaceBetween: 16,
               // centeredSlides: true,
               //freeMode: true,
               loop: true,
