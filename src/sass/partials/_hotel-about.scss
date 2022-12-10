@@ -14,103 +14,12 @@
   }
 }
 
-.vertical-lines {
-  position: absolute;
-  display: block;
-  left: 33.33%;
-  top: 0;
-  transform: translateX(-50%);
-  width: 1px;
-  height: 100%;
-  background-color: rgba(122, 122, 122, 0.4);
-  z-index: 0;
-
-  @include respondTo('pre-unisonus') {
-    display: none;
-  }
-
-  &::after {
-    position: absolute;
-    content: '';
-    top: 0px;
-    right: -33vw;
-    width: 1px;
-    height: 100%;
-    background-color: rgba(122, 122, 122, 0.4);
-  }
-
-  @include respondTo('diapente') {
-    left: 50%;
-    transform: translateX(-50%);
-
-    &::before,
-    &::after {
-      position: absolute;
-      content: '';
-      top: 0;
-      width: 1px;
-      height: 100%;
-      background-color: rgba(122, 122, 122, 0.4);
-    }
-
-    &::before {
-      left: -23vw;
-    }
-
-    &::after {
-      right: -23vw;
-    }
-
-  }
+.conteiner-hotel-about {
+  position: relative;
 }
 
-.vertical-lines {
-  position: absolute;
-  display: block;
-  left: 33.33%;
-  top: 0;
-  transform: translateX(-50%);
-  width: 1px;
-  height: 100%;
-  background-color: rgba(122, 122, 122, 0.4);
+.hotel-about > .vertical-lines {
   z-index: 0;
-
-  @include respondTo('pre-unisonus') {
-    display: none;
-  }
-  
-  &::after {
-    position: absolute;
-    content: '';
-    top: 0px;
-    right: -33vw;
-    width: 1px;
-    height: 100%;
-    background-color: rgba(122, 122, 122, 0.4);
-  }
-  
-  @include respondTo('diapente') {
-    left: 50%;
-    transform: translateX(-50%);
-  
-    &::before,
-    &::after {
-      position: absolute;
-      content: '';
-      top: 0;
-      width: 1px;
-      height: 100%;
-      background-color: rgba(122, 122, 122, 0.4);
-    }
-  
-    &::before {
-      left: -23vw;
-    }
-  
-    &::after {
-      right: -23vw;
-    }
-  }
 }
   
 .hotel-about__title {
@@ -245,6 +154,11 @@
 }
 
 .hotel-about-article-two__description {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
   color: #c79002;
 
   @include respondTo('pre-unisonus') {
@@ -255,11 +169,13 @@
 
   @include respondTo('unisonus') {
     width: 163px;
+    font-size: 12px;
   }
 
   @include respondTo('diapente') {
     width: 312px;
     margin-right: 48px;
+    font-size: 16px;
   }
 
   @include respondTo('diapason') {
