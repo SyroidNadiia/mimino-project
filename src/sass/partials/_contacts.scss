@@ -3,11 +3,12 @@
     padding-top: 36px;
     padding-bottom: 32px;
     @include respondTo('diapente') {
-        padding-top: 56px;
-        padding-bottom: 44px;
+        padding-top: 69px;
+        padding-bottom: 40px;
     }
     @include respondTo('diapason') {
-        padding-bottom: 73px;
+        padding-top: 64px;
+        padding-bottom: 74px;
     }
 }
 .contacts__container{
