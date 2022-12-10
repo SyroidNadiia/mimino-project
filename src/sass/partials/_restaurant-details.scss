@@ -142,8 +142,6 @@ $hero-button: true;
     text-align: center;
 
     @include respondTo("diapente") {
-      margin-bottom: 0px;
-      width: 236px;
       gap: 16px;
     }
   }
