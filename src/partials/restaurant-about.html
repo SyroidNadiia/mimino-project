@@ -5,230 +5,390 @@
     <h3 class="tagline restaurant-about__tagline" lang="en">
       Amet minim mollit non
     </h3>
-    <span class="brand restaurant-about__subtitle" lang="en">MIMIHO</span>
-    <article class="restaurant-about__article">
-      <p class="restaurant-about__text" lang="en">
+    <span class="brand restaurant-about__brand" lang="en">MIMIHO</span>
+    <p class="restaurant-about__text" lang="en">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
+    <div class="restaurant-about__img-interior">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/home/restaurant-about/desktop/restaurant-interior-1-desk.webp    1x,
+            ./images/home/restaurant-about/desktop/restaurant-interior-1-desk@2x.webp 2x,
+            ./images/home/restaurant-about/desktop/restaurant-interior-1-desk@3x.webp 3x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 1279px)"
+          srcset="
+            ./images/home/restaurant-about/tablet/restaurant-interior-1-tab.webp    1x,
+            ./images/home/restaurant-about/tablet/restaurant-interior-1-tab@2x.webp 2x,
+            ./images/home/restaurant-about/tablet/restaurant-interior-1-tab@3x.webp 3x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 1023px)"
+          srcset="
+            ./images/home/restaurant-about/mobile/restaurant-interior-1-mob.webp    1x,
+            ./images/home/restaurant-about/mobile/restaurant-interior-1-mob@2x.webp 2x,
+            ./images/home/restaurant-about/mobile/restaurant-interior-1-mob@3x.webp 3x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/home/restaurant-about/desktop/restaurant-interior-1-desk.jpg    1x,
+            ./images/home/restaurant-about/desktop/restaurant-interior-1-desk@2x.jpg 2x,
+            ./images/home/restaurant-about/desktop/restaurant-interior-1-desk@3x.jpg 3x
+          "
+        />
+        <source
+          media="(max-width: 1279px)"
+          srcset="
+            ./images/home/restaurant-about/tablet/restaurant-interior-1-tab.jpg    1x,
+            ./images/home/restaurant-about/tablet/restaurant-interior-1-tab@2x.jpg 2x,
+            ./images/home/restaurant-about/tablet/restaurant-interior-1-tab@3x.jpg 3x
+          "
+        />
+        <source
+          media="(max-width: 1023px)"
+          srcset="
+            ./images/home/restaurant-about/mobile/restaurant-interior-1-mob.jpg    1x,
+            ./images/home/restaurant-about/mobile/restaurant-interior-1-mob@2x.jpg 2x,
+            ./images/home/restaurant-about/mobile/restaurant-interior-1-mob@3x.jpg 3x
+          "
+        />
+        <img
+          loading="lazy"
+          src="./images/home/restaurant-about/desktop/restaurant-interior-1-desk.jpg"
+          alt="interior"
+        />
+      </picture>
+    </div>
+    <div class="restaurant-about__img-lobby">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/home/restaurant-about/desktop/restaurant-interior-2-desk.webp    1x,
+            ./images/home/restaurant-about/desktop/restaurant-interior-2-desk@2x.webp 2x,
+            ./images/home/restaurant-about/desktop/restaurant-interior-2-desk@3x.webp 3x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 1279px)"
+          srcset="
+            ./images/home/restaurant-about/tablet/restaurant-interior-2-tab.webp    1x,
+            ./images/home/restaurant-about/tablet/restaurant-interior-2-tab@2x.webp 2x,
+            ./images/home/restaurant-about/tablet/restaurant-interior-2-tab@3x.webp 3x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 1023px)"
+          srcset="
+            ./images/home/restaurant-about/mobile/restaurant-interior-2-mob.webp    1x,
+            ./images/home/restaurant-about/mobile/restaurant-interior-2-mob@2x.webp 2x,
+            ./images/home/restaurant-about/mobile/restaurant-interior-2-mob@3x.webp 3x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/home/restaurant-about/desktop/restaurant-interior-2-desk.jpg    1x,
+            ./images/home/restaurant-about/desktop/restaurant-interior-2-desk@2x.jpg 2x,
+            ./images/home/restaurant-about/desktop/restaurant-interior-2-desk@3x.jpg 3x
+          "
+        />
+        <source
+          media="(max-width: 1279px)"
+          srcset="
+            ./images/home/restaurant-about/tablet/restaurant-interior-2-tab.jpg    1x,
+            ./images/home/restaurant-about/tablet/restaurant-interior-2-tab@2x.jpg 2x,
+            ./images/home/restaurant-about/tablet/restaurant-interior-2-tab@3x.jpg 3x
+          "
+        />
+        <source
+          media="(max-width: 1023px)"
+          srcset="
+            ./images/home/restaurant-about/mobile/restaurant-interior-2-mob.jpg    1x,
+            ./images/home/restaurant-about/mobile/restaurant-interior-2-mob@2x.jpg 2x,
+            ./images/home/restaurant-about/mobile/restaurant-interior-2-mob@3x.jpg 3x
+          "
+        />
+        <img loading="lazy"
+        src="./images/home/restaurant-about/desktop/restaurant-interior-2-desk.jpg"
+        alt="interior" /2
+      </picture>
+      <p class="restaurant-about__text-lobby">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
       </p>
-      <div class="restaurant-about__article-img-one">
-        <picture>
-          <source
-            srcset="
-              ./images/home/restaurant-about/restaurant-second-mobile-1x.jpg,
-              ./images/home/restaurant-about/restaurant-second-mobile-2x.jpg
-            "
-            media="(max-width: 1023px)"
-          />
+    </div>
 
-          <source
-            srcset="
-              ./images/home/restaurant-about/restaurant-second-tablet-1x.jpg,
-              ./images/home/restaurant-about/restaurant-second-tablet-2x.jpg
-            "
-            media="(max-width: 1279px)"
-          />
-          <source
-            srcset="
-              ./images/home/restaurant-about/restaurant-second-desk-1x.jpg,
-              ./images/home/restaurant-about/restaurant-second-desk-2x.jpg
-            "
-            media="(min-width: 1280px)"
-          />
-          <img
-            src="./images/home/restaurant-about/restaurant-second-mobile-1x.jpg"
-            alt="restaurant"
-          />
-        </picture>
-      </div>
-    </article>
-    <article class="restaurant-about__article-two">
-      <div class="restaurant-about__interior">
-        <picture>
-          <source
-            srcset="
-              ./images/home/restaurant-about/restaurant-interior-mobile-1x.jpg,
-              ./images/home/restaurant-about/restaurant-interior-mobile-2x.jpg
-            "
-            media="(max-width: 1023px)"
-          />
-          <source
-            srcset="
-              ./images/home/restaurant-about/restaurant-interior-tablet-1x.jpg,
-              ./images/home/restaurant-about/restaurant-interior-tablet-2x.jpg
-            "
-            media="(max-width: 1279px)"
-          />
-          <source
-            srcset="
-              ./images/home/restaurant-about/restaurant-interior-desk-1x.jpg,
-              ./images/home/restaurant-about/restaurant-interior-desk-2x.jpg
-            "
-            media="(min-width: 1280px)"
-          />
-          <img
-            src="./images/home/restaurant-about/restaurant-interior-mobile-1x.jpg"
-            alt="restaurant interior"
-          />
-        </picture>
-      </div>
-      <p class="restaurant-about__text-interiour">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
-    </article>
+    <div
+      class="container-swiper container-swiper--right container-swiper--positioned"
+    >
+      <div class="wrapper-mask">
+        <div class="swiper swiper--modified mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--modified">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/desktop/slider-4-desk.webp    1x,
+                    ./images/swiper/home/restaurant-about/desktop/slider-4-desk@2x.webp 2x,
+                    ./images/swiper/home/restaurant-about/desktop/slider-4-desk@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/tablet/slider-4-tab.webp    1x,
+                    ./images/swiper/home/restaurant-about/tablet/slider-4-tab@2x.webp 2x,
+                    ./images/swiper/home/restaurant-about/tablet/slider-4-tab@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/mobile/slider-4-mob.webp    1x,
+                    ./images/swiper/home/restaurant-about/mobile/slider-4-mob@2x.webp 2x,
+                    ./images/swiper/home/restaurant-about/mobile/slider-4-mob@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/desktop/slider-4-desk.jpg    1x,
+                    ./images/swiper/home/restaurant-about/desktop/slider-4-desk@2x.jpg 2x,
+                    ./images/swiper/home/restaurant-about/desktop/slider-4-desk@3x.jpg 3x
+                  "
+                />
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/tablet/slider-4-tab.jpg    1x,
+                    ./images/swiper/home/restaurant-about/tablet/slider-4-tab@2x.jpg 2x,
+                    ./images/swiper/home/restaurant-about/tablet/slider-4-tab@3x.jpg 3x
+                  "
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/mobile/slider-4-mob.jpg    1x,
+                    ./images/swiper/home/restaurant-about/mobile/slider-4-mob@2x.jpg 2x,
+                    ./images/swiper/home/restaurant-about/mobile/slider-4-mob@3x.jpg 3x
+                  "
+                />
+                <img
+                  loading="lazy"
+                  src="./images/swiper/home/restaurant-about/desktop/slider-4-desk.jpg"
+                  alt="interior"
+                />
+              </picture>
 
-    <div class="container my-container my-container--right">
-      <div class="box"></div>
-      <div class="wrapper-mask"></div>
-      <div class="swiper mySwiper"></div>
-      <div class="swiper-wrapper"></div>
-      <div class="swiper-slide">
-        <div
-          class="container-swiper container-swiper--right container-swiper--large"
-        >
-          <div class="wrapper-mask">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <!-- <picture>
-                    
-                    <source
-                      media="(min-width: 1280px)"
-                      srcset="
-                      ./images/swiper/home/restaurant-about/restaurant-wine-desk-2x 2x,
-                      ./images/swiper/home/restaurant-about/restaurant-wine-desk-1x 1x
-                      "
-                    />
-                    
-                    <source
-                      media="(min-width: 1024px)"
-                      srcset="
-                      ./images/swiper/home/restaurant-about/restaurant-wine-tablet-2x 2x,
-                      ./images/swiper/home/restaurant-about/restaurant-wine-tablet-1x 1x
-                      "
-                    />
-                    
-                    <source
-                      media="(max-width: 1023px)"
-                      srcset="
-                        ./images/swiper/home/restaurant-about/restaurant-wine-mobile-2x 2x,
-                        ./images/swiper/home/restaurant-about/restaurant-wine-mobile-1x 1x
-                      "
-                    />
-                    <img
-                      class="image"
-                      src="./images/swiper/home/restaurant-about/restaurant-wine-mobile-1x"
-                      alt="картинка1"
-                    />
-                  </picture> -->
-                </div>
-                <div class="swiper-slide">
-                  <!-- <picture>
-                    
-                    <source
-                      media="(min-width: 1280px)"
-                      srcset="
-                      ./images/home/swiper/restaurant-about/restaurant-wine-desk-2x 2x,
-                      ./images/home/swiper/restaurant-about/restaurant-wine-desk-1x 1x
-                      "
-                    />
-                    
-                    <source
-                      media="(min-width: 1024px)"
-                      srcset="
-                      ./images/home/swiper/restaurant-about/restaurant-wine-tablet-2x 2x,
-                      ./images/home/swiper/restaurant-about/restaurant-wine-tablet-1x 1x
-                      "
-                    />
-                    
-                    <source
-                      media="(max-width: 1023px)"
-                      srcset="
-                        ./images/home/swiper/restaurant-about/restaurant-wine-mobile-2x 2x,
-                        ./images/home/swiper/restaurant-about/restaurant-wine-mobile-1x 1x
-                      "
-                    />
-                    <img
-                      class="image"
-                      src="./images/swiper/home/restaurant-about/restaurant-wine-mobile-1x"
-                      alt="картинка1"
-                    />
-                  </picture> -->
-                </div>
-                <div class="swiper-slide">
-                  <!-- <picture>
-                    
-                    <source
-                      media="(min-width: 1280px)"
-                      srcset="
-                      ./images/home/swiper/restaurant-about/restaurant-wine-desk-2x 2x,
-                      ./images/home/swiper/restaurant-about/restaurant-wine-desk-1x 1x
-                      "
-                    />
-                    
-                    <source
-                      media="(min-width: 1024px)"
-                      srcset="
-                      ./images/home/swiper/restaurant-about/restaurant-wine-tablet-2x 2x,
-                      ./images/home/swiper/restaurant-about/restaurant-wine-tablet-1x 1x
-                      "
-                    />
-                    
-                    <source
-                      media="(max-width: 1023px)"
-                      srcset="
-                        ./images/home/swiper/restaurant-about/restaurant-wine-mobile-2x 2x,
-                        ./images/home/swiper/restaurant-about/restaurant-wine-mobile-1x 1x
-                      "
-                    />
-                    <img
-                      class="image"
-                      src="./images/home/swiper/restaurant-about/restaurant-wine-mobile-1x"
-                      alt="картинка1"
-                    />
-                  </picture> -->
-                </div>
-                <div class="swiper-slide">
-                  <!-- <picture>
-                  
-                    <source
-                      media="(min-width: 1280px)"
-                      srcset="
-                      ./images/home/swiper/restaurant-about/restaurant-wine-desk-2x 2x,
-                      ./images/home/swiper/restaurant-about/restaurant-wine-desk-1x 1x
-                      "
-                    />
-                    
-                    <source
-                      media="(min-width: 1024px)"
-                      srcset="
-                      ./images/home/swiper/restaurant-about/restaurant-wine-tablet-2x 2x,
-                      ./images/home/swiper/restaurant-about/restaurant-wine-tablet-1x 1x
-                      "
-                    />
-                    
-                    <source
-                      media="(max-width: 1023px)"
-                      srcset="
-                        ./images/home/swiper/restaurant-about/restaurant-wine-mobile-2x 2x,
-                        ./images/home/swiper/restaurant-about/restaurant-wine-mobile-1x 1x
-                      "
-                    />
-                    <img
-                      class="image"
-                      src="./images/home/swiper/restaurant-about/restaurant-wine-mobile-1x"
-                      alt="картинка1"
-                    />
-                  </picture> -->
-                </div>
-              </div>
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/desktop/slider-3-desk.webp    1x,
+                    ./images/swiper/home/restaurant-about/desktop/slider-3-desk@2x.webp 2x,
+                    ./images/swiper/home/restaurant-about/desktop/slider-3-desk@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/tablet/slider-3-tab.webp    1x,
+                    ./images/swiper/home/restaurant-about/tablet/slider-3-tab@2x.webp 2x,
+                    ./images/swiper/home/restaurant-about/tablet/slider-3-tab@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/mobile/slider-3-mob.webp    1x,
+                    ./images/swiper/home/restaurant-about/mobile/slider-3-mob@2x.webp 2x,
+                    ./images/swiper/home/restaurant-about/mobile/slider-3-mob@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/desktop/slider-3-desk.jpg    1x,
+                    ./images/swiper/home/restaurant-about/desktop/slider-3-desk@2x.jpg 2x,
+                    ./images/swiper/home/restaurant-about/desktop/slider-3-desk@3x.jpg 3x
+                  "
+                />
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/tablet/slider-3-tab.jpg    1x,
+                    ./images/swiper/home/restaurant-about/tablet/slider-3-tab@2x.jpg 2x,
+                    ./images/swiper/home/restaurant-about/tablet/slider-3-tab@3x.jpg 3x
+                  "
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/mobile/slider-3-mob.jpg    1x,
+                    ./images/swiper/home/restaurant-about/mobile/slider-3-mob@2x.jpg 2x,
+                    ./images/swiper/home/restaurant-about/mobile/slider-3-mob@3x.jpg 3x
+                  "
+                />
+                <img
+                  loading="lazy"
+                  src="./images/swiper/home/restaurant-about/desktop/slider-3-desk.jpg"
+                  alt="interior"
+                />
+              </picture>
+
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/desktop/slider-2-desk.webp    1x,
+                    ./images/swiper/home/restaurant-about/desktop/slider-2-desk@2x.webp 2x,
+                    ./images/swiper/home/restaurant-about/desktop/slider-2-desk@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/tablet/slider-2-tab.webp    1x,
+                    ./images/swiper/home/restaurant-about/tablet/slider-2-tab@2x.webp 2x,
+                    ./images/swiper/home/restaurant-about/tablet/slider-2-tab@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/mobile/slider-2-mob.webp    1x,
+                    ./images/swiper/home/restaurant-about/mobile/slider-2-mob@2x.webp 2x,
+                    ./images/swiper/home/restaurant-about/mobile/slider-2-mob@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/desktop/slider-2-desk.jpg    1x,
+                    ./images/swiper/home/restaurant-about/desktop/slider-2-desk@2x.jpg 2x,
+                    ./images/swiper/home/restaurant-about/desktop/slider-2-desk@3x.jpg 3x
+                  "
+                />
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/tablet/slider-2-tab.jpg    1x,
+                    ./images/swiper/home/restaurant-about/tablet/slider-2-tab@2x.jpg 2x,
+                    ./images/swiper/home/restaurant-about/tablet/slider-2-tab@3x.jpg 3x
+                  "
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/mobile/slider-2-mob.jpg    1x,
+                    ./images/swiper/home/restaurant-about/mobile/slider-2-mob@2x.jpg 2x,
+                    ./images/swiper/home/restaurant-about/mobile/slider-2-mob@3x.jpg 3x
+                  "
+                />
+                <img
+                  loading="lazy"
+                  src="./images/swiper/home/restaurant-about/desktop/slider-2-desk.jpg"
+                  alt="interior"
+                />
+              </picture>
+
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/desktop/slider-1-desk.webp    1x,
+                    ./images/swiper/home/restaurant-about/desktop/slider-1-desk@2x.webp 2x,
+                    ./images/swiper/home/restaurant-about/desktop/slider-1-desk@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/tablet/slider-1-tab.webp    1x,
+                    ./images/swiper/home/restaurant-about/tablet/slider-1-tab@2x.webp 2x,
+                    ./images/swiper/home/restaurant-about/tablet/slider-1-tab@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/mobile/slider-1-mob.webp    1x,
+                    ./images/swiper/home/restaurant-about/mobile/slider-1-mob@2x.webp 2x,
+                    ./images/swiper/home/restaurant-about/mobile/slider-1-mob@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/desktop/slider-1-desk.jpg    1x,
+                    ./images/swiper/home/restaurant-about/desktop/slider-1-desk@2x.jpg 2x,
+                    ./images/swiper/home/restaurant-about/desktop/slider-1-desk@3x.jpg 3x
+                  "
+                />
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/tablet/slider-1-tab.jpg    1x,
+                    ./images/swiper/home/restaurant-about/tablet/slider-1-tab@2x.jpg 2x,
+                    ./images/swiper/home/restaurant-about/tablet/slider-1-tab@3x.jpg 3x
+                  "
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    ./images/swiper/home/restaurant-about/mobile/slider-1-mob.jpg    1x,
+                    ./images/swiper/home/restaurant-about/mobile/slider-1-mob@2x.jpg 2x,
+                    ./images/swiper/home/restaurant-about/mobile/slider-1-mob@3x.jpg 3x
+                  "
+                />
+                <img
+                  loading="lazy"
+                  src="./images/swiper/home/restaurant-about/desktop/slider-1-desk.jpg"
+                  alt="interior"
+                />
+              </picture>
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
           </div>
+        </div>
+        <div class="swiper-button-prev swiper-button-prev--positioned">
+          <svg width="32" height="32">
+            <use href="./images/icons.svg#icon-arrow-left"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next swiper-button-next--positioned">
+          <svg width="32" height="32">
+            <use href="./images/icons.svg#icon-arrow-right"></use>
+          </svg>
         </div>
       </div>
     </div>
