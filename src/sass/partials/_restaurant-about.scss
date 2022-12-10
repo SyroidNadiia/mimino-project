@@ -2,23 +2,14 @@
   position: relative;
 }
 
-// .restaurant-about__tagline {
-//   margin-bottom: 16px;
-//   margin-left: 15px;
-//   margin-right: 209px;
-// }
-
-.tagline {
+.restaurant-about__tagline {
   margin-bottom: 16px;
-  margin-left: 15px;
   margin-right: 209px;
-  width: 190px;
+  width: 100%;
 }
 
 .restaurant-about__brand {
   display: block;
-  margin-top: 12px;
-  margin-bottom: 12px;
   margin-right: auto;
 
   @include respondTo('unisonus') {
@@ -35,7 +26,7 @@
   }
 }
 
-.restaurant-about__article {
+.restaurant-about__interior {
   @include respondTo('tritonus') {
     margin-bottom: 32px;
   }
@@ -72,7 +63,7 @@
   }
 }
 
-.restaurant-about__article-img-one {
+.restaurant-about__img-interior {
   display: block;
   margin-left: 155px;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
@@ -100,22 +91,6 @@
   display: block;
 }
 
-.restaurant-about__img-bar {
-  display: flex;
-}
-
-.restaurant-about__img-slider {
-  margin-bottom: 20px;
-  margin-left: 84px;
-  margin-top: 32px;
-  display: flex;
-}
-
-.restaurant-about__article-two {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
 .restaurant-about__icon {
   display: block;
 }
@@ -127,10 +102,13 @@
   border-radius: 2px;
 }
 
-.restaurant-about__interior {
+.restaurant-about__table {
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+.restaurant-about__img-lobby {
   display: flex;
-  margin-right: 15px;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
   overflow: hidden;
 
@@ -150,18 +128,16 @@
   }
 }
 
-.restaurant-about__text-interiour {
-  display: flex;
-  justify-content: end;
-  margin-right: 16px;
-  align-items: center;
-  width: 163px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
+.restaurant-about__text-lobby {
   font-family: $text-font-stack;
-  color: 'accent-darken';
+  color: #c79002;
+  font-weight: 600;
+  font-size: 13px;
+  margin-top: 102px;
+  line-height: 1.21;
+  width: 100%;
+  margin-left: 15px;
+  letter-spacing: 0.02em;
 
   @include respondTo('unisonus') {
     width: 163px;
@@ -201,4 +177,9 @@
 
 .swiper-button-prev {
   margin-right: 15px;
+}
+
+.swiper-slide {
+  display: flex;
+  width: 100%;
 }
