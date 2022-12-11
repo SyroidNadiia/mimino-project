@@ -211,20 +211,28 @@
 
   @include respondTo('diapente') {
     margin-top: -86px;
-    margin-left: -110px;
+    margin-left: -120px;
   }
 
   @include respondTo('diapason') {
     margin-top: -220px;
-    margin-left: -72px;
+    margin-left: -88px;
   }
 
 }
 
 .swiper--modified {
   @include respondTo('tritonus') {
-    width: calc(245px * 2 + 16px);
-    transform: translateX(-105px);
+    max-width: 312px;
+    transform: translateX(28px);
+  }
+
+  @include respondTo('diapente') {
+    transform: translateX(210px);
+  }
+
+  @include respondTo('diapason') {
+    transform: translateX(273px);
   }
 }
 
@@ -232,7 +240,7 @@
   overflow: hidden;
 }
 
-.wrapper-mask>.swiper-button-prev--positioned {
+.wrapper-mask > .swiper-button-prev--positioned {
 
   @include respondTo('tritonus') {
     left: 307px;
@@ -247,7 +255,7 @@
   }
 }
 
-.wrapper-mask>.swiper-button-next--positioned {
+.wrapper-mask > .swiper-button-next--positioned {
 
   @include respondTo('tritonus') {
     left: 369px;
