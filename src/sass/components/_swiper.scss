@@ -14,7 +14,6 @@
 .wrapper-mask {
   position: relative;
   overflow: hidden;
-  padding: 60px;
   margin-right: -15px;
   @include respondTo('diapente') {
     margin-left: -60px;
