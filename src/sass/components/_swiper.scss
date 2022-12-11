@@ -42,17 +42,20 @@
     width: 548px;
     transform: translateX(0px);
   }
-
-  &--picture {
-    height: 100%;
+  &--large {
+    width: 506px;
+    @include respondTo('diapente') {
+      width: 404px;
+    }
+    @include respondTo('diapason') {
+      width: 506px;
+    }
   }
-
   &-slide {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
     visibility: hidden;
   }
-
   &-wrapper {
     @extend %list;
   }
@@ -67,9 +70,6 @@
   visibility: visible;
   .wrapper-swiper--right & {
     visibility: hidden;
-    // @include respondTo('diapente') {
-    //   visibility: visible;
-    // }
   }
   @include respondTo('diapente') {
     visibility: hidden;
@@ -166,4 +166,9 @@
     left: 60px;
     right: unset;
   }
+}
+
+.swiper-slide .image {
+  width: 100%;
+  height: 100%;
 }
