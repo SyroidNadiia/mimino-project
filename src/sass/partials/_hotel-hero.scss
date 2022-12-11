@@ -1,76 +1,60 @@
-.hotel-hero {
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.65), 
-    rgba(0, 0, 0, 0.65)),
-    url('../images/hero/hotel/hotel-mob_1920.jpg');
-
-  @media (min-device-pixel-ratio: 2), 
-  (min-resolution: 192dpi) {
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.65), 
-      rgba(0, 0, 0, 0.65)),
-      url('../images/hero/hotel/hotel-mob_1920@2x.jpg');
+.home-hero {
+  max-width: 414px;
+  @include backgroundImageRetina(
+    $page: hero,
+    $section: home,
+    $part: mobile,
+    $file: hero-mob,
+    $webp-file: '../images/hero/home/desktop/hero-desk.webp'
+  );
+  @include respondTo('diapente') {
+    max-width: 1024px;
+    @include backgroundImageRetina(
+      $page: hero,
+      $section: home,
+      $part: tablet,
+      $file: hero-tab,
+      $webp-file: '../images/hero/home/desktop/hero-desk.webp'
+    );
+  }
+  @include respondTo('diapason') {
+    max-width: 1280px;
+    @include backgroundImageRetina(
+      $page: hero,
+      $section: home,
+      $part: desktop,
+      $file: hero-desk,
+      $webp-file: '../images/hero/home/desktop/hero-desk.webp'
+    );
   }
 
-  @include respondTo('diapente') {
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.65), 
-      rgba(0, 0, 0, 0.65)),
-      url('../images/hero/hotel/hotel-tab_1920.jpg');
+  .hotel-hero__title {
+    margin-bottom: 32px;
+  }
 
-    @media (min-device-pixel-ratio: 2), 
-    (min-resolution: 192dpi) {
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url('../images/hero/hotel/hotel-tab_1920@2x.jpg');
+  .hotel-hero__subtitle {
+    font-size: 20px;
+    margin-bottom: 178px;
+    color: getColor('primary-inversed');
+
+    @include respondTo('diapente') {
+      margin-bottom: 218px;
+    }
+
+    @include respondTo('diapason') {
+      margin-bottom: 242px;
     }
   }
 
-  @include respondTo('diapason') {
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.65), 
-      rgba(0, 0, 0, 0.65)),
-      url('../images/hero/hotel/hotel-desk_1920.jpg');
-
-    @media (min-device-pixel-ratio: 2), 
-    (min-resolution: 192dpi) {
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url('../images/hero/hotel/hotel-desk_1920@2x.jpg');
+  .hotel-hero__location {
+    @include respondTo('tritonus') {
+      position: absolute;
+      top: 64px;
+      right: 15px;
     }
   }
-}
 
-.hotel-hero__title {
-  margin-bottom: 32px;
-}
-
-.hotel-hero__subtitle {
-  font-size: 20px;
-  margin-bottom: 178px;
-  color: getColor('primary-inversed');
-
-  @include respondTo('diapente') {
-    margin-bottom: 218px;
+  .hotel-hero__socials {
+    gap: 20px;
   }
-
-  @include respondTo('diapason') {
-    margin-bottom: 242px;
-  }
-}
-
-.hotel-hero__location {
-  @include respondTo('tritonus') {
-    position: absolute;
-    top: 64px;
-    right: 15px;
-  }
-}
-
-.hotel-hero__socials {
-  gap: 20px;
 }
