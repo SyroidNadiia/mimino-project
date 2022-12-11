@@ -5,3 +5,4 @@ import './js/modalinputs';
 import './js/hotel-details__swiper';
 import './js/swiper-config';
 import './js/scroll-up';
+
