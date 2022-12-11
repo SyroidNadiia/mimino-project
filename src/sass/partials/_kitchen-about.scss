@@ -1,6 +1,6 @@
 .kitchen-about {
   position: relative;
-  z-index: -2;
+  z-index: 2;
 }
 
 .tagline--kitchen-about {
@@ -58,6 +58,7 @@
 }
 
 .kitchen-about__article {
+  position: relative;
 margin-top: 12px;
 @include respondTo('diapente') {
   max-width: 439px;
@@ -73,22 +74,28 @@ margin-top: 12px;
   margin-bottom: 32px;
   z-index: 2;
   margin-left: auto;
-
   @include respondTo('unisonus') {
     max-width: 244px;
   }
   @include respondTo('diapente') {
     max-width: 400px;
-    position: absolute;
-    top: -32px;
-    right: 112px;
   }
   @include respondTo('diapason') {
-    right: 180px;
     max-width: 460px;
-    top: -33px;
   }
 }
+
+  .kitchen-about__foto {
+    @include respondTo('diapente') {
+      position: absolute;
+      top: -285px;
+      right: -425px;
+    }
+    @include respondTo('diapason') {
+      right: -555px;
+    }
+}
+
 .kitchen-about__article-img-two {
   display: flex;
   justify-content: start;
@@ -144,6 +151,29 @@ margin-top: 12px;
   gap: 32px;
 }
 
-// .lines--kitchen {
-//   z-index: 1;
-// }
+.swiper-buttons--kitchen {
+  display: flex;
+  gap: 33px;
+}
+
+.swiper-button-next--kitchen,
+.swiper-button-prev--kitchen {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.swiper-wrapper--kitchen .swiper-slide--kitchen {
+  @include respondTo('unisonus') {
+    width: 245px;
+  }
+  @include respondTo('diapente') {
+    width: 194px;
+  }
+  @include respondTo('diapason') {
+    width: 245px;
+  }
+}
+
+.wrapper-swiper {
+  margin-top: 32px;
+}

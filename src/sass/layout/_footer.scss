@@ -103,31 +103,18 @@
     }
 }
 
-
-.footer__lines {
-    @include respondTo('diapente') {
-    content: '';
-    position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1px;
-  min-height: 304px;
-  background-color: rgba(122, 122, 122, 0.4);
-  z-index: 2;
-    }   
-  }
-    
-  .footer__lines::after {
-    @include respondTo('diapente') {
-    content: '';
-    position: absolute;
-  top: 0;
-  right: -23vw;
-  width: 1px;
-  min-height: 304px;
-  background-color: rgba(122, 122, 122, 0.4);
-  z-index: 2;
+.footer .lines {
+    @include respondTo('tritonus') {
+        display: none;
     }
-     
-  }
+
+    @include respondTo('diapente')  {
+        z-index: 2;
+    }
+}
+
+.footer .lines::before {
+    @include respondTo('diapente') {
+       opacity: 0;
+    }
+}
