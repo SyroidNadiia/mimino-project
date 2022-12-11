@@ -1,9 +1,13 @@
 .kitchen-about {
   position: relative;
+  z-index: -2;
 }
 
-.kitchen-about__title {
+.tagline--kitchen-about {
   margin-bottom: 12px;
+  @include respondTo('diapente') {
+    margin-bottom: 4px;
+  }
 }
 
 .kitchen-about__subtitle {
@@ -25,49 +29,51 @@
     color: mix(getColor('primary-inversed'), getColor('primary'), 68%);
   }
 }
-.kitchen-about__article {
-  @include respondTo('tritonus') {
-    margin-bottom: 32px;
-  }
-  @include respondTo('diapente') {
-    margin-bottom: 142px;
-  }
-  @include respondTo('diapason') {
-    margin-bottom: 162px;
-  }
-}
+
 .kitchen-about__text {
   @extend %marginPaddingReset;
   display: block;
   font-family: $text-font-stack;
   line-height: 1.25;
-  margin-bottom: 28px;
   font-weight: 600;
-  margin-top: 12px;
   letter-spacing: 0.02em;
   font-size: 12px;
-  width: 258px;
   color: mix(getColor('primary-inversed'), getColor('primary'), 37.3%);
-  @include respondTo('unisonus') {
-    width: 242px;
-    margin-bottom: 28px;
-    font-size: 12px;
+  margin-bottom: 28px;
+
+  @include respondTo('tritonus') {
+    max-width: 258px;
   }
+
   @include respondTo('diapente') {
     font-size: 16px;
+    margin-bottom: 142px;
     width: 439px;
-    margin-bottom: 0px;
   }
+
   @include respondTo('diapason') {
+    margin-bottom: 162px;
     width: 518px;
   }
 }
+
+.kitchen-about__article {
+margin-top: 12px;
+@include respondTo('diapente') {
+  max-width: 439px;
+  margin-top: 24px;
+}
+}
+
 .kitchen-about__article-img-one {
   display: block;
-  margin-left: 155px;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
   overflow: hidden;
+  margin-bottom: 32px;
+  z-index: 2;
+  margin-left: auto;
+
   @include respondTo('unisonus') {
     max-width: 244px;
   }
@@ -75,10 +81,10 @@
     max-width: 400px;
     position: absolute;
     top: -32px;
-    right: 65px;
+    right: 112px;
   }
   @include respondTo('diapason') {
-    right: 95px;
+    right: 180px;
     max-width: 460px;
     top: -33px;
   }
@@ -88,18 +94,23 @@
   justify-content: start;
   align-items: center;
 }
+
 .kitchen-about__food {
   display: flex;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
   overflow: hidden;
+
   @include respondTo('tritonus') {
     max-width: 200px;
     margin-right: 20px;
+    z-index: 2;
   }
+  
   @include respondTo('diapente') {
     max-width: 350px;
     margin-right: 48px;
+    z-index: 2;
   }
   @include respondTo('diapason') {
     max-width: 460px;
@@ -109,23 +120,21 @@
 .kitchen-about__text-food {
   display: flex;
   align-items: center;
-  font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   font-family: $text-font-stack;
-  color: getColor('accent-darken');
-  @include respondTo('unisonus') {
-    width: 163px;
-    font-size: 12px;
-  }
+  color: getColor('accent-darker');
+  max-width: 163px;
+
+
   @include respondTo('diapente') {
     font-size: 16px;
-    width: 312px;
+    max-width: 312px;
   }
   @include respondTo('diapason') {
-    width: 311px;
+    max-width: 311px;
     margin-bottom: 121px;
   }
 }
@@ -134,3 +143,7 @@
   justify-content: end;
   gap: 32px;
 }
+
+// .lines--kitchen {
+//   z-index: 1;
+// }
