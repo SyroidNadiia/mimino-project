@@ -3,21 +3,6 @@
   flex-direction: column;
   margin-top: 0px;
 
-  &--right {
-    // быстрый способ сделать вариант со сдвигом вправо через зеркализацию
-    transform: scale(-1, 1);
-    flex-direction: column-reverse;
-
-    & .button-wrapper {
-      // компенсация зеркализации лишних элементов
-      transform: scale(-1, 1);
-    }
-
-    @include respondTo('diapente') {
-      flex-direction: row-reverse;
-    }
-  }
-
   @include respondTo('diapente') {
     display: flex;
     justify-content: space-between;
@@ -29,94 +14,74 @@
 .wrapper-mask {
   position: relative;
   overflow: hidden;
-
-  // outline: 1px dotted red;
-  @include respondTo('tritonus') {
-    margin-left: -15px;
-    margin-right: -15px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
+  padding: 60px;
+  margin-right: -15px;
   @include respondTo('diapente') {
-    width: 600px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin-left: -63px;
-    margin-right: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  @include respondTo('diapason') {
-    width: 670px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin-left: -58px;
+    margin-left: -60px;
     margin-right: 0;
-    padding-left: 0px;
-    padding-right: 0px;
+    .wrapper-swiper--right & {
+      margin-left: 0;
+      margin-right: -60px;
+    }
   }
 }
 
 .swiper {
   overflow: visible;
-  width: calc(194px * 2 + 16px);
-  transform: translateX(-72px);
-
+  width: 404px;
+  transform: translateX(34px);
   @include respondTo('diapente') {
-    transform: translateX(93px);
-    width: calc(194px * 2 + 40px);
+    width: 428px;
+    transform: translateX(0px);
   }
-
   @include respondTo('diapason') {
-    transform: translateX(130px);
-    width: calc(245px * 2 + 40px);
+    width: 548px;
+    transform: translateX(0px);
   }
-
-  &--picture {
-    height: 100%;
-  }
-
-  .container-swiper--large & {
-    width: calc(245px * 2 + 16px);
-
+  &--large {
+    width: 506px;
     @include respondTo('diapente') {
-      transform: translateX(93px);
-      width: calc(194px * 2 + 40px);
+      width: 404px;
     }
-
     @include respondTo('diapason') {
-      transform: translateX(130px);
-      width: calc(245px * 2 + 40px);
+      width: 506px;
     }
   }
-
   &-slide {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
-    visibility: visible;
-
-    @include respondTo('diapente') {
-      visibility: hidden;
-    }
+    visibility: hidden;
   }
-
   &-wrapper {
     @extend %list;
   }
 }
 
-
-
-.swiper-slide.swiper-slide-prev,
-.swiper-slide.swiper-slide-active {
+// .swiper-slide.swiper-slide-prev,
+.swiper-slide-active {
   visibility: visible;
 }
 
-//ПЕРЕВИЗНАЧЕНІ СТИЛІ ДЛЯ СТОРІНКИ HOME СЕКЦІЯ HOTEL-DETAILS!!!!!! 
+.swiper-slide-prev {
+  visibility: visible;
+  .wrapper-swiper--right & {
+    visibility: hidden;
+  }
+  @include respondTo('diapente') {
+    visibility: hidden;
+  }
+}
+.swiper-slide-next {
+  visibility: hidden;
+  .wrapper-swiper--right & {
+    visibility: visible;
+  }
+  @include respondTo('diapente') {
+    visibility: visible;
+  }
+}
+
+//ПЕРЕВИЗНАЧЕНІ СТИЛІ ДЛЯ СТОРІНКИ HOME СЕКЦІЯ HOTEL-DETAILS!!!!!!
 .hotel-details__swiper-slide.swiper-slide-prev {
   width: 162px !important;
 }
@@ -124,7 +89,6 @@
 .hotel-details__swiper-slide.swiper-slide-active {
   width: 270px !important;
 }
-
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -135,11 +99,16 @@
 
 .swiper-button-next,
 .swiper-button-prev {
+  position: relative;
+  left: unset;
+  right: unset;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  margin-top: 0;
   @extend %icon;
-  top: calc(100% - 20px);
   fill: getColor('primary');
   @include transition(fill);
-
   &:hover {
     fill: getColor('accent');
   }
@@ -150,54 +119,6 @@
   fill: getColor('primary-inversed');
 }
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-.swiper-button-prev {
-  left: 0px;
-
-  @include respondTo('diapente') {
-    right: calc(108px + 32px + 32px);
-    left: unset;
-
-    .container-swiper--right & {
-      right: unset;
-      left: 61px;
-    }
-  }
-
-  @include respondTo('diapason') {
-    right: calc(108px + 32px);
-    left: unset;
-
-    .container-swiper--right & {
-      left: 55px;
-    }
-  }
-}
-
-.swiper-button-next {
-  left: calc(32px + 32px);
-
-  @include respondTo('diapente') {
-    right: 109px;
-    left: unset;
-
-    .container-swiper--right & {
-      right: unset;
-      left: 125px;
-    }
-  }
-
-  @include respondTo('diapason') {
-    right: 81px;
-    left: unset;
-
-    .container-swiper--right & {
-      left: 120px;
-    }
-  }
-}
-
 .swiper-button-disabled.swiper-button-next,
 .swiper-button-disabled.swiper-button-prev {
   opacity: 1;
@@ -206,20 +127,42 @@
 
 .wrapper-swiper {
   margin-top: -24px;
-
   @include respondTo('diapente') {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  &--reversed {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &--right {
+    flex-direction: row-reverse;
   }
 }
 
 .swiper-button-disabled.swiper-button-prev {
   opacity: 1;
-  //background-image: url('../images/swiper/arrow-left-disabled.svg');
+}
+
+.swiper__arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  gap: 32px;
+  position: absolute;
+  bottom: 8px;
+  left: 0px;
+  right: unset;
+  @include respondTo('diapente') {
+    right: 60px;
+    left: unset;
+  }
+  .wrapper-swiper--right & {
+    left: 60px;
+    right: unset;
+  }
+}
+
+.swiper-slide .image {
+  width: 100%;
+  height: 100%;
 }

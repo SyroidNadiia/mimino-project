@@ -9,7 +9,7 @@ function swiperSlider() {
           swiper = new Swiper(slider.querySelector('.swiper'), {
               slidesPerView: 2,
               //initialSlide: 4,
-              spaceBetween: 25,
+              spaceBetween: 16,
               // centeredSlides: true,
               //freeMode: true,
               loop: true,
@@ -20,8 +20,8 @@ function swiperSlider() {
               breakpoints: {
                 //   when window width is >= 320px
                   320: {
-                      slidesPerView: 1.25,
-                      spaceBetween: 25,
+                      slidesPerView: 2,
+                      spaceBetween: 16,
                   },
                   // when window width is >= 480px
                   1024: {
