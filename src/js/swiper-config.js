@@ -18,7 +18,7 @@ function swiperSlider() {
                   prevEl: arrowLeft,
               },
               breakpoints: {
-                  // when window width is >= 320px
+                //   when window width is >= 320px
                   320: {
                       slidesPerView: 1.25,
                       spaceBetween: 25,
