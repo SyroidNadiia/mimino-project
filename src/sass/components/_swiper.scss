@@ -45,7 +45,7 @@
   &-slide {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
-    visibility: hidden;
+    // visibility: hidden;
   }
 
   &-wrapper {
@@ -54,9 +54,20 @@
 }
 
 // .swiper-slide.swiper-slide-prev,
-.swiper-slide.swiper-slide-active,
-.swiper-slide.swiper-slide-next {
+.swiper-slide.swiper-slide-active {
   visibility: visible;
+}
+.swiper-slide.swiper-slide-prev {
+  visibility: visible;
+  .container-swiper--right & {
+    visibility: hidden;
+  }
+}
+.swiper-slide.swiper-slide-next {
+  visibility: hidden;
+  .container-swiper--right & {
+    visibility: visible;
+  }
 }
 
 //ПЕРЕВИЗНАЧЕНІ СТИЛІ ДЛЯ СТОРІНКИ HOME СЕКЦІЯ HOTEL-DETAILS!!!!!!
@@ -106,6 +117,7 @@
 .wrapper-swiper {
   margin-top: -24px;
   outline: 1px dotted blue;
+  background-color: aqua;
   @include respondTo('diapente') {
     display: flex;
     flex-direction: row-reverse;
@@ -116,7 +128,6 @@
 
 .swiper-button-disabled.swiper-button-prev {
   opacity: 1;
-  //background-image: url('../images/swiper/arrow-left-disabled.svg');
 }
 
 .swiper__arrows {
@@ -127,9 +138,14 @@
   gap: 32px;
   position: absolute;
   bottom: 8px;
-  right: 15px;
+  left: 0px;
+  right: unset;
   @include respondTo('diapente') {
     right: unset;
     left: 60px;
+  }
+  .container-swiper--right & {
+    left: unset;
+    right: 15px;
   }
 }
