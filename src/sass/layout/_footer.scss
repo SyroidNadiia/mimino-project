@@ -23,6 +23,7 @@
     }
 }
 .footer__content {
+    
     @include respondTo('diapente') {
         display: flex;
         flex-basis: 50vw;
@@ -66,51 +67,32 @@
     }
 }
 
-.footer__soc-menu {
-    @extend %list;
-    display: flex;
-    gap: 22px;
+.footer__socials {
+    gap: 20px;
+
     @include respondTo('diapente') {
-    gap: 12px;
-    flex-direction: column-reverse;
-}
+        gap: 12px;
+        flex-direction: column-reverse;
+    }
 }
 
-.footer__soc-menu-text {
-    @include respondTo('tritonus') {
-        display: none;
-    }
-    @include respondTo('diapente') {
-        display: block;
-    }
-}
-.footer__soc-menu-link {
-    @extend %link;
+.footer__socials-link {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include respondTo('diapente') {
-        font-family: $text-font-stack;
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.02em;
-        color: getColor('accent');
-    }
-}
-.footer__soc-menu-item {
+
     @include respondTo('diapente') {
         padding: 7px 12px;
         border: 0.5px solid getColor('accent');
         border-radius: 2px;
-        min-width: 144px;
     }
+
 }
-.soc-menu__icon {
-fill: getColor('accent');
-}
+
 .wrapper-footer {
     background-color: #0E0C07;
 }
+
 .footer__nav {
     display: flex;
     @include respondTo('diapente') {

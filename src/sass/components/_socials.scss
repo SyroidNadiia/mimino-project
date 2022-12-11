@@ -2,17 +2,19 @@
   @extend %list;
   display: flex;
   align-items: center;
-  margin-top: 58px;
 
-  @include respondTo('diapente') {
-    margin-top: 25px;
-  }
-
-  @include respondTo('diapason') {
-    display: none;
+  &__item {
+    @include respondTo('diapente') {
+      width: 144px;
+    }
   }
 
   &__link {
+    @extend %link;
+    font-family: $text-font-stack;
+    font-size: 16px;
+    line-height: 1.219;
+    letter-spacing: 0.02em;
     color: getColor('accent');
 
     &:hover,
@@ -22,9 +24,17 @@
     }
   }
 
+  &__text {
+    @include respondTo('tritonus') {
+      display: none;
+    }
+    @include respondTo('diapente') {
+      display: block;
+    }
+  }
+
   &__icon {
-    fill: currentColor;
-    display: block;
+    @extend %icon;
   }
 }
 
