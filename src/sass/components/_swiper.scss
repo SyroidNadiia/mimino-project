@@ -21,7 +21,12 @@
   padding: 60px;
   margin-right: -15px;
   @include respondTo('diapente') {
-    margin-right: -60px;
+    margin-left: -60px;
+    margin-right: 0;
+    .wrapper-swiper--right & {
+      margin-left: 0;
+      margin-right: -60px;
+    }
   }
 }
 
@@ -45,7 +50,7 @@
   &-slide {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
-    // visibility: hidden;
+    visibility: hidden;
   }
 
   &-wrapper {
@@ -54,18 +59,28 @@
 }
 
 // .swiper-slide.swiper-slide-prev,
-.swiper-slide.swiper-slide-active {
+.swiper-slide-active {
   visibility: visible;
 }
-.swiper-slide.swiper-slide-prev {
+
+.swiper-slide-prev {
   visibility: visible;
-  .container-swiper--right & {
+  .wrapper-swiper--right & {
+    visibility: hidden;
+    // @include respondTo('diapente') {
+    //   visibility: visible;
+    // }
+  }
+  @include respondTo('diapente') {
     visibility: hidden;
   }
 }
-.swiper-slide.swiper-slide-next {
+.swiper-slide-next {
   visibility: hidden;
-  .container-swiper--right & {
+  .wrapper-swiper--right & {
+    visibility: visible;
+  }
+  @include respondTo('diapente') {
     visibility: visible;
   }
 }
@@ -120,9 +135,12 @@
   background-color: aqua;
   @include respondTo('diapente') {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+  &--right {
+    flex-direction: row-reverse;
   }
 }
 
@@ -141,11 +159,11 @@
   left: 0px;
   right: unset;
   @include respondTo('diapente') {
-    right: unset;
-    left: 60px;
-  }
-  .container-swiper--right & {
+    right: 60px;
     left: unset;
-    right: 15px;
+  }
+  .wrapper-swiper--right & {
+    left: 60px;
+    right: unset;
   }
 }
