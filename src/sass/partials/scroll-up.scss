@@ -1,0 +1,37 @@
+.up-button {
+  position: fixed;
+  bottom: 45px;
+  right: 45px;
+}
+.up-button__link {
+  position: relative;
+  top: -30px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  width: 30px;
+  height: 70px;
+  background-color: getColor('accent');
+  fill: getColor('accent-darker');
+  opacity: 0.5;
+  &:hover,
+  &:focus {
+    scale: 1;
+    opacity: 1;
+    background-color: getColor('accent');
+    fill: getColor('accent-darker');
+    box-shadow: rgb(205, 183, 43) 2px 0px 15px;
+  }
+  @include respondTo('diapason') {
+    width: 45px;
+    height: 80px;
+  }
+}
+
+.up-button__icon {
+  position: relative;
+  top: 20px;
+  left: 0;
+}

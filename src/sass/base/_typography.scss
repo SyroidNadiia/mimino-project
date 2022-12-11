@@ -1,5 +1,9 @@
+// html {
+//   scroll-behavior: smooth;
+// }
+
 body {
-    font-family: $text-font-stack;
-    color: getColor('primary');
-    background-color: getColor('background');
+  font-family: $text-font-stack;
+  color: getColor('primary');
+  background-color: getColor('background');
 }
